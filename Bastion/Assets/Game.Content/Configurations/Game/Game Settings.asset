@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3f8f98fdeda483f810f2f4ce7f324d1, type: 3}
+  m_Name: Game Settings
+  m_EditorClassIdentifier: 
+  settings:
+    gameMode: 5
+    gameModes:
+    - buildType: 4
+      assets:
+        items:
+        - makeImmortal: 1
+          assetReference:
+            m_AssetGUID: 03e75359e252cc84cbbcc44ec86e6a8c
+            m_SubObjectName: 
+            m_SubObjectType: 
+            m_EditorAssetChanged: 0
+    - buildType: 1
+      assets:
+        items:
+        - makeImmortal: 1
+          assetReference:
+            m_AssetGUID: 96716f05dedf670459f3ea0e22556070
+            m_SubObjectName: 
+            m_SubObjectType: 
+            m_EditorAssetChanged: 0
+  gameStatesAsset: {fileID: 11400000, guid: 6e039c1fa778c5b4cb1a0004b0bb61a9, type: 2}

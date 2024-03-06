@@ -1,0 +1,2563 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce56e4dbb13e1644aa983b6dd170e4a7, type: 3}
+  m_Name: Newtonsoft-Json-for-Unity-Converters
+  m_EditorClassIdentifier: 
+  useBakedConverters: 1
+  useUnityContractResolver: 1
+  useAllOutsideConverters: 1
+  outsideConverters:
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.ExplicitNullConverter
+    converterType: Google.Apis.Json.ExplicitNullConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  - enabled: 1
+    converterName: Google.Apis.Json.RFC3339DateTimeConverter
+    converterType: Google.Apis.Json.RFC3339DateTimeConverter, Google.Apis.Core, Version=1.60.0.0,
+      Culture=neutral, PublicKeyToken=4b01fa6e34db77ab
+    settings: []
+  useAllUnityConverters: 1
+  unityConverters:
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Addressables.AssetReferenceConverter
+    converterType: Newtonsoft.Json.UnityConverters.Addressables.AssetReferenceConverter,
+      Newtonsoft.Json.UnityConverters.Addressables, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.AI.NavMesh.NavMeshQueryFilterConverter
+    converterType: Newtonsoft.Json.UnityConverters.AI.NavMesh.NavMeshQueryFilterConverter,
+      Newtonsoft.Json.UnityConverters, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.AI.NavMesh.NavMeshTriangulationConverter
+    converterType: Newtonsoft.Json.UnityConverters.AI.NavMesh.NavMeshTriangulationConverter,
+      Newtonsoft.Json.UnityConverters, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Camera.CullingGroupEventConverter
+    converterType: Newtonsoft.Json.UnityConverters.Camera.CullingGroupEventConverter,
+      Newtonsoft.Json.UnityConverters, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Geometry.BoundsConverter
+    converterType: Newtonsoft.Json.UnityConverters.Geometry.BoundsConverter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Geometry.BoundsIntConverter
+    converterType: Newtonsoft.Json.UnityConverters.Geometry.BoundsIntConverter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Geometry.PlaneConverter
+    converterType: Newtonsoft.Json.UnityConverters.Geometry.PlaneConverter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Geometry.RectConverter
+    converterType: Newtonsoft.Json.UnityConverters.Geometry.RectConverter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Geometry.RectIntConverter
+    converterType: Newtonsoft.Json.UnityConverters.Geometry.RectIntConverter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Geometry.RectOffsetConverter
+    converterType: Newtonsoft.Json.UnityConverters.Geometry.RectOffsetConverter,
+      Newtonsoft.Json.UnityConverters, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Hashing.Hash128Converter
+    converterType: Newtonsoft.Json.UnityConverters.Hashing.Hash128Converter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Math.Color32Converter
+    converterType: Newtonsoft.Json.UnityConverters.Math.Color32Converter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Math.ColorConverter
+    converterType: Newtonsoft.Json.UnityConverters.Math.ColorConverter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Math.Matrix4x4Converter
+    converterType: Newtonsoft.Json.UnityConverters.Math.Matrix4x4Converter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Math.QuaternionConverter
+    converterType: Newtonsoft.Json.UnityConverters.Math.QuaternionConverter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Math.SphericalHarmonicsL2Converter
+    converterType: Newtonsoft.Json.UnityConverters.Math.SphericalHarmonicsL2Converter,
+      Newtonsoft.Json.UnityConverters, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Math.Vector2Converter
+    converterType: Newtonsoft.Json.UnityConverters.Math.Vector2Converter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Math.Vector2IntConverter
+    converterType: Newtonsoft.Json.UnityConverters.Math.Vector2IntConverter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Math.Vector3Converter
+    converterType: Newtonsoft.Json.UnityConverters.Math.Vector3Converter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Math.Vector3IntConverter
+    converterType: Newtonsoft.Json.UnityConverters.Math.Vector3IntConverter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Math.Vector4Converter
+    converterType: Newtonsoft.Json.UnityConverters.Math.Vector4Converter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.NativeArray.NativeArrayConverter
+    converterType: Newtonsoft.Json.UnityConverters.NativeArray.NativeArrayConverter,
+      Newtonsoft.Json.UnityConverters, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Physics.JointDriveConverter
+    converterType: Newtonsoft.Json.UnityConverters.Physics.JointDriveConverter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Physics.JointLimitsConverter
+    converterType: Newtonsoft.Json.UnityConverters.Physics.JointLimitsConverter,
+      Newtonsoft.Json.UnityConverters, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Physics.SoftJointLimitConverter
+    converterType: Newtonsoft.Json.UnityConverters.Physics.SoftJointLimitConverter,
+      Newtonsoft.Json.UnityConverters, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Physics2D.ColliderDistance2DConverter
+    converterType: Newtonsoft.Json.UnityConverters.Physics2D.ColliderDistance2DConverter,
+      Newtonsoft.Json.UnityConverters, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Physics2D.ContactFilter2DConverter
+    converterType: Newtonsoft.Json.UnityConverters.Physics2D.ContactFilter2DConverter,
+      Newtonsoft.Json.UnityConverters, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Random.RandomStateConverter
+    converterType: Newtonsoft.Json.UnityConverters.Random.RandomStateConverter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Scripting.LayerMaskConverter
+    converterType: Newtonsoft.Json.UnityConverters.Scripting.LayerMaskConverter,
+      Newtonsoft.Json.UnityConverters, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.UnityConverters.Scripting.RangeIntConverter
+    converterType: Newtonsoft.Json.UnityConverters.Scripting.RangeIntConverter, Newtonsoft.Json.UnityConverters,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    settings: []
+  useAllJsonNetConverters: 0
+  jsonNetConverters:
+  - enabled: 1
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 1
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BinaryConverter
+    converterType: Newtonsoft.Json.Converters.BinaryConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.BsonObjectIdConverter
+    converterType: Newtonsoft.Json.Converters.BsonObjectIdConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataSetConverter
+    converterType: Newtonsoft.Json.Converters.DataSetConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DataTableConverter
+    converterType: Newtonsoft.Json.Converters.DataTableConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.DiscriminatedUnionConverter
+    converterType: Newtonsoft.Json.Converters.DiscriminatedUnionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.EntityKeyMemberConverter
+    converterType: Newtonsoft.Json.Converters.EntityKeyMemberConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.ExpandoObjectConverter
+    converterType: Newtonsoft.Json.Converters.ExpandoObjectConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.IsoDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.IsoDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.JavaScriptDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.KeyValuePairConverter
+    converterType: Newtonsoft.Json.Converters.KeyValuePairConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.RegexConverter
+    converterType: Newtonsoft.Json.Converters.RegexConverter, Newtonsoft.Json, Version=13.0.0.0,
+      Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.StringEnumConverter
+    converterType: Newtonsoft.Json.Converters.StringEnumConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.UnixDateTimeConverter
+    converterType: Newtonsoft.Json.Converters.UnixDateTimeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.VersionConverter
+    converterType: Newtonsoft.Json.Converters.VersionConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []
+  - enabled: 0
+    converterName: Newtonsoft.Json.Converters.XmlNodeConverter
+    converterType: Newtonsoft.Json.Converters.XmlNodeConverter, Newtonsoft.Json,
+      Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+    settings: []

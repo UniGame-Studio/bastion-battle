@@ -1,0 +1,7 @@
+*.Rider.Unity.Editor.Plugin.Repacked.dll
+**.idea/
+/remote_config_data
+/out/
+Tools/Firebase/NodeScripts/node_modules/
+MobaGame/UserSettings/
+IdleGame/Recordings

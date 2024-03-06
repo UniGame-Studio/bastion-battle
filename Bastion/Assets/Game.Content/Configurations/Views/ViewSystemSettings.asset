@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb7e5639c338ff4a9a1cee8f5178231, type: 3}
+  m_Name: ViewSystemSettings
+  m_EditorClassIdentifier: 
+  sourceName: GameViewSystemSettings
+  isActive: 1
+  uiViewsDefaultFolders:
+  - Assets/Game.Content/UiViews
+  viewsAssetsSources: []
+  uiViewsSkinFolders: []
+  uiViews:
+  - AssetGUID: 10a6a1b9b95dac3418376f41b4ebe96d
+    View:
+      m_AssetGUID: 10a6a1b9b95dac3418376f41b4ebe96d
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    ViewName: ServerActionsView
+    Tag: 
+    Type:
+      name: ServerCommandsView
+      fullTypeName: Game.Ecs.States.Views.ServerCommandsView, game.ecs.ui.server,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    ModelType:
+      name: ServerCommandsViewModel
+      fullTypeName: Game.Ecs.States.Views.ServerCommandsViewModel, game.ecs.ui.server,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    ViewModelType:
+      name: ServerCommandsViewModel
+      fullTypeName: Game.Ecs.States.Views.ServerCommandsViewModel, game.ecs.ui.server,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    PoolingPreloadCount: 1
+    Atlases: []
+    Hash: 1410355308
+  applyAddressablesGroup: 0
+  labels: []
+  addressableGroupName: 
+  sources: []
+  layoutFlow: {fileID: 11400000, guid: c22cfe04dc8dc9e43b8b9b36576fab63, type: 2}
+  viewModelResolver:
+    modelFactoryTimeoutMs: 500
+    modelResolvers: []
+  references:
+    version: 2
+    RefIds: []

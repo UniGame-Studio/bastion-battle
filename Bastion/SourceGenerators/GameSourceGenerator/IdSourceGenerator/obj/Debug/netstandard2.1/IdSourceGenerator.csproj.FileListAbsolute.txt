@@ -1,0 +1,11 @@
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\IdSourceGenerator\bin\Debug\netstandard2.1\IdSourceGenerator.deps.json
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\IdSourceGenerator\bin\Debug\netstandard2.1\IdSourceGenerator.dll
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\IdSourceGenerator\bin\Debug\netstandard2.1\IdSourceGenerator.pdb
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\IdSourceGenerator\obj\Debug\netstandard2.1\IdSourceGenerator.csproj.AssemblyReference.cache
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\IdSourceGenerator\obj\Debug\netstandard2.1\IdSourceGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\IdSourceGenerator\obj\Debug\netstandard2.1\IdSourceGenerator.AssemblyInfoInputs.cache
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\IdSourceGenerator\obj\Debug\netstandard2.1\IdSourceGenerator.AssemblyInfo.cs
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\IdSourceGenerator\obj\Debug\netstandard2.1\IdSourceGenerator.csproj.CoreCompileInputs.cache
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\IdSourceGenerator\obj\Debug\netstandard2.1\IdSourceGenerator.sourcelink.json
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\IdSourceGenerator\obj\Debug\netstandard2.1\IdSourceGenerator.dll
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\IdSourceGenerator\obj\Debug\netstandard2.1\IdSourceGenerator.pdb

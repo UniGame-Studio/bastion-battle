@@ -1,0 +1,28 @@
+{
+    "name": "game.ecs.gameroot",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e59bf9fc7d5a44b18a819a92edd46163",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:b10aac27e5bc3d74f9892b100a74487f",
+        "GUID:c1d53fc1b1b71c647b00626be502b7b1",
+        "GUID:29ec3b0531d6fe44ea0b574ce668e73e",
+        "GUID:8e4577c9194c10845984cf27eb974fd1",
+        "GUID:2796129a6c23eb84a8181f62bf7332f1",
+        "GUID:86b80cc3b4934800978b8c8e30edf8ef",
+        "GUID:0257b6e072034ffcadf09b69db029084",
+        "GUID:5f152d2c085e82e4cb666473f78648dc",
+        "GUID:dd8673e534f84de4bbbfe3f43621102c",
+        "GUID:a0b431bd9232ee0439a3722ec36414ed",
+        "GUID:b48f2927b162c3a43ab9ec6fa8165d4e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

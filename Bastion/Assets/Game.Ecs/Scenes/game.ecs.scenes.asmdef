@@ -1,0 +1,26 @@
+{
+    "name": "game.ecs.scenes",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e59bf9fc7d5a44b18a819a92edd46163",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:966f01aff3301cb449a4595679577a3a",
+        "GUID:b10aac27e5bc3d74f9892b100a74487f",
+        "GUID:c1d53fc1b1b71c647b00626be502b7b1",
+        "GUID:29ec3b0531d6fe44ea0b574ce668e73e",
+        "GUID:8e4577c9194c10845984cf27eb974fd1",
+        "GUID:4185675af2c91ce438157b41079cd107",
+        "GUID:734ad187cc97468aafd24e6984ece1fa",
+        "GUID:8cdce4963da4aee46850f98481d60a5b",
+        "GUID:e06a58708b83247ca9dc984644f5b40b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

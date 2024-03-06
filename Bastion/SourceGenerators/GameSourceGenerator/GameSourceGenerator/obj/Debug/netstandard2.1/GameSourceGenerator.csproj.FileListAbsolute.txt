@@ -1,0 +1,11 @@
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\GameSourceGenerator\bin\Debug\netstandard2.1\GameSourceGenerator.deps.json
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\GameSourceGenerator\bin\Debug\netstandard2.1\GameSourceGenerator.dll
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\GameSourceGenerator\bin\Debug\netstandard2.1\GameSourceGenerator.pdb
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\GameSourceGenerator\obj\Debug\netstandard2.1\GameSourceGenerator.csproj.AssemblyReference.cache
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\GameSourceGenerator\obj\Debug\netstandard2.1\GameSourceGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\GameSourceGenerator\obj\Debug\netstandard2.1\GameSourceGenerator.AssemblyInfoInputs.cache
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\GameSourceGenerator\obj\Debug\netstandard2.1\GameSourceGenerator.AssemblyInfo.cs
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\GameSourceGenerator\obj\Debug\netstandard2.1\GameSourceGenerator.csproj.CoreCompileInputs.cache
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\GameSourceGenerator\obj\Debug\netstandard2.1\GameSourceGenerator.sourcelink.json
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\GameSourceGenerator\obj\Debug\netstandard2.1\GameSourceGenerator.dll
+D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\GameSourceGenerator\obj\Debug\netstandard2.1\GameSourceGenerator.pdb

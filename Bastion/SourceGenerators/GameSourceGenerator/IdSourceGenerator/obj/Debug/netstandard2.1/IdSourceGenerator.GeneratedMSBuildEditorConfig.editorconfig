@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = IdSourceGenerator
+build_property.ProjectDir = D:\Dev\UniGame\castle_fight\CastleFight\SourceGenerators\GameSourceGenerator\IdSourceGenerator\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,0 +1,3 @@
+[submodule "Bastion/Packages/UniModules"]
+	path = Bastion/Packages/UniModules
+	url = https://github.com/UnioGame/UniModules.git
