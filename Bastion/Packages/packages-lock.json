@@ -65,6 +65,22 @@
       "dependencies": {},
       "hash": "b8bc3c994394be817915a6050169373915b811b4"
     },
+    "com.unigame.ecs.game.features": {
+      "version": "file:ECS.Features",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.addressables": "1.21.17",
+        "com.unity.editorcoroutines": "1.0.0",
+        "com.unity.burst": "1.8.9",
+        "com.unity.ugui": "1.0.0",
+        "com.unity.textmeshpro": "2.1.6",
+        "com.unity.timeline": "1.8.6",
+        "com.unity.localization": "1.4.5",
+        "com.unity.2d.psdimporter": "8.0.3",
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      }
+    },
     "com.unigame.modules.assembles": {
       "version": "file:UniModules",
       "depth": 0,
