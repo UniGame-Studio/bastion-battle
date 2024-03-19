@@ -999,7 +999,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2763759045475528793, guid: f5133f12b5e95f4478bb0e4d080ecca2, type: 3}
+    - {fileID: 7769566553530509405, guid: f5133f12b5e95f4478bb0e4d080ecca2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
