@@ -18,8 +18,7 @@ MonoBehaviour:
     name: Game Client Feature
     _active: 1
     _systems: []
-    nestedFeatures:
-    - {fileID: 11400000, guid: 99d5257fd8e85704b86770eed99d593e, type: 2}
+    nestedFeatures: []
     serializableFeatures: []
   references:
     version: 2

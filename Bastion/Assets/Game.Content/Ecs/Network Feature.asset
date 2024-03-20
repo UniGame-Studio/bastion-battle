@@ -18,10 +18,7 @@ MonoBehaviour:
     name: Network
     _active: 1
     _systems: []
-    nestedFeatures:
-    - {fileID: 11400000, guid: 8406dee9735a60f48a47a278201f073a, type: 2}
-    - {fileID: 11400000, guid: 26fdb10f8fb3863468fb3e60bcb816ac, type: 2}
-    - {fileID: 11400000, guid: d442b8e3b3a7ab546b1d6d219bd81011, type: 2}
+    nestedFeatures: []
     serializableFeatures: []
   references:
     version: 2

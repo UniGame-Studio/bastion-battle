@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Game Settings
   m_EditorClassIdentifier: 
   settings:
-    gameMode: 5
+    gameMode: 0
     gameModes:
     - buildType: 4
       assets:
