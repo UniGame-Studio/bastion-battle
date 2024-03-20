@@ -68,11 +68,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4fdd513ad13c7cb49a0257536e910e4f
-    m_Address: Assets/Game.Content/Network/NetworkManager.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 42a758a1200eda045a61ec46285d7a0d
     m_Address: Assets/Game.Content/Configurations/Bootstrap/Addressable Context Source.asset
     m_ReadOnly: 0
@@ -83,43 +78,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 96716f05dedf670459f3ea0e22556070
-    m_Address: Assets/Game.Content/Network/ServerAgent.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2d50ea622fda92e428443b7d2852547b
     m_Address: Assets/Game.Content/Configurations/Game/Game Settings.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 03e75359e252cc84cbbcc44ec86e6a8c
-    m_Address: Assets/Game.Content/Client/ClientAgent.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6e039c1fa778c5b4cb1a0004b0bb61a9
     m_Address: Assets/Game.Content/Configurations/Game/Game States Asset.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3a7381a2555bf3b459e7cd848eaa8138
-    m_Address: Assets/Game.Content/Configurations/Client/Client Configuration Asset.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: dd2bc53f712a7554db0ca9e722d9d0ae
-    m_Address: Assets/Game.Content/Configurations/Network/Server Configuration Asset.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2a49f283d8ac1374b971b61855f65b3c
-    m_Address: Assets/Game.Content/Configurations/Network/Network Settings.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 677bb31981761e849a103fff17e9a8b5
-    m_Address: Assets/Game.Content/Configurations/Network/Unity Netcode Settings.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
