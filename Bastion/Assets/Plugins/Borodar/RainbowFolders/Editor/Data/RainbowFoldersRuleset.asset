@@ -353,7 +353,7 @@ MonoBehaviour:
     Key: Assets/Game.Content
     Ordinal: 28
     Priority: 0
-    IconType: 2610
+    IconType: 2680
     SmallIcon: {fileID: 0}
     LargeIcon: {fileID: 0}
     IsIconRecursive: 0
@@ -364,6 +364,18 @@ MonoBehaviour:
   - Type: 1
     Key: Assets/Game.Ecs
     Ordinal: 29
+    Priority: 0
+    IconType: 2620
+    SmallIcon: {fileID: 0}
+    LargeIcon: {fileID: 0}
+    IsIconRecursive: 1
+    BackgroundType: 0
+    BackgroundTexture: {fileID: 0}
+    IsBackgroundRecursive: 0
+    IsHidden: 0
+  - Type: 1
+    Key: Assets/Game.Ecs.Ui
+    Ordinal: 30
     Priority: 0
     IconType: 2620
     SmallIcon: {fileID: 0}
