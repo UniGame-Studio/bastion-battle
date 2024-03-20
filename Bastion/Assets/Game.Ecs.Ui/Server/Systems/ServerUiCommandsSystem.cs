@@ -3,6 +3,7 @@
     using System;
     using Leopotam.EcsLite;
     using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
+    using UniGame.LeoEcs.Shared.Components;
 
     /// <summary>
     /// update server ui commands
@@ -19,10 +20,12 @@
     public class ServerUiCommandsSystem : IEcsInitSystem, IEcsRunSystem
     {
         private EcsWorld _world;
+        private EcsFilter _asdasd;
 
         public void Init(IEcsSystems systems)
         {
             _world = systems.GetWorld();
+            _asdasd = _world.Filter<TransformComponent>().End();
         }
 
         public void Run(IEcsSystems systems)
