@@ -21,6 +21,7 @@ MonoBehaviour:
     nestedFeatures:
     - {fileID: 11400000, guid: fa577f7789a50674c93c50869e24c44a, type: 2}
     - {fileID: 11400000, guid: 04b6914a291551b44861d5b88650b3c6, type: 2}
+    - {fileID: 11400000, guid: 50ececf1005d6d64d87cd29ecf007ff7, type: 2}
     serializableFeatures: []
   references:
     version: 2
