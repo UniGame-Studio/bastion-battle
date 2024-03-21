@@ -44,7 +44,7 @@ namespace Game.Ecs.Energy.Systems
         {
             foreach (var entity in _filter)
             {
-                ref var request = ref _energyAspect.Set.Get(entity);
+                ref var request = ref _energyAspect.SetRequest.Get(entity);
                 foreach (var energyEntity in _energyFilter)
                 {
                     ref var energyComponent = ref _energyAspect.Energy.Get(energyEntity);

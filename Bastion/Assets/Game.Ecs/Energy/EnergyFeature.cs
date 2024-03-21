@@ -21,7 +21,7 @@ namespace Game.Ecs.Energy
         {
             var world = ecsSystems.GetWorld();
             // init system
-            ecsSystems.Add(new InitializeEnergySystem(Setup));
+            ecsSystems.Add(new InitializeEnergySystem(Setup));//в будущем переделать инициализацию энергии
             // add or remove energy
             ecsSystems.DelHere<NotEnoughEnergyEvent>();
             ecsSystems.Add(new SetEnergyValueSystem());

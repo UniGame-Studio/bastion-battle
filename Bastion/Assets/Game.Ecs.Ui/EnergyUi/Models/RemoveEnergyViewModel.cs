@@ -1,4 +1,4 @@
-namespace Game.Ecs.Ui.EnergyUi.Views
+namespace Game.Ecs.Ui.EnergyUi.Models
 {
     using System;
     using UniGame.Runtime.Common;
@@ -13,8 +13,8 @@ namespace Game.Ecs.Ui.EnergyUi.Views
     /// decrease energy view model
     /// </summary>
     [Serializable]
-    public class DecreaseEnergyViewModel : ViewModelBase
+    public class RemoveEnergyViewModel : ViewModelBase
     {
-        public SignalValueProperty<bool> decreaseEnergy = new();
+        public SignalValueProperty<bool> removeEnergy = new();
     }
 }

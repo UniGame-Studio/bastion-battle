@@ -2,6 +2,7 @@ namespace Game.Ecs.Ui.EnergyUi.Models
 {
     using System;
     using UniGame.UiSystem.Runtime;
+    using UniModules.UniCore.Runtime.Common;
     using UniRx;
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -16,6 +17,6 @@ namespace Game.Ecs.Ui.EnergyUi.Models
     [Serializable]
     public class EnergyUiViewModel : ViewModelBase
     {
-        public ReactiveProperty<float> energy = new();
+        public ReactiveValue<float> energy = new();
     }
 }

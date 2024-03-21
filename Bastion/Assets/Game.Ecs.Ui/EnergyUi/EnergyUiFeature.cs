@@ -14,7 +14,7 @@ namespace Game.Ecs.Ui.EnergyUi
     {
         public override async UniTask InitializeFeatureAsync(IEcsSystems ecsSystems)
         {
-            ecsSystems.Add(new GenerateChangeEnergyRequestSystem());//temp
+            ecsSystems.Add(new GenerateChangeEnergyRequestSystem());//temp for demo
             ecsSystems.Add(new UpdateEnergyUiSystem());
         }
     }

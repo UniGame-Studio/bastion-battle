@@ -48,7 +48,7 @@ namespace Game.Ecs.Energy.Systems
                 ref var energyComponent = ref _energyAspect.Energy.Get(energyEntity);
                 foreach (var addRequest in _addFilter)
                 {
-                    ref var request = ref _energyAspect.Add.Get(addRequest);
+                    ref var request = ref _energyAspect.AddRequest.Get(addRequest);
                     
                     if (energyComponent.Energy + request.Value > energyComponent.MaxEnergy)
                         energyComponent.Energy = energyComponent.MaxEnergy;
@@ -57,7 +57,7 @@ namespace Game.Ecs.Energy.Systems
                 }
                 foreach (var removeRequest in _removeFilter)
                 {
-                    ref var request = ref _energyAspect.Remove.Get(removeRequest);
+                    ref var request = ref _energyAspect.RemoveRequest.Get(removeRequest);
                     
                     if(request.Value > energyComponent.Energy)
                         _energyAspect.NotEnough.Add(_world.NewEntity());

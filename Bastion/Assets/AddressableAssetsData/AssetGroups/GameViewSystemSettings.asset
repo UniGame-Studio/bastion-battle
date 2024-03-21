@@ -22,6 +22,21 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ff826cc98639c748a0c7cd09c71e6a3
+    m_Address: Assets/Game.Content/UiViews/Energy/AddEnergyButton.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d6a73b70e575d314e93595b8a37af647
+    m_Address: Assets/Game.Content/UiViews/Energy/EnergyUiView.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 26b133b726da1344095cd9ee414fdc20
+    m_Address: Assets/Game.Content/UiViews/Energy/SpendEnergyButton.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5be18780e8fdf434c90bf26cedd41243, type: 2}
   m_SchemaSet:

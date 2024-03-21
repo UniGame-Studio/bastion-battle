@@ -16,14 +16,15 @@ namespace Game.Ecs.Ui.EnergyUi.Views
 #endif
 
     /// <summary>
-    /// Add energy button view
+    /// BUTTON TO ADD ENERGY !! TEST
     /// </summary>
     [Serializable]
     public class AddEnergyButtonView : EcsUiView<AddEnergyButtonViewModel>
     {
-        Button button;
+        public Button button;
         protected override UniTask OnInitialize(AddEnergyButtonViewModel model)
         {
+            this.Bind(button, model.addEnergy);
             return base.OnInitialize(model);
         }
     }

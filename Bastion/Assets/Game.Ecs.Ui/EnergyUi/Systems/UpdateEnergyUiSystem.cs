@@ -42,7 +42,7 @@ namespace Game.Ecs.Ui.EnergyUi.Systems
                 foreach (var energyEntity in _energyFilter)
                 {
                     ref var energyComponent = ref _energyAspect.Energy.Get(energyEntity);
-                    energyUiViewModel.energy.Value = energyComponent.Energy;
+                    energyUiViewModel.energy.SetValue(energyComponent.Energy);
                 }
             }
 

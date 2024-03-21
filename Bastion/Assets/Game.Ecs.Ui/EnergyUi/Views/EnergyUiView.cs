@@ -3,9 +3,11 @@ namespace Game.Ecs.Ui.EnergyUi.Views
     using System;
     using Cysharp.Threading.Tasks;
     using Models;
+    using PrimeTween;
     using TMPro;
     using UniGame.LeoEcs.ViewSystem.Converters;
     using UniGame.Rx.Runtime.Extensions;
+    using UnityEngine;
 
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -22,11 +24,18 @@ namespace Game.Ecs.Ui.EnergyUi.Views
     public class EnergyUiView : EcsUiView<EnergyUiViewModel>
     {
         public TextMeshProUGUI energyText;
+        [SerializeField] public TweenSettings<float> tweenSettings;
         protected override UniTask OnInitialize(EnergyUiViewModel model)
         {
-            this.Bind(model.energy, energyText);
+            this.Bind(model.energy, UpdateText);
             return base.OnInitialize(model);
         }
         
+        
+        private void UpdateText(float value)
+        {
+            energyText.text = value.ToString();
+            Tween.Scale(energyText.transform, tweenSettings);
+        }
     }
 }
