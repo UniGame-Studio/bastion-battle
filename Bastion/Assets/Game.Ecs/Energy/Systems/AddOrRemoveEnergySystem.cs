@@ -43,22 +43,26 @@ namespace Game.Ecs.Energy.Systems
 
         public void Run(IEcsSystems systems)
         {
-            foreach (var energyEntity in _energyFilter)
+            foreach (var addRequest in _addFilter)
             {
-                ref var energyComponent = ref _energyAspect.Energy.Get(energyEntity);
-                foreach (var addRequest in _addFilter)
+                foreach (var energyEntity in _energyFilter)
                 {
+                    ref var energyComponent = ref _energyAspect.Energy.Get(energyEntity);
                     ref var request = ref _energyAspect.AddRequest.Get(addRequest);
-                    
+
                     if (energyComponent.Energy + request.Value > energyComponent.MaxEnergy)
                         energyComponent.Energy = energyComponent.MaxEnergy;
                     else
                         energyComponent.Energy += request.Value;
-                }
-                foreach (var removeRequest in _removeFilter)
+                }            }
+            
+            foreach (var removeRequest in _removeFilter)
+            {
+                foreach (var energyEntity in _energyFilter)
                 {
+                    ref var energyComponent = ref _energyAspect.Energy.Get(energyEntity);
                     ref var request = ref _energyAspect.RemoveRequest.Get(removeRequest);
-                    
+
                     if(request.Value > energyComponent.Energy)
                         _energyAspect.NotEnough.Add(_world.NewEntity());
                     else

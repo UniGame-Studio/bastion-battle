@@ -1,7 +1,7 @@
 namespace Game.Ecs.Energy
 {
-    using System;
     using Cysharp.Threading.Tasks;
+    using Data;
     using Events;
     using Leopotam.EcsLite;
     using Leopotam.EcsLite.ExtendedSystems;
@@ -31,12 +31,5 @@ namespace Game.Ecs.Energy
             ecsSystems.DelHere<AddEnergyRequest>();
             ecsSystems.DelHere<RemoveEnergyRequest>();
         }
-    }
-
-    [Serializable]
-    public struct EnergySettings
-    {
-        public int StartEnergy;
-        public int MaxEnergy;
     }
 }

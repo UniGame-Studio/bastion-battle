@@ -4,6 +4,7 @@ namespace Game.Ecs.Energy.Systems
     using System.Linq;
     using Aspects;
     using Components;
+    using Data;
     using Leopotam.EcsLite;
     using UniGame.Core.Runtime.Extension;
     using UniGame.LeoEcs.Shared.Extensions;
@@ -13,7 +14,7 @@ namespace Game.Ecs.Energy.Systems
     using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// Тестовоая система инициализации энергии, котурую в будущем заменит конвертор
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
