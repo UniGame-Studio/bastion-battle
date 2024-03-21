@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6937400046973219005}
   - component: {fileID: 2211676582205960776}
   m_Layer: 0
-  m_Name: Forest_blue
+  m_Name: ForestBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7464439767384487040}
   m_Layer: 0
-  m_Name: Castle_up
+  m_Name: CastleUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 3233841700899121607}
   - component: {fileID: 4709687067230999212}
   m_Layer: 0
-  m_Name: Castle_red
+  m_Name: CastleRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 7586606576286730838}
   - component: {fileID: 8200935657560721348}
   m_Layer: 0
-  m_Name: Field_with_background
+  m_Name: FieldWithBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -581,7 +581,7 @@ GameObject:
   - component: {fileID: 2770682311388392341}
   - component: {fileID: 5125658021384572071}
   m_Layer: 0
-  m_Name: Forest_red
+  m_Name: ForestRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -816,7 +816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4754432673543022783}
   m_Layer: 0
-  m_Name: Castle_down
+  m_Name: CastleDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -901,12 +901,20 @@ PrefabInstance:
     - target: {fileID: 5414455308745377269, guid: 5604184be926304468903943fb901198,
         type: 3}
       propertyPath: m_Name
-      value: Castle_blue
+      value: CastleBlue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6484727662900445293, guid: 5604184be926304468903943fb901198,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8621240016856053107}
+    - targetCorrespondingSourceObject: {fileID: 6484727662900445293, guid: 5604184be926304468903943fb901198,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5224057915374699647}
   m_SourcePrefab: {fileID: 100100000, guid: 5604184be926304468903943fb901198, type: 3}
 --- !u!4 &4416605302879032165 stripped
 Transform:
@@ -914,3 +922,55 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2634500298756113207}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9039218561952793434 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6484727662900445293, guid: 5604184be926304468903943fb901198,
+    type: 3}
+  m_PrefabInstance: {fileID: 2634500298756113207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8621240016856053107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9039218561952793434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0acd60cbbe1484da9c72d797dc766f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  createEntityOnEnabled: 1
+  createEntityOnStart: 0
+  destroyEntityOnDisable: 1
+  destroyOnDestroy: 0
+  serializableConverters:
+  - rid: 797715961105874951
+  assetConverters: []
+  entity: -1
+  references:
+    version: 2
+    RefIds:
+    - rid: 797715961105874951
+      type: {class: MapConvereter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
+      data:
+        isEnabled: 1
+--- !u!114 &5224057915374699647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9039218561952793434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81f7aca20b5f4ec428cf25dc06cd1a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  converter:
+    _isEnabled: 1
+    configurations: []
+    converters: []
+  references:
+    version: 2
+    RefIds: []

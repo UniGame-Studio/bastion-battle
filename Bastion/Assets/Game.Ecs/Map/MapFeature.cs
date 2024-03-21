@@ -2,7 +2,6 @@
 using Game.Ecs.Ability.Common.Components;
 using Game.Ecs.Map.Requests;
 using Game.Ecs.Map.Systems;
-using Game.Ecs.Map.Tools;
 using Leopotam.EcsLite;
 using Leopotam.EcsLite.ExtendedSystems;
 using UniGame.LeoEcs.Bootstrap.Runtime;
@@ -17,13 +16,15 @@ namespace Game.Ecs.Map
     {
         public override UniTask InitializeFeatureAsync(IEcsSystems ecsSystems)
         {
-            var world = ecsSystems.GetWorld();
-            MapTools mapTools = new MapTools();
-            world.SetGlobal(mapTools);
+            //ecsSystems.Add(new MapInit());
             
-            ecsSystems.Add(mapTools);
-            ecsSystems.DelHere<SetUnitOnMapRequest>();
-            ecsSystems.Add(new SetUnitSystem());
+            // set on random cell
+            ecsSystems.Add(new SetOnRandomCellSystem());
+            ecsSystems.DelHere<SetOnRandomCellRequest>();
+            
+            // set on concrete cel
+            ecsSystems.Add(new SetOnCellSystem());
+            ecsSystems.DelHere<SetOnCellRequest>();
 
             return UniTask.CompletedTask;
         }

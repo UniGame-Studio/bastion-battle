@@ -2,14 +2,14 @@
 using Game.Ecs.Map.Aspects;
 using Game.Ecs.Map.Components;
 using Game.Ecs.Map.Requests;
-using Game.Ecs.Map.Tools;
 using Leopotam.EcsLite;
 using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
+using UniGame.LeoEcs.Shared.Extensions;
 
 namespace Game.Ecs.Map.Systems
 {
     [ECSDI]
-    public class SetUnitSystem : IEcsRunSystem, IEcsInitSystem
+    public class SetOnCellSystem : IEcsRunSystem, IEcsInitSystem
     {
         private GameSpawnTools _gameSpawnTools;
         private EcsFilter _filter;
@@ -19,9 +19,10 @@ namespace Game.Ecs.Map.Systems
         public void Init(IEcsSystems systems)
         {
             _world = systems.GetWorld();
+            _gameSpawnTools = _world.GetGlobal<GameSpawnTools>();
             
             _filter = _world
-                .Filter<SetUnitOnMapRequest>()
+                .Filter<SetOnCellRequest>()
                 .End();
         }
         
@@ -29,11 +30,12 @@ namespace Game.Ecs.Map.Systems
         {
             foreach (var entity in _filter)
             {
-                ref var setRequest = ref _mapAspect.SetUnit.Get(entity);
-                if(!setRequest.Target.Unpack(_world, out int cellEntity)) continue;
-                ref var cellComponent = ref _mapAspect.Cells.Get(cellEntity);
-
-                _gameSpawnTools.Spawn(setRequest.UnitResourceId, cellComponent.Position.position);
+                ref var setRequest = ref _mapAspect.SetUnitOnCell.Get(entity);
+                
+                if(!setRequest.TargetCell.Unpack(_world, out int cellEntity)) continue;
+                
+                ref var transform = ref _mapAspect.Transform.Get(cellEntity);
+                _gameSpawnTools.Spawn(setRequest.ResourceId, transform.Value.position);
             }
         }
     }
