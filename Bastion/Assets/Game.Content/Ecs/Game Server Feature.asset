@@ -18,8 +18,7 @@ MonoBehaviour:
     name: Game Server Feature
     _active: 1
     _systems: []
-    nestedFeatures:
-    - {fileID: 11400000, guid: e84d3f764c18e2d49b986f70382515e2, type: 2}
+    nestedFeatures: []
     serializableFeatures: []
   references:
     version: 2

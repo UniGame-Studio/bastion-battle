@@ -9,19 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3ba5a65350429eb3333917a96d9ac0, type: 3}
-  m_Name: Client Configuration Asset
+  m_Script: {fileID: 11500000, guid: f1123ff6e6fc4e82af73f6ab7d4b33fa, type: 3}
+  m_Name: Addressable Category Asset
   m_EditorClassIdentifier: 
-  configuration:
-    client:
-      m_AssetGUID: 
+  category: Test Category
+  resourceLocation: {fileID: 0}
+  records:
+  - assetReference:
+      m_AssetGUID: f676c86e8bea0864c9251474fdcc0d09
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-    scenes: []
-    gameplayData:
-      fullResourcePath:
-      - Resources/ClientOnline
-      clientResourcePath: ClientOnline
-      serverResourcePath: ServerOnline
-      resourceCache: []
+    name: Test Unit Square

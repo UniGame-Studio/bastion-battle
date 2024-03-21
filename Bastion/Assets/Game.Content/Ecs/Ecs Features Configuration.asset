@@ -31,18 +31,6 @@ MonoBehaviour:
         type: 2}
       featureGroup:
         rid: -2
-    - featureGroupAsset: {fileID: 11400000, guid: 65c151a96d6d5934288ede1d90739eae,
-        type: 2}
-      featureGroup:
-        rid: 7966364217674563587
-    - featureGroupAsset: {fileID: 11400000, guid: 9967d611519da4642874a90c38a86607,
-        type: 2}
-      featureGroup:
-        rid: -2
-    - featureGroupAsset: {fileID: 11400000, guid: be47594c98b23744b80b3e0116b74f50,
-        type: 2}
-      featureGroup:
-        rid: -2
   - updateType: Fixed Update
     features: []
   - updateType: Late Update
@@ -62,7 +50,3 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 7966364217674563587
-      type: {class: EmptyFeature, ns: UniGame.LeoEcs.Bootstrap.Runtime.Config, asm: UniGame.LeoEcs.Bootstrap.Runtime}
-      data:
-        name: Empty Feature
