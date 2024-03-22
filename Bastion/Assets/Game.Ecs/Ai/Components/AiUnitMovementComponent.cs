@@ -1,9 +1,9 @@
-namespace Game.Ecs.Ai.Navigation.Components
+namespace Game.Ecs.Ai.Components
 {
     using System;
 
     /// <summary>
-    /// Settings for navigation agent in ECS
+    /// Marks entity as an AI agent.
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -13,9 +13,8 @@ namespace Game.Ecs.Ai.Navigation.Components
     [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 #endif
     [Serializable]
-    public struct NavigationAgentSettingsComponent
+    public struct AiUnitMovementComponent
     {
-        public float speed;
-        public float stoppingDistanceSqr;
+        
     }
 }

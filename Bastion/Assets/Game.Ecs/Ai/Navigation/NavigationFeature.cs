@@ -21,10 +21,12 @@ namespace Game.Ecs.Ai.Navigation
             float3 destination = testEndPositionTransform.position;
             ecsSystems.DelHere<DestinationIsReachedEvent>();
             //check distance by moving to target system
-            ecsSystems.Add(new MovingToTargetSystem());
+            // ecsSystems.Add(new MovingToTargetSystem());
 
             //set destination for all agents
-            ecsSystems.Add(new SetDestinationTestSystem(destination));
+            // ecsSystems.Add(new SetDestinationTestSystem(destination));
+            ecsSystems.Add(new SetDestinationToEnemySystem());
+
         }
     }
 }

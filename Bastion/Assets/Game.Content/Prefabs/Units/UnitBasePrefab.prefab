@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 517ed76b602594d4f9e188e77ed665c0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -125,7 +125,8 @@ MonoBehaviour:
   destroyOnDestroy: 0
   serializableConverters:
   - rid: 2882177798788874249
-  - rid: 2882177821664608261
+  - rid: 2882177821664608264
+  - rid: 2882177821664608281
   assetConverters: []
   entity: -1
   references:
@@ -135,13 +136,27 @@ MonoBehaviour:
       type: {class: UnitConverter, ns: Game.Ecs.Unit.Converters, asm: game.ecs.unit}
       data:
         isEnabled: 1
-    - rid: 2882177821664608261
-      type: {class: NavigationConverter, ns: Game.Ecs.Ai.Navigation.Converters, asm: game.ecs.ai.navigation}
+    - rid: 2882177821664608264
+      type: {class: MovementConverter, ns: Game.Ecs.Movement.Converters, asm: Game.Ecs.Movement}
       data:
-        isEnabled: 1
-        agent: {fileID: 7784747775027257429}
-        speed: 0
-        stoppingDistance: 0
+        _isEnabled: 1
+        movementData:
+          speed: 2
+          angularSpeed: 720
+          navMeshStep: 1
+          animationRunSpeed: 5
+          maxAnimationRunSpeed: 6
+          instantRotation: 0
+    - rid: 2882177821664608281
+      type: {class: AiBrainConverter, ns: Game.Ecs.Ai.Converter, asm: game.ecs.ai}
+      data:
+        _isEnabled: 1
+        aiConverters:
+        - rid: 2882177821664608282
+    - rid: 2882177821664608282
+      type: {class: AiMovementConverter, ns: Game.Ecs.Ai.Converter, asm: game.ecs.ai}
+      data:
+        _isEnabled: 1
 --- !u!195 &7784747775027257429
 NavMeshAgent:
   m_ObjectHideFlags: 0

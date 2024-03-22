@@ -1,10 +1,9 @@
-namespace Game.Ecs.Ai.Navigation.Components
+namespace Game.Ecs.Ai.Components
 {
     using System;
-    using UnityEngine.AI;
 
     /// <summary>
-    /// Navigation agent component
+    /// Marks Entity as enemy cristall
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -14,8 +13,8 @@ namespace Game.Ecs.Ai.Navigation.Components
     [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 #endif
     [Serializable]
-    public struct NavigationAgentComponent
+    public struct EnemyCrystalComponent
     {
-        public NavMeshAgent agent;
+        
     }
 }
