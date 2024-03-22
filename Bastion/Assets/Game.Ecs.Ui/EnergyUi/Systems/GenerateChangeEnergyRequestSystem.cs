@@ -42,7 +42,7 @@ namespace Game.Ecs.Ui.EnergyUi.Systems
                 {
                     addEnergyButtonViewModel.addEnergy.Value = false;
                     var newEntity = _world.NewEntity();
-                    ref var addEnergyRequest = ref _energyAspect.AddRequest.Add(newEntity);
+                    ref var addEnergyRequest = ref _energyAspect.ChangeRequest.Add(newEntity);
                     addEnergyRequest.Value = 10;
                 }
                 
@@ -54,8 +54,8 @@ namespace Game.Ecs.Ui.EnergyUi.Systems
                 if (removeEnergyViewModel.removeEnergy.Take())
                 {
                     var newEntity = _world.NewEntity();
-                    ref var removeEnergyRequest = ref _energyAspect.RemoveRequest.Add(newEntity);
-                    removeEnergyRequest.Value = 10;
+                    ref var removeEnergyRequest = ref _energyAspect.ChangeRequest.Add(newEntity);
+                    removeEnergyRequest.Value = -10;
                 }
             }
 

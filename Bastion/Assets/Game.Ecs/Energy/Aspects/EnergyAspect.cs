@@ -22,8 +22,7 @@ namespace Game.Ecs.Energy.Aspects
     {
         public EcsPool<EnergyComponent> Energy;
         //requests
-        public EcsPool<AddEnergyRequest> AddRequest;
-        public EcsPool<RemoveEnergyRequest> RemoveRequest;
+        public EcsPool<ChangeEnergyRequest> ChangeRequest;
         public EcsPool<SetEnergyRequest> SetRequest;
         //add 
         public EcsPool<NotEnoughEnergyEvent> NotEnough;

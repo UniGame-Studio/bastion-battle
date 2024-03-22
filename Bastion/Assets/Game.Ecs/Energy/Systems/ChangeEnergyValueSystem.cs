@@ -25,48 +25,38 @@ namespace Game.Ecs.Energy.Systems
 #endif
     [Serializable]
     [ECSDI]
-    public class AddOrRemoveEnergySystem : IEcsInitSystem, IEcsRunSystem
+    public class ChangeEnergyValueSystem : IEcsInitSystem, IEcsRunSystem
     {
         private EcsWorld _world;
         private EcsFilter _energyFilter;
-        private EcsFilter _addFilter;
-        private EcsFilter _removeFilter;
         private EnergyAspect _energyAspect;
+        private EcsFilter _changeEnergyFilter;
 
         public void Init(IEcsSystems systems)
         {
             _world = systems.GetWorld();
-            _addFilter = _world.Filter<AddEnergyRequest>().End();
-            _removeFilter = _world.Filter<RemoveEnergyRequest>().End();
+            _changeEnergyFilter = _world.Filter<ChangeEnergyRequest>().End();
             _energyFilter = _world.Filter<EnergyComponent>().End();
         }
 
         public void Run(IEcsSystems systems)
         {
-            foreach (var addRequest in _addFilter)
+            foreach (var changeRequest in _changeEnergyFilter)
             {
                 foreach (var energyEntity in _energyFilter)
                 {
                     ref var energyComponent = ref _energyAspect.Energy.Get(energyEntity);
-                    ref var request = ref _energyAspect.AddRequest.Get(addRequest);
+                    ref var request = ref _energyAspect.ChangeRequest.Get(changeRequest);
 
-                    if (energyComponent.Energy + request.Value > energyComponent.MaxEnergy)
-                        energyComponent.Energy = energyComponent.MaxEnergy;
-                    else
-                        energyComponent.Energy += request.Value;
-                }            }
-            
-            foreach (var removeRequest in _removeFilter)
-            {
-                foreach (var energyEntity in _energyFilter)
-                {
-                    ref var energyComponent = ref _energyAspect.Energy.Get(energyEntity);
-                    ref var request = ref _energyAspect.RemoveRequest.Get(removeRequest);
-
-                    if(request.Value > energyComponent.Energy)
-                        _energyAspect.NotEnough.Add(_world.NewEntity());
-                    else
-                        energyComponent.Energy -= request.Value;
+                    energyComponent.Energy =
+                        Mathf.Clamp(energyComponent.Energy + request.Value, 0, energyComponent.MaxEnergy);
+                    
+                    //check if energy is not enough
+                    if(request.Value < 0 && request.Value > energyComponent.Energy)
+                    {
+                        var eventEntity = _world.NewEntity();
+                        _energyAspect.NotEnough.Add(eventEntity);
+                    }
                 }
             }
         }

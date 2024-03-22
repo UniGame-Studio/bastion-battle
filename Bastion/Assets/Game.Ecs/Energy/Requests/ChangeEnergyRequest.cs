@@ -1,10 +1,9 @@
 namespace Game.Ecs.Energy.Requests
 {
     using System;
-    using Leopotam.EcsLite;
 
     /// <summary>
-    /// request to remove energy value from player energy
+    /// Add or remove some energy value request
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -14,9 +13,8 @@ namespace Game.Ecs.Energy.Requests
     [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 #endif
     [Serializable]
-    public struct RemoveEnergyRequest
+    public struct ChangeEnergyRequest
     {
         public float Value;
-        public EcsPackedEntity Source;
     }
 }

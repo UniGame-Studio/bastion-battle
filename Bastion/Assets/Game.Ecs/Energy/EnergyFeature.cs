@@ -25,11 +25,10 @@ namespace Game.Ecs.Energy
             // add or remove energy
             ecsSystems.DelHere<NotEnoughEnergyEvent>();
             ecsSystems.Add(new SetEnergyValueSystem());
-            ecsSystems.Add(new AddOrRemoveEnergySystem());
+            ecsSystems.Add(new ChangeEnergyValueSystem());
             
             ecsSystems.DelHere<SetEnergyRequest>();
-            ecsSystems.DelHere<AddEnergyRequest>();
-            ecsSystems.DelHere<RemoveEnergyRequest>();
+            ecsSystems.DelHere<ChangeEnergyRequest>();
         }
     }
 }
