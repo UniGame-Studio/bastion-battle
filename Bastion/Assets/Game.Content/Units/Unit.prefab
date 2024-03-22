@@ -1,0 +1,300 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &377143569256721125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2663632765495368607}
+  - component: {fileID: 7277831396348267231}
+  - component: {fileID: 800315963791731490}
+  - component: {fileID: 8543900702010378373}
+  - component: {fileID: 2776386852864492508}
+  - component: {fileID: -3981340868582095553}
+  m_Layer: 0
+  m_Name: Unit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2663632765495368607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377143569256721125}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 371.95074, y: 973.45776, z: -2.0727074}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7277831396348267231
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377143569256721125}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &800315963791731490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377143569256721125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0acd60cbbe1484da9c72d797dc766f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  createEntityOnEnabled: 1
+  createEntityOnStart: 0
+  destroyEntityOnDisable: 1
+  destroyOnDestroy: 0
+  serializableConverters:
+  - rid: 7966364672852754434
+  - rid: 7966364672852754435
+  - rid: 7966364672852754450
+  assetConverters: []
+  entity: -1
+  references:
+    version: 2
+    RefIds:
+    - rid: 7966364672852754434
+      type: {class: MovementConverter, ns: Game.Ecs.Movement.Converters, asm: Game.Ecs.Movement}
+      data:
+        _isEnabled: 1
+        movementData:
+          speed: 5
+          angularSpeed: 720
+          navMeshStep: 1
+          animationRunSpeed: 5
+          maxAnimationRunSpeed: 6
+          instantRotation: 0
+    - rid: 7966364672852754435
+      type: {class: CharacteristicsConverter, ns: Game.Ecs.Characteristics.CharacteristicsTools.Converters,
+        asm: Game.Ecs.Characteristics.Tools}
+      data:
+        _isEnabled: 1
+        characteristics:
+        - rid: 7966364672852754436
+        - rid: 7966364672852754437
+        - rid: 7966364672852754438
+        - rid: 7966364672852754439
+        - rid: 7966364672852754440
+        - rid: 7966364672852754441
+        - rid: 7966364672852754442
+        - rid: 7966364672852754443
+        - rid: 7966364672852754444
+        - rid: 7966364672852754445
+        - rid: 7966364672852754446
+        - rid: 7966364672852754447
+        - rid: 7966364672852754448
+        - rid: 7966364672852754449
+    - rid: 7966364672852754436
+      type: {class: HealthComponentConverter, ns: Game.Ecs.Characteristics.Health.Converters,
+        asm: Game.Ecs.Characteristics.Health}
+      data:
+        _isEnabled: 1
+        maxHealth: 0
+    - rid: 7966364672852754437
+      type: {class: AttackConverter, ns: Game.Ecs.Characteristics.Attack.Converters,
+        asm: Game.Ecs.Characteristics}
+      data:
+        _isEnabled: 1
+        attackDamage: 10
+    - rid: 7966364672852754438
+      type: {class: AttackSpeedConverter, ns: Game.Ecs.Characteristics.AttackSpeed.Converters,
+        asm: Game.Ecs.Characteristic.AttakSpeed}
+      data:
+        _isEnabled: 1
+        cooldownType: 1
+        abilitySlotId: 0
+        attackSpeed: 0
+        minLimitValue: 0
+        maxLimitValue: 5
+    - rid: 7966364672852754439
+      type: {class: AttackRangeComponentConverter, ns: Game.Ecs.Characteristics.CriticalChance.Converters,
+        asm: Game.Ecs.Characteristic.AttackRange}
+      data:
+        _isEnabled: 1
+        attackRange: 3.2
+        minValue: 3
+        maxValue: 100
+        delta: {x: -0.5, y: 0.5}
+        rangeGizmosColor: {r: 0.128, g: 0.2, b: 0.85, a: 1}
+    - rid: 7966364672852754440
+      type: {class: CriticalChanceConverter, ns: Game.Ecs.Characteristics.CriticalChance.Converters,
+        asm: Game.Ecs.Characteristic.CriticalChance}
+      data:
+        _isEnabled: 1
+        criticalChance: 0
+        minLimitValue: 0
+        maxLimitValue: 1000
+    - rid: 7966364672852754441
+      type: {class: CriticalMultiplierConverter, ns: Game.Ecs.Characteristics.CriticalMultiplier.Converters,
+        asm: Game.Ecs.Characteristic.CriticalMultiplier}
+      data:
+        _isEnabled: 1
+        criticalMultilplier: 100
+        minLimitValue: 0
+        maxLimitValue: 1000
+    - rid: 7966364672852754442
+      type: {class: DodgeComponentConverter, ns: Game.Ecs.Characteristics.Dodge.Converters,
+        asm: Game.Ecs.Characteristic.Dodge}
+      data:
+        _isEnabled: 1
+        dodge: 0
+        maxDodge: 100
+        minDodge: 0
+    - rid: 7966364672852754443
+      type: {class: BlockComponentConverter, ns: Game.Ecs.Characteristics.Block.Converters,
+        asm: Game.Ecs.Characteristic.Block}
+      data:
+        _isEnabled: 1
+        block: 0
+        maxDodge: 100
+        minDodge: 0
+    - rid: 7966364672852754444
+      type: {class: AbilityPowerConverter, ns: Game.Ecs.Characteristics.AbilityPower.Converters,
+        asm: Game.Ecs.Characteristics}
+      data:
+        _isEnabled: 1
+        abilityPower: 0
+    - rid: 7966364672852754445
+      type: {class: ManaComponentConverter, ns: Game.Ecs.Characteristics.Mana.Converters,
+        asm: Game.Ecs.Characteristics.Mana}
+      data:
+        _isEnabled: 1
+        maxMana: 0
+    - rid: 7966364672852754446
+      type: {class: ManaRegenerationConverter, ns: Game.Ecs.Characteristics.ManaRegeneration.Converters,
+        asm: Game.Ecs.Characteristics.ManaRegeneration}
+      data:
+        _isEnabled: 1
+        tickTime: 0.2
+        manaRegeneration: 80
+    - rid: 7966364672852754447
+      type: {class: SpeedConverter, ns: Game.Ecs.Characteristics.Speed.Converters,
+        asm: Game.Ecs.Characteristics}
+      data:
+        _isEnabled: 1
+        speed: 5
+        minValue: 0
+        maxValue: 0
+    - rid: 7966364672852754448
+      type: {class: SplashDamageConverter, ns: Game.Ecs.Characteristics.SplashDamage.Converters,
+        asm: Game.Ecs.Characteristics}
+      data:
+        _isEnabled: 1
+        _splashDamage: 0
+    - rid: 7966364672852754449
+      type: {class: ArmorResistConverter, ns: Game.Ecs.Characteristics.ArmorResist.Converters,
+        asm: Game.Ecs.Characteristics.ArmorResist}
+      data:
+        _isEnabled: 1
+        physicalResist: 0
+        maxValue: 100
+        minValue: 0
+    - rid: 7966364672852754450
+      type: {class: LayerIdConverter, ns: Game.Ecs.GameLayers.Layer.Converters, asm: Game.Ecs.GameLayers}
+      data:
+        enabled: 1
+        layer:
+          value: 0
+--- !u!23 &8543900702010378373
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377143569256721125}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &2776386852864492508
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377143569256721125}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!195 &-3981340868582095553
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377143569256721125}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

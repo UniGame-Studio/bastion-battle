@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1123ff6e6fc4e82af73f6ab7d4b33fa, type: 3}
-  m_Name: Addressable Category Asset
+  m_Script: {fileID: 11500000, guid: 597f69b6f72c4ee591773fa829e09cba, type: 3}
+  m_Name: GameObject Category Asset
   m_EditorClassIdentifier: 
-  category: Test Category
-  resourceLocation: {fileID: 0}
+  category: Units
+  resourceLocation: {fileID: 11400000, guid: 457aba3117e4f7d408ad99499b1b13a7, type: 2}
   records:
   - assetReference:
       m_AssetGUID: f676c86e8bea0864c9251474fdcc0d09
@@ -21,3 +21,11 @@ MonoBehaviour:
       m_SubObjectType: 
       m_EditorAssetChanged: 0
     name: Test Unit Square
+  - assetReference:
+      m_AssetGUID: 6f2346356d4e3d842ab0c821cec48dd5
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    name: Unit
+  folders:
+  - Assets/Game.Content/Units
