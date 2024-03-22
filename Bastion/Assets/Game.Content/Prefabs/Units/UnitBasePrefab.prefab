@@ -127,6 +127,7 @@ MonoBehaviour:
   - rid: 2882177798788874249
   - rid: 2882177821664608264
   - rid: 2882177821664608281
+  - rid: 2882177821664608287
   assetConverters: []
   entity: -1
   references:
@@ -152,11 +153,44 @@ MonoBehaviour:
       data:
         _isEnabled: 1
         aiConverters:
-        - rid: 2882177821664608282
-    - rid: 2882177821664608282
+        - rid: 2882177821664608286
+    - rid: 2882177821664608286
       type: {class: AiMovementConverter, ns: Game.Ecs.Ai.Converter, asm: game.ecs.ai}
       data:
         _isEnabled: 1
+    - rid: 2882177821664608287
+      type: {class: CharacteristicsConverter, ns: Game.Ecs.Characteristics.CharacteristicsTools.Converters,
+        asm: Game.Ecs.Characteristics.Tools}
+      data:
+        _isEnabled: 1
+        characteristics:
+        - rid: 2882177821664608288
+        - rid: 2882177821664608289
+        - rid: 2882177821664608290
+    - rid: 2882177821664608288
+      type: {class: SpeedConverter, ns: Game.Ecs.Characteristics.Speed.Converters,
+        asm: Game.Ecs.Characteristics}
+      data:
+        _isEnabled: 1
+        speed: 2
+        minValue: 0
+        maxValue: 0
+    - rid: 2882177821664608289
+      type: {class: HealthComponentConverter, ns: Game.Ecs.Characteristics.Health.Converters,
+        asm: Game.Ecs.Characteristics.Health}
+      data:
+        _isEnabled: 1
+        maxHealth: 10
+    - rid: 2882177821664608290
+      type: {class: AttackRangeComponentConverter, ns: Game.Ecs.Characteristics.CriticalChance.Converters,
+        asm: Game.Ecs.Characteristic.AttackRange}
+      data:
+        _isEnabled: 1
+        attackRange: 1.15
+        minValue: 3
+        maxValue: 100
+        delta: {x: -0.5, y: 0.5}
+        rangeGizmosColor: {r: 0.128, g: 0.2, b: 0.85, a: 1}
 --- !u!195 &7784747775027257429
 NavMeshAgent:
   m_ObjectHideFlags: 0
