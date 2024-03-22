@@ -5,6 +5,7 @@ namespace Game.Ecs.Ai.Navigation.Converters
     using Leopotam.EcsLite;
     using UniGame.LeoEcs.Converter.Runtime;
     using Unity.IL2CPP.CompilerServices;
+    using Unity.Mathematics;
     using UnityEngine.AI;
 
     /// <summary>
@@ -17,11 +18,21 @@ namespace Game.Ecs.Ai.Navigation.Converters
     public class NavigationConverter : EcsComponentConverter
     {
         public NavMeshAgent agent;
+        public float speed;
+        public float stoppingDistance;
         public override void Apply(EcsWorld world, int entity)
         {
             var navAgentPool = world.GetPool<NavigationAgentComponent>();
             ref var navAgentComponent = ref navAgentPool.Add(entity);
             navAgentComponent.agent = agent;
+            
+            var navAgentSettingsPool = world.GetPool<NavigationAgentSettingsComponent>();
+            ref var navAgentSettingsComponent = ref navAgentSettingsPool.Add(entity);
+            
+            navAgentSettingsComponent.speed = speed;
+            navAgentSettingsComponent.stoppingDistanceSqr = stoppingDistance;
+            
+            agent.speed = speed;
         }
     }
 }

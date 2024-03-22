@@ -28,7 +28,7 @@ namespace Game.Ecs.Ai.Navigation.Systems
     [ECSDI]
     public class MovingToTargetSystem : IEcsInitSystem, IEcsRunSystem
     {
-        private const float MinSquaredDistance = 4;
+        private const float MinSquaredDistance = 1;
         
         
         private EcsWorld _world;
@@ -48,16 +48,17 @@ namespace Game.Ecs.Ai.Navigation.Systems
             {
                 ref var agentComponent = ref _aspect.NavigationAgent.Get(movableEntity);
                 ref var moveToTarget = ref _aspect.MoveToTarget.Get(movableEntity);
-                ref var positionComponent = ref _positionPool.Get(movableEntity); 
-                
+                ref var positionComponent = ref _positionPool.Get(movableEntity);
+                ref var agentSettings = ref _aspect.Settings.Get(movableEntity);
                 var agent = agentComponent.agent;
                 var distance = math.distancesq(positionComponent.Position, moveToTarget.destination);
                 
-                if (distance < MinSquaredDistance)
+                if (distance < agentSettings.stoppingDistanceSqr)
                 {
                     agent.isStopped = true;
                     _aspect.MoveToTarget.Del(movableEntity);
                     //либо создать событие о достижении цели
+                    _aspect.DestinationIsReached.Add(_world.NewEntity());
                 }
             }
         }

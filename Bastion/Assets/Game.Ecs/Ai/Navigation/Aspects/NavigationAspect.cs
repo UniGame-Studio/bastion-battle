@@ -2,6 +2,7 @@ namespace Game.Ecs.Ai.Navigation.Aspects
 {
     using System;
     using Components;
+    using Events;
     using Leopotam.EcsLite;
     using UniGame.LeoEcs.Bootstrap.Runtime.Abstract;
 
@@ -21,5 +22,9 @@ namespace Game.Ecs.Ai.Navigation.Aspects
         public EcsPool<UnmovableComponent> Unmovable;
         public EcsPool<NavigationAgentComponent> NavigationAgent;
         public EcsPool<MoveToTargetComponent> MoveToTarget;
+        public EcsPool<NavigationAgentSettingsComponent> Settings;
+        //events
+        public EcsPool<DestinationIsReachedEvent> DestinationIsReached;
+        
     }
 }

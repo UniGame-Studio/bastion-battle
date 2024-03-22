@@ -15,10 +15,11 @@ MonoBehaviour:
   isEnabled: 1
   groupConfiguration:
     showFeatureInfo: 1
-    name: 
+    name: Unit Feature
     _active: 1
     _systems: []
-    nestedFeatures: []
+    nestedFeatures:
+    - {fileID: 11400000, guid: 35cd37e2d273cb44e9fa182c3ec7dd51, type: 2}
     serializableFeatures: []
   references:
     version: 2
