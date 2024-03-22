@@ -1,0 +1,4 @@
+{
+	"name": "game.sources.runtime",
+	"references":[ "GUID:9f8e6b2872ac2ca4683e584b9ba21f29", "GUID:f51ebe6a0ceec4240a699833d6309b23", "GUID:a0b431bd9232ee0439a3722ec36414ed" ]
+}
