@@ -14,18 +14,9 @@ namespace Game.Ecs.Map.Converters
     {
         public override void Apply(EcsWorld world, int entity)
         {
-            EcsPool<ParentEntityComponent> parentPool = world.GetPool<ParentEntityComponent>();
             EcsPool<EmptyCellCountComponent> emptyCountPool = world.GetPool<EmptyCellCountComponent>();
-            
-            ref var parentComponent = ref parentPool.Get(entity); 
-            
             ref var cell = ref world.AddComponent<CellComponent>(entity);
             cell.IsEmply = true;
-
-            if (!parentComponent.Value.Unpack(world, out int parentMap)) return;
-
-            ref var emptyCountComponent = ref emptyCountPool.Get(parentMap);
-            emptyCountComponent.Count++;
         }
     }
 }

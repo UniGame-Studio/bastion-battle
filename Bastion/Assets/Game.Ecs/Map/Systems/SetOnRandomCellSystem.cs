@@ -77,9 +77,9 @@ namespace Game.Ecs.Map.Systems
                     foreach (var cellEntity in _cellFilter)
                     {
                         ref var cellComponent = ref _mapAspect.Cell.Get(cellEntity);
-                        ref var parentComponent = ref _mapAspect.Parent.Get(cellEntity);
+                        ref var ownerComponent = ref _mapAspect.Owner.Get(cellEntity);
                         
-                        if(!parentComponent.Value.Unpack(_world, out int cellOwner)) continue;
+                        if(!ownerComponent.Value.Unpack(_world, out int cellOwner)) continue;
                         
                         if(cellOwner != targetMap) continue;
                         

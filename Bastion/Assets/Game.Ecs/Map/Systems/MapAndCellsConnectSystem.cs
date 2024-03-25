@@ -26,7 +26,7 @@ namespace Game.Ecs.Map.Systems
 #endif
     [Serializable]
     [ECSDI]
-    public class MapInit : IEcsInitSystem
+    public class MapAndCellsConnectSystem : IEcsInitSystem, IEcsRunSystem, IEcsDestroySystem
     {
         private EcsWorld _world;
         private EcsFilter _cellFilter;
@@ -39,17 +39,27 @@ namespace Game.Ecs.Map.Systems
             
             _cellFilter = _world
                 .Filter<CellComponent>()
-                //.Exc<OwnerComponent>()
+                .Exc<OwnerComponent>()
                 .End();
 
             _mapFilter = _world
                 .Filter<MapComponent>()
                 .End();
-            
-            foreach (var mapEntity in _mapFilter)
+        }
+
+        public void Run(IEcsSystems systems)
+        {
+            foreach (var cellEntity in _cellFilter)
             {
-                foreach (var cellEntity in _cellFilter)
+                ref var gameObjectComponent = ref _mapAspect.GameObject.Get(cellEntity);
+
+                foreach (var mapEntity in _mapFilter)
                 {
+                    ref var mapComponent = ref _mapAspect.Map.Get(mapEntity);
+
+                    if(!mapComponent.CellIds.IsCreated) continue;
+                    if (!mapComponent.CellIds.Contains(gameObjectComponent.Value.GetInstanceID())) continue;
+                    
                     ref var ownerComponent = ref _world.AddComponent<OwnerComponent>(cellEntity);
                     ownerComponent.Value = mapEntity.PackedEntity(_world);
                     
@@ -57,7 +67,16 @@ namespace Game.Ecs.Map.Systems
                     emptyCountComponent.Count++;
                 }
             }
-            
+        }
+
+        public void Destroy(IEcsSystems systems)
+        {
+            foreach (var mapEntity in _mapFilter)
+            {
+                ref var mapComponent = ref _mapAspect.Map.Get(mapEntity);
+                if(mapComponent.CellIds.IsCreated)
+                    mapComponent.CellIds.Dispose();
+            }
         }
     }
 }

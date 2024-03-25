@@ -103,7 +103,6 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 797715984991911942
   - rid: 797715961105874947
   assetConverters: []
   entity: -1
@@ -114,13 +113,6 @@ MonoBehaviour:
       type: {class: CellComponentConverter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
-    - rid: 797715984991911942
-      type: {class: ParentComponentsConverter, ns: UniGame.LeoEcs.Converter.Runtime.Converters,
-        asm: UniGame.LeoEcs.Converter.Runtime}
-      data:
-        _isEnabled: 1
-        configurations: []
-        converters: []
 --- !u!1 &293927928637127646
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,7 +300,6 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 797715984991911945
   - rid: 797715961105874946
   assetConverters: []
   entity: -1
@@ -319,13 +310,6 @@ MonoBehaviour:
       type: {class: CellComponentConverter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
-    - rid: 797715984991911945
-      type: {class: ParentComponentsConverter, ns: UniGame.LeoEcs.Converter.Runtime.Converters,
-        asm: UniGame.LeoEcs.Converter.Runtime}
-      data:
-        _isEnabled: 1
-        configurations: []
-        converters: []
 --- !u!1 &973911751950042492
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +413,6 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 797715984991911946
   - rid: 797715961105874947
   assetConverters: []
   entity: -1
@@ -440,13 +423,6 @@ MonoBehaviour:
       type: {class: CellComponentConverter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
-    - rid: 797715984991911946
-      type: {class: ParentComponentsConverter, ns: UniGame.LeoEcs.Converter.Runtime.Converters,
-        asm: UniGame.LeoEcs.Converter.Runtime}
-      data:
-        _isEnabled: 1
-        configurations: []
-        converters: []
 --- !u!1 &1977920360952916868
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,7 +526,6 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 797715984991911947
   - rid: 797715961105874950
   assetConverters: []
   entity: -1
@@ -561,13 +536,6 @@ MonoBehaviour:
       type: {class: CellComponentConverter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
-    - rid: 797715984991911947
-      type: {class: ParentComponentsConverter, ns: UniGame.LeoEcs.Converter.Runtime.Converters,
-        asm: UniGame.LeoEcs.Converter.Runtime}
-      data:
-        _isEnabled: 1
-        configurations: []
-        converters: []
 --- !u!1 &2034689554409128696
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,7 +639,6 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 797715984991911948
   - rid: 797715961105874949
   assetConverters: []
   entity: -1
@@ -682,13 +649,6 @@ MonoBehaviour:
       type: {class: CellComponentConverter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
-    - rid: 797715984991911948
-      type: {class: ParentComponentsConverter, ns: UniGame.LeoEcs.Converter.Runtime.Converters,
-        asm: UniGame.LeoEcs.Converter.Runtime}
-      data:
-        _isEnabled: 1
-        configurations: []
-        converters: []
 --- !u!1 &2516177764380897664
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,7 +752,6 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 797715984991911949
   - rid: 797715961105874948
   assetConverters: []
   entity: -1
@@ -803,13 +762,6 @@ MonoBehaviour:
       type: {class: CellComponentConverter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
-    - rid: 797715984991911949
-      type: {class: ParentComponentsConverter, ns: UniGame.LeoEcs.Converter.Runtime.Converters,
-        asm: UniGame.LeoEcs.Converter.Runtime}
-      data:
-        _isEnabled: 1
-        configurations: []
-        converters: []
 --- !u!1 &2616735266096178789
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +865,6 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 797715984991911950
   - rid: 797715961105874950
   assetConverters: []
   entity: -1
@@ -924,13 +875,6 @@ MonoBehaviour:
       type: {class: CellComponentConverter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
-    - rid: 797715984991911950
-      type: {class: ParentComponentsConverter, ns: UniGame.LeoEcs.Converter.Runtime.Converters,
-        asm: UniGame.LeoEcs.Converter.Runtime}
-      data:
-        _isEnabled: 1
-        configurations: []
-        converters: []
 --- !u!1 &2765417977992825819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,7 +1014,6 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 797715984991911951
   - rid: 797715961105874947
   assetConverters: []
   entity: -1
@@ -1081,13 +1024,6 @@ MonoBehaviour:
       type: {class: CellComponentConverter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
-    - rid: 797715984991911951
-      type: {class: ParentComponentsConverter, ns: UniGame.LeoEcs.Converter.Runtime.Converters,
-        asm: UniGame.LeoEcs.Converter.Runtime}
-      data:
-        _isEnabled: 1
-        configurations: []
-        converters: []
 --- !u!1 &3158893305020474495
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,7 +1127,6 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 797715984991911952
   - rid: 797715961105874949
   assetConverters: []
   entity: -1
@@ -1202,13 +1137,6 @@ MonoBehaviour:
       type: {class: CellComponentConverter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
-    - rid: 797715984991911952
-      type: {class: ParentComponentsConverter, ns: UniGame.LeoEcs.Converter.Runtime.Converters,
-        asm: UniGame.LeoEcs.Converter.Runtime}
-      data:
-        _isEnabled: 1
-        configurations: []
-        converters: []
 --- !u!1 &4435615754060520581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,7 +1240,6 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 797715984991911953
   - rid: 797715961105874950
   assetConverters: []
   entity: -1
@@ -1323,13 +1250,6 @@ MonoBehaviour:
       type: {class: CellComponentConverter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
-    - rid: 797715984991911953
-      type: {class: ParentComponentsConverter, ns: UniGame.LeoEcs.Converter.Runtime.Converters,
-        asm: UniGame.LeoEcs.Converter.Runtime}
-      data:
-        _isEnabled: 1
-        configurations: []
-        converters: []
 --- !u!1 &5093326293277734982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,7 +1353,6 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 797715984991911954
   - rid: 797715961105874946
   assetConverters: []
   entity: -1
@@ -1444,13 +1363,6 @@ MonoBehaviour:
       type: {class: CellComponentConverter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
-    - rid: 797715984991911954
-      type: {class: ParentComponentsConverter, ns: UniGame.LeoEcs.Converter.Runtime.Converters,
-        asm: UniGame.LeoEcs.Converter.Runtime}
-      data:
-        _isEnabled: 1
-        configurations: []
-        converters: []
 --- !u!1 &5414455308745377269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,7 +1499,6 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 797715984991911957
   - rid: 797715961105874948
   assetConverters: []
   entity: -1
@@ -1598,13 +1509,6 @@ MonoBehaviour:
       type: {class: CellComponentConverter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
-    - rid: 797715984991911957
-      type: {class: ParentComponentsConverter, ns: UniGame.LeoEcs.Converter.Runtime.Converters,
-        asm: UniGame.LeoEcs.Converter.Runtime}
-      data:
-        _isEnabled: 1
-        configurations: []
-        converters: []
 --- !u!1 &6484727662900445293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,6 +1571,22 @@ MonoBehaviour:
       type: {class: MapConvereter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
+        Cells:
+        - {fileID: 6650607878358382975}
+        - {fileID: 4435615754060520581}
+        - {fileID: 135229527323205430}
+        - {fileID: 2516177764380897664}
+        - {fileID: 2034689554409128696}
+        - {fileID: 475760658543918955}
+        - {fileID: 2616735266096178789}
+        - {fileID: 973911751950042492}
+        - {fileID: 7402580899388510369}
+        - {fileID: 3158893305020474495}
+        - {fileID: 5093326293277734982}
+        - {fileID: 1977920360952916868}
+        - {fileID: 3132043091933764772}
+        - {fileID: 7042229188268039462}
+        - {fileID: 6168287414327570782}
 --- !u!1 &6650607878358382975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,7 +1690,6 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 797715984991911956
   - rid: 797715961105874946
   assetConverters: []
   entity: -1
@@ -1781,13 +1700,6 @@ MonoBehaviour:
       type: {class: CellComponentConverter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
-    - rid: 797715984991911956
-      type: {class: ParentComponentsConverter, ns: UniGame.LeoEcs.Converter.Runtime.Converters,
-        asm: UniGame.LeoEcs.Converter.Runtime}
-      data:
-        _isEnabled: 1
-        configurations: []
-        converters: []
 --- !u!1 &7042229188268039462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,7 +1803,6 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 797715984991911957
   - rid: 797715961105874948
   assetConverters: []
   entity: -1
@@ -1902,13 +1813,6 @@ MonoBehaviour:
       type: {class: CellComponentConverter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
-    - rid: 797715984991911957
-      type: {class: ParentComponentsConverter, ns: UniGame.LeoEcs.Converter.Runtime.Converters,
-        asm: UniGame.LeoEcs.Converter.Runtime}
-      data:
-        _isEnabled: 1
-        configurations: []
-        converters: []
 --- !u!1 &7402580899388510369
 GameObject:
   m_ObjectHideFlags: 0
@@ -2012,7 +1916,6 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 797715984991911958
   - rid: 797715961105874948
   assetConverters: []
   entity: -1
@@ -2023,13 +1926,6 @@ MonoBehaviour:
       type: {class: CellComponentConverter, ns: Game.Ecs.Map.Converters, asm: Assembly-CSharp}
       data:
         isEnabled: 1
-    - rid: 797715984991911958
-      type: {class: ParentComponentsConverter, ns: UniGame.LeoEcs.Converter.Runtime.Converters,
-        asm: UniGame.LeoEcs.Converter.Runtime}
-      data:
-        _isEnabled: 1
-        configurations: []
-        converters: []
 --- !u!1 &7512519741661426093
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,7 +1951,7 @@ Transform:
   m_GameObject: {fileID: 7512519741661426093}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.64, z: 0}
+  m_LocalPosition: {x: 0, y: -0.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2091,7 +1987,7 @@ Transform:
   m_GameObject: {fileID: 8316123043348005414}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.28, z: 0}
+  m_LocalPosition: {x: 0, y: -1.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

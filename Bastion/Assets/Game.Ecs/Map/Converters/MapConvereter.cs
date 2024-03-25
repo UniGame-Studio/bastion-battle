@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using Game.Ecs.Core.Components;
+using Game.Ecs.Map.Aspects;
 using Game.Ecs.Map.Components;
 using UniGame.LeoEcs.Shared.Extensions;
+using Unity.Collections;
 
 namespace Game.Ecs.Map.Converters
 {
@@ -25,10 +27,17 @@ namespace Game.Ecs.Map.Converters
     [Serializable]
     public class MapConvereter : EcsComponentConverter
     {
+        public List<GameObject> Cells;
+        
         public override void Apply(EcsWorld world, int entity)
         {
             world.GetOrAddComponent<EmptyCellCountComponent>(entity);
-            world.GetOrAddComponent<MapComponent>(entity);
+            ref var mapComponent = ref world.GetOrAddComponent<MapComponent>(entity);
+            mapComponent.CellIds = new NativeHashSet<int>(Cells.Count, Allocator.Persistent);
+            foreach (var cell in Cells)
+            {
+                mapComponent.CellIds.Add(cell.GetInstanceID());
+            }
         }
     }
 }

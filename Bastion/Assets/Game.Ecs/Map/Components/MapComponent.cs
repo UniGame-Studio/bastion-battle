@@ -1,4 +1,6 @@
-﻿namespace Game.Ecs.Map.Components
+﻿using Unity.Collections;
+
+namespace Game.Ecs.Map.Components
 {
     using System;
 
@@ -15,6 +17,6 @@
     [Serializable]
     public struct MapComponent
     {
-        
+        public NativeHashSet<int> CellIds;
     }
 }

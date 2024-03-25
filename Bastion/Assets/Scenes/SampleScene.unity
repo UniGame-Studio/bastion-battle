@@ -729,6 +729,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 831119788932941774, guid: f5133f12b5e95f4478bb0e4d080ecca2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1198417326047835205, guid: f5133f12b5e95f4478bb0e4d080ecca2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3277035494157218998, guid: f5133f12b5e95f4478bb0e4d080ecca2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5757139779988121046, guid: f5133f12b5e95f4478bb0e4d080ecca2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -783,6 +798,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025324736306271764, guid: f5133f12b5e95f4478bb0e4d080ecca2,
+        type: 3}
+      propertyPath: managedReferences[-2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025324736306271764, guid: f5133f12b5e95f4478bb0e4d080ecca2,
+        type: 3}
+      propertyPath: serializableConverters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025324736306271764, guid: f5133f12b5e95f4478bb0e4d080ecca2,
+        type: 3}
+      propertyPath: serializableConverters.Array.data[1]
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025324736306271764, guid: f5133f12b5e95f4478bb0e4d080ecca2,
+        type: 3}
+      propertyPath: managedReferences[797715984991911956].converters.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025324736306271764, guid: f5133f12b5e95f4478bb0e4d080ecca2,
+        type: 3}
+      propertyPath: managedReferences[797715984991911956].converters.Array.data[0]
+      value: 797715961105874946
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025324736306271764, guid: f5133f12b5e95f4478bb0e4d080ecca2,
+        type: 3}
+      propertyPath: managedReferences[797715984991911956].configurations.Array.size
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
