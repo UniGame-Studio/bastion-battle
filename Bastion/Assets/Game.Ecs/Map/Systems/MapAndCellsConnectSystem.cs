@@ -15,7 +15,7 @@ namespace Game.Ecs.Map.Systems
     using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// add owner component on cell by game object instance id
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -51,14 +51,14 @@ namespace Game.Ecs.Map.Systems
         {
             foreach (var cellEntity in _cellFilter)
             {
-                ref var gameObjectComponent = ref _mapAspect.GameObject.Get(cellEntity);
+                ref var cellIdComponent = ref _mapAspect.CellId.Get(cellEntity);
 
                 foreach (var mapEntity in _mapFilter)
                 {
                     ref var mapComponent = ref _mapAspect.Map.Get(mapEntity);
 
                     if(!mapComponent.CellIds.IsCreated) continue;
-                    if (!mapComponent.CellIds.Contains(gameObjectComponent.Value.GetInstanceID())) continue;
+                    if (!mapComponent.CellIds.Contains(cellIdComponent.Value)) continue;
                     
                     ref var ownerComponent = ref _world.AddComponent<OwnerComponent>(cellEntity);
                     ownerComponent.Value = mapEntity.PackedEntity(_world);

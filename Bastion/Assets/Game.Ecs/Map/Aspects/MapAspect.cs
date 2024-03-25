@@ -14,8 +14,8 @@ namespace Game.Ecs.Map.Aspects
         
         //cells
         public EcsPool<CellComponent> Cell;
+        public EcsPool<CellIdComponent> CellId;
         public EcsPool<OwnerComponent> Owner;
-        public EcsPool<GameObjectComponent> GameObject;
         public EcsPool<EmptyCellCountComponent> EmptyCellsCount;
         public EcsPool<TransformComponent> Transform;
 

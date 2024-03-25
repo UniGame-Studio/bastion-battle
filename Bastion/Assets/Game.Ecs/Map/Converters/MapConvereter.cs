@@ -15,7 +15,7 @@ namespace Game.Ecs.Map.Converters
     using UnityEngine;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// add cell ids for map
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
