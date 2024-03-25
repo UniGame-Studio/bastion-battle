@@ -31,6 +31,10 @@ MonoBehaviour:
         type: 2}
       featureGroup:
         rid: -2
+    - featureGroupAsset: {fileID: 11400000, guid: 27918cf9f9676a54ba95b4a6cb10ed7e,
+        type: 2}
+      featureGroup:
+        rid: -2
   - updateType: Fixed Update
     features: []
   - updateType: Late Update
