@@ -3,6 +3,8 @@ namespace Game.Ecs.Ai.Navigation.Systems
     using System;
     using System.Linq;
     using Ai.Components;
+    using GameLayers.Layer.Components;
+    using GameLayers.Relationship.Systems;
     using Leopotam.EcsLite;
     using Movement.Components;
     using UniGame.Core.Runtime.Extension;
@@ -14,7 +16,7 @@ namespace Game.Ecs.Ai.Navigation.Systems
     using UniGame.LeoEcs.Shared.Components;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// Система приказывает юнитам двигаться к вражескому кристаллу
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -34,8 +36,13 @@ namespace Game.Ecs.Ai.Navigation.Systems
         public void Init(IEcsSystems systems)
         {
             _world = systems.GetWorld();
-            _aiUnitGroup = _world.Filter<AiUnitMovementComponent>().Inc<NavMeshAgentComponent>().Exc<MovementPointRequest>().End();
-            _enemyCrystalGroup = _world.Filter<EnemyCrystalComponent>().Inc<TransformPositionComponent>().End();
+            _aiUnitGroup = _world.Filter<AiUnitMovementComponent>()
+                .Inc<NavMeshAgentComponent>()
+                .Inc<LayerIdComponent>()
+                .Exc<MovementPointRequest>().End();
+            _enemyCrystalGroup = _world.Filter<CrystalComponent>()
+                .Inc<LayerIdComponent>()
+                .Inc<TransformPositionComponent>().End();
         }
 
         public void Run(IEcsSystems systems)
@@ -44,6 +51,11 @@ namespace Game.Ecs.Ai.Navigation.Systems
             {
                 foreach (var enemyCrystal in _enemyCrystalGroup)
                 {
+                    ref var layerId = ref _world.GetComponent<LayerIdComponent>(enemyCrystal);
+                    ref var aiUnitLayerId = ref _world.GetComponent<LayerIdComponent>(aiUnit);
+                    if(layerId.Value == aiUnitLayerId.Value)
+                        continue;
+                    
                     ref var enemyCrystalPosition = ref _world.GetComponent<TransformPositionComponent>(enemyCrystal);
                     ref var movementPointRequest = ref _world.AddComponent<MovementPointRequest>(aiUnit);
                     movementPointRequest.DestinationPosition = enemyCrystalPosition.Position;

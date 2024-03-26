@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Category Id Configuration
   m_EditorClassIdentifier: 
   _categories:
-  - 
-  - 
-  - 
-  - 
+  - Unit
+  - Boss
+  - Tower
+  - Crystal
   - 
   - 
   - 
