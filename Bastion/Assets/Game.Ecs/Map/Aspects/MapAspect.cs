@@ -10,9 +10,12 @@ namespace Game.Ecs.Map.Aspects
 {
     public class MapAspect : EcsAspect
     {
+        public EcsPool<MapComponent> Map;
+        
         //cells
         public EcsPool<CellComponent> Cell;
-        public EcsPool<ParentEntityComponent> Parent;
+        public EcsPool<CellIdComponent> CellId;
+        public EcsPool<OwnerComponent> Owner;
         public EcsPool<EmptyCellCountComponent> EmptyCellsCount;
         public EcsPool<TransformComponent> Transform;
 

@@ -1,11 +1,11 @@
-﻿using Unity.Collections;
+﻿using UnityEngine.Serialization;
 
 namespace Game.Ecs.Map.Components
 {
     using System;
 
     /// <summary>
-    /// for find maps
+    /// game object cell id for connect with map
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -15,8 +15,8 @@ namespace Game.Ecs.Map.Components
     [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 #endif
     [Serializable]
-    public struct MapComponent
+    public struct CellIdComponent
     {
-        public NativeHashSet<int> CellIds;
+        public int Value;
     }
 }

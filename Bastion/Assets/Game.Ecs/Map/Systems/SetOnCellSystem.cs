@@ -33,9 +33,15 @@ namespace Game.Ecs.Map.Systems
                 ref var setRequest = ref _mapAspect.SetUnitOnCell.Get(entity);
                 
                 if(!setRequest.TargetCell.Unpack(_world, out int cellEntity)) continue;
+                if(!setRequest.TargetMap.Unpack(_world, out int mapEntity)) continue;
+
+                ref var emptyCellsCountComponent = ref _mapAspect.EmptyCellsCount.Get(mapEntity);
+                ref var cellComponent = ref _mapAspect.Cell.Get(cellEntity);
                 
                 ref var transform = ref _mapAspect.Transform.Get(cellEntity);
                 _gameSpawnTools.Spawn(setRequest.ResourceId, transform.Value.position);
+                cellComponent.IsEmply = false;
+                emptyCellsCountComponent.Count--;
             }
         }
     }

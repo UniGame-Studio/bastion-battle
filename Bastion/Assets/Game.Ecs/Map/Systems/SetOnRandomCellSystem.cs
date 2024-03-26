@@ -58,11 +58,11 @@ namespace Game.Ecs.Map.Systems
         {
             foreach (var requestEntity in _requestFilter)
             {
-                ref var setOnRandomCellRequestRequest = ref _mapAspect.SetUnitOnRandomCell.Get(requestEntity);
+                ref var setOnRandomCellRequest = ref _mapAspect.SetUnitOnRandomCell.Get(requestEntity);
 
                 foreach (var mapEntity in _mapFilter)
                 {
-                    if (!setOnRandomCellRequestRequest.TargetMap.Unpack(_world, out var targetMap)) continue;
+                    if (!setOnRandomCellRequest.TargetMap.Unpack(_world, out var targetMap)) continue;
                     
                     if(mapEntity != targetMap) continue;
                     
@@ -77,9 +77,9 @@ namespace Game.Ecs.Map.Systems
                     foreach (var cellEntity in _cellFilter)
                     {
                         ref var cellComponent = ref _mapAspect.Cell.Get(cellEntity);
-                        ref var parentComponent = ref _mapAspect.Parent.Get(cellEntity);
+                        ref var ownerComponent = ref _mapAspect.Owner.Get(cellEntity);
                         
-                        if(!parentComponent.Value.Unpack(_world, out int cellOwner)) continue;
+                        if(!ownerComponent.Value.Unpack(_world, out int cellOwner)) continue;
                         
                         if(cellOwner != targetMap) continue;
                         
@@ -94,8 +94,9 @@ namespace Game.Ecs.Map.Systems
                     
                     var newRequestEntity = _world.NewEntity();
                     ref var newSetRequest = ref _world.GetOrAddComponent<SetOnCellRequest>(newRequestEntity);
-                    newSetRequest.ResourceId = setOnRandomCellRequestRequest.ResourceId;
+                    newSetRequest.ResourceId = setOnRandomCellRequest.ResourceId;
                     newSetRequest.TargetCell = randomCell;
+                    newSetRequest.TargetMap = setOnRandomCellRequest.TargetMap;
                 }
             }
         }
