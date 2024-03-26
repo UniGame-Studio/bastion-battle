@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3752750669684720291}
   - component: {fileID: 7695468690431768397}
   - component: {fileID: 7784747775027257429}
-  - component: {fileID: 7074675987524506210}
   m_Layer: 0
   m_Name: UnitBasePrefab
   m_TagString: Untagged
@@ -131,6 +130,7 @@ MonoBehaviour:
   - rid: 2882177821664608287
   - rid: 2882177821664608293
   - rid: 2882177913136349190
+  - rid: 2882177913136349191
   assetConverters: []
   entity: -1
   references:
@@ -205,7 +205,14 @@ MonoBehaviour:
       data:
         enabled: 1
         layer:
-          value: 0
+          value: 2
+    - rid: 2882177913136349191
+      type: {class: CategoryIdConverter, ns: Game.Ecs.GameLayers.Category.Converters,
+        asm: Game.Ecs.GameLayers}
+      data:
+        enabled: 1
+        categoryId:
+          _value: 1
 --- !u!195 &7784747775027257429
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -228,19 +235,3 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 0
---- !u!114 &7074675987524506210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5115211655814986030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e085603b9b73d4a4ca02065ef5cfead5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  converter:
-    enabled: 1
-    layer:
-      value: 0

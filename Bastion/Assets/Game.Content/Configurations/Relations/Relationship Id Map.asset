@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _relationshipsMap:
   - Row:
-    - _value: 1
-    - _value: 4
     - _value: 2
+    - _value: 1
+    - _value: 0
     - _value: 0
     - _value: 0
     - _value: 0
@@ -47,9 +47,9 @@ MonoBehaviour:
     - _value: 0
     - _value: 0
   - Row:
-    - _value: 4
+    - _value: 1
     - _value: 2
-    - _value: 4
+    - _value: 0
     - _value: 0
     - _value: 0
     - _value: 0
@@ -80,9 +80,9 @@ MonoBehaviour:
     - _value: 0
     - _value: 0
   - Row:
-    - _value: 2
-    - _value: 4
-    - _value: 1
+    - _value: 0
+    - _value: 0
+    - _value: 0
     - _value: 0
     - _value: 0
     - _value: 0

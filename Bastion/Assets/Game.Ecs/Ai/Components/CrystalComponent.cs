@@ -3,7 +3,7 @@ namespace Game.Ecs.Ai.Components
     using System;
 
     /// <summary>
-    /// Marks Entity as enemy cristall
+    /// Marks Entity as cristal
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -13,7 +13,7 @@ namespace Game.Ecs.Ai.Components
     [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 #endif
     [Serializable]
-    public struct EnemyCrystalComponent
+    public struct CrystalComponent
     {
         
     }

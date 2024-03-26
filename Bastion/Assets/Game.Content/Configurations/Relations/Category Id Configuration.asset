@@ -9,14 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffe9e1c6301e4200bce25090e1559e4e, type: 3}
-  m_Name: Relationship Id Configuration
+  m_Script: {fileID: 11500000, guid: d1b2212a23a940269ccbc362c6d64547, type: 3}
+  m_Name: Category Id Configuration
   m_EditorClassIdentifier: 
-  _relationships:
-  - Enemy
-  - Friend
-  - 
-  - 
+  _categories:
+  - Unit
+  - Boss
+  - Tower
+  - Crystal
   - 
   - 
   - 
