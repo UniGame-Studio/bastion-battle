@@ -128,6 +128,7 @@ MonoBehaviour:
   - rid: 2882177821664608264
   - rid: 2882177821664608281
   - rid: 2882177821664608287
+  - rid: 2882177821664608293
   assetConverters: []
   entity: -1
   references:
@@ -191,6 +192,12 @@ MonoBehaviour:
         maxValue: 100
         delta: {x: -0.5, y: 0.5}
         rangeGizmosColor: {r: 0.128, g: 0.2, b: 0.85, a: 1}
+    - rid: 2882177821664608293
+      type: {class: AttackConverter, ns: Game.Ecs.Characteristics.Attack.Converters,
+        asm: Game.Ecs.Characteristics}
+      data:
+        _isEnabled: 1
+        attackDamage: 10
 --- !u!195 &7784747775027257429
 NavMeshAgent:
   m_ObjectHideFlags: 0
