@@ -4,6 +4,7 @@
     using UniGame.Runtime.Common;
     using UniGame.UiSystem.Runtime;
     using UniModules.UniCore.Runtime.Common;
+    using UniModules.UniGame.Core.Runtime.Rx;
 #if ENABLE_IL2CPP
     [Il2CppSetOption(Option.NullChecks, false)]
     [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
