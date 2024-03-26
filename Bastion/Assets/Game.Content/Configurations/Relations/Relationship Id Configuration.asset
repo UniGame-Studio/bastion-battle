@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _relationships:
   - Enemy
-  - Friend
-  - 
-  - 
+  - Ally
+  - Self
+  - Neutrals
   - 
   - 
   - 

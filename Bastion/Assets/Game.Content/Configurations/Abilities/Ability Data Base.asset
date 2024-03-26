@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ca5543ba32412d974ce6c6c7cf6798, type: 3}
+  m_Name: Ability Data Base
+  m_EditorClassIdentifier: 
+  category: Ability
+  resourceLocation: {fileID: 11400000, guid: 457aba3117e4f7d408ad99499b1b13a7, type: 2}
+  id: Ability
+  abilities:
+  - name: Melee Attack
+    id: 1
+    slotType: 0
+    data:
+      slotType: 0
+      unlockLevel: 0
+      isDefault: 0
+      isHidden: 0
+      isBlock: 0
+    ability:
+      reference:
+        m_AssetGUID: 068975340fda7ae4eb5e166a3b016472
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0

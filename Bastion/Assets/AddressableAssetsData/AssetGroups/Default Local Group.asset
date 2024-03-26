@@ -115,12 +115,17 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 457aba3117e4f7d408ad99499b1b13a7
-    m_Address: Assets/Game.Content/Configurations/GameDatabase/AddressablesResourceLocation.asset
+    m_Address: urations/GameDatabase/AddressablesResourceLocation.assetblesResourceLocation.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f676c86e8bea0864c9251474fdcc0d09
     m_Address: Assets/Game.Content/Units/Test Unit Square.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0310ed671d469aa41babb77af639b843
+    m_Address: Assets/Game.Content/Configurations/Abilities/Abilities Ability Configuration.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
