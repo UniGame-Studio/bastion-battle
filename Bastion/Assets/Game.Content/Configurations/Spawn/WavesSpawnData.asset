@@ -13,23 +13,30 @@ MonoBehaviour:
   m_Name: WavesSpawnData
   m_EditorClassIdentifier: 
   Waves:
-  - Delay: 0
-    Duration: 0
+  - Delay: 1
+    Duration: 25
     Units:
     - UnitReference:
-        m_AssetGUID: 
+        m_AssetGUID: f676c86e8bea0864c9251474fdcc0d09
         m_SubObjectName: 
         m_SubObjectType: 
         m_EditorAssetChanged: 0
-      Cooldown: 0
-      SpawnImmediately: 0
-  - Delay: 0
-    Duration: 0
+      Cooldown: 1
+      SpawnImmediately: 1
+  - Delay: 3
+    Duration: 15
     Units:
     - UnitReference:
-        m_AssetGUID: 
+        m_AssetGUID: 6f2346356d4e3d842ab0c821cec48dd5
         m_SubObjectName: 
         m_SubObjectType: 
         m_EditorAssetChanged: 0
-      Cooldown: 0
+      Cooldown: 1
+      SpawnImmediately: 1
+    - UnitReference:
+        m_AssetGUID: f676c86e8bea0864c9251474fdcc0d09
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Cooldown: 2
       SpawnImmediately: 0
