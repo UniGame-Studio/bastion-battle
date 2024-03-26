@@ -93,6 +93,37 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6f2346356d4e3d842ab0c821cec48dd5
+    m_Address: Assets/Game.Content/Units/Unit.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3da8e9e7b69b88c45b1da9627408ec97
+    m_Address: Assets/Game.Content/Configurations/GameDatabase/GameDataBaseAsset.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0cf8e97dbb9c4f7429607eedaea5fd40
+    m_Address: Assets/Game.Content/Configurations/GameDatabase/Game Data Service.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e5166d4c8f4f744caa60b52c2312828
+    m_Address: Assets/Game.Content/Configurations/GameDatabase/GameObject Category
+      Asset.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 457aba3117e4f7d408ad99499b1b13a7
+    m_Address: Assets/Game.Content/Configurations/GameDatabase/AddressablesResourceLocation.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f676c86e8bea0864c9251474fdcc0d09
+    m_Address: Assets/Game.Content/Units/Test Unit Square.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5be18780e8fdf434c90bf26cedd41243, type: 2}
   m_SchemaSet:

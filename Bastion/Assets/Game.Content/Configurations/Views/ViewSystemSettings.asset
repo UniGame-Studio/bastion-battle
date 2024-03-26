@@ -41,7 +41,30 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: 1410355308
+    Hash: 1755574616
+  - AssetGUID: 7c4cd758f7f05164c931cca10e3bf40a
+    View:
+      m_AssetGUID: 7c4cd758f7f05164c931cca10e3bf40a
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    ViewName: Summon Action View
+    Tag: 
+    Type:
+      name: MapCommandsView
+      fullTypeName: Game.Ecs.SelectUnit.View.MapCommandsView, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    ModelType:
+      name: MapCommandsViewModel
+      fullTypeName: Game.Ecs.SelectUnit.View.MapCommandsViewModel, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    ViewModelType:
+      name: MapCommandsViewModel
+      fullTypeName: Game.Ecs.SelectUnit.View.MapCommandsViewModel, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    PoolingPreloadCount: 1
+    Atlases: []
+    Hash: 932151000
   applyAddressablesGroup: 0
   labels: []
   addressableGroupName: 
