@@ -8,9 +8,9 @@ namespace Game.Runtime.Sources
     [CreateAssetMenu(menuName = "Game/Sources/Boot Configuration Source", fileName = "BootConfigurationSource")]
     public class BootConfigurationSource : ScriptableObject, IAsyncDataSource
     {
-        public UniTask<IContext> RegisterAsync(IContext context)
+        public async UniTask<IContext> RegisterAsync(IContext context)
         {
-            throw new System.NotImplementedException();
+            return context;
         }
     }
 }
