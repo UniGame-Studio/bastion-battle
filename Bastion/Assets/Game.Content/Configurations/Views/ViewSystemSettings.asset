@@ -19,75 +19,6 @@ MonoBehaviour:
   viewsAssetsSources: []
   uiViewsSkinFolders: []
   uiViews:
-  - AssetGUID: 7ff826cc98639c748a0c7cd09c71e6a3
-    View:
-      m_AssetGUID: 7ff826cc98639c748a0c7cd09c71e6a3
-      m_SubObjectName: 
-      m_SubObjectType: 
-      m_EditorAssetChanged: 0
-    ViewName: AddEnergyButton
-    Tag: 
-    Type:
-      name: AddEnergyButtonView
-      fullTypeName: Game.Ecs.Ui.EnergyUi.Views.AddEnergyButtonView, game.ecs.ui.energy,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    ModelType:
-      name: AddEnergyButtonViewModel
-      fullTypeName: Game.Ecs.Ui.EnergyUi.Models.AddEnergyButtonViewModel, game.ecs.ui.energy,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    ViewModelType:
-      name: AddEnergyButtonViewModel
-      fullTypeName: Game.Ecs.Ui.EnergyUi.Models.AddEnergyButtonViewModel, game.ecs.ui.energy,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PoolingPreloadCount: 1
-    Atlases: []
-    Hash: 273093210
-  - AssetGUID: d6a73b70e575d314e93595b8a37af647
-    View:
-      m_AssetGUID: d6a73b70e575d314e93595b8a37af647
-      m_SubObjectName: 
-      m_SubObjectType: 
-      m_EditorAssetChanged: 0
-    ViewName: EnergyUiView
-    Tag: 
-    Type:
-      name: EnergyUiView
-      fullTypeName: Game.Ecs.Ui.EnergyUi.Views.EnergyUiView, game.ecs.ui.energy,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    ModelType:
-      name: EnergyUiViewModel
-      fullTypeName: Game.Ecs.Ui.EnergyUi.Models.EnergyUiViewModel, game.ecs.ui.energy,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    ViewModelType:
-      name: EnergyUiViewModel
-      fullTypeName: Game.Ecs.Ui.EnergyUi.Models.EnergyUiViewModel, game.ecs.ui.energy,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PoolingPreloadCount: 1
-    Atlases: []
-    Hash: -1280572595
-  - AssetGUID: 26b133b726da1344095cd9ee414fdc20
-    View:
-      m_AssetGUID: 26b133b726da1344095cd9ee414fdc20
-      m_SubObjectName: 
-      m_SubObjectType: 
-      m_EditorAssetChanged: 0
-    ViewName: SpendEnergyButton
-    Tag: 
-    Type:
-      name: DecreaseEnergyView
-      fullTypeName: Game.Ecs.Ui.EnergyUi.Views.DecreaseEnergyView, game.ecs.ui.energy,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    ModelType:
-      name: RemoveEnergyViewModel
-      fullTypeName: Game.Ecs.Ui.EnergyUi.Models.RemoveEnergyViewModel, game.ecs.ui.energy,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    ViewModelType:
-      name: RemoveEnergyViewModel
-      fullTypeName: Game.Ecs.Ui.EnergyUi.Models.RemoveEnergyViewModel, game.ecs.ui.energy,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PoolingPreloadCount: 1
-    Atlases: []
-    Hash: -445939672
   - AssetGUID: 10a6a1b9b95dac3418376f41b4ebe96d
     View:
       m_AssetGUID: 10a6a1b9b95dac3418376f41b4ebe96d
@@ -110,7 +41,30 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: -451719901
+    Hash: 1755574616
+  - AssetGUID: 7c4cd758f7f05164c931cca10e3bf40a
+    View:
+      m_AssetGUID: 7c4cd758f7f05164c931cca10e3bf40a
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    ViewName: Summon Action View
+    Tag: 
+    Type:
+      name: MapCommandsView
+      fullTypeName: Game.Ecs.SelectUnit.View.MapCommandsView, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    ModelType:
+      name: MapCommandsViewModel
+      fullTypeName: Game.Ecs.SelectUnit.View.MapCommandsViewModel, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    ViewModelType:
+      name: MapCommandsViewModel
+      fullTypeName: Game.Ecs.SelectUnit.View.MapCommandsViewModel, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    PoolingPreloadCount: 1
+    Atlases: []
+    Hash: 932151000
   applyAddressablesGroup: 0
   labels: []
   addressableGroupName: 
