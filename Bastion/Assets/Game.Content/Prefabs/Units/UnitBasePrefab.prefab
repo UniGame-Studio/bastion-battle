@@ -128,6 +128,10 @@ MonoBehaviour:
   - rid: 2882177821664608264
   - rid: 2882177821664608281
   - rid: 2882177821664608287
+  - rid: 2882177821664608293
+  - rid: 2882177913136349190
+  - rid: 2882177913136349191
+  - rid: 2882177913136349205
   assetConverters: []
   entity: -1
   references:
@@ -167,6 +171,8 @@ MonoBehaviour:
         - rid: 2882177821664608288
         - rid: 2882177821664608289
         - rid: 2882177821664608290
+        - rid: 2882177913136349206
+        - rid: 2882177913136349207
     - rid: 2882177821664608288
       type: {class: SpeedConverter, ns: Game.Ecs.Characteristics.Speed.Converters,
         asm: Game.Ecs.Characteristics}
@@ -191,6 +197,51 @@ MonoBehaviour:
         maxValue: 100
         delta: {x: -0.5, y: 0.5}
         rangeGizmosColor: {r: 0.128, g: 0.2, b: 0.85, a: 1}
+    - rid: 2882177821664608293
+      type: {class: AttackConverter, ns: Game.Ecs.Characteristics.Attack.Converters,
+        asm: Game.Ecs.Characteristics}
+      data:
+        _isEnabled: 1
+        attackDamage: 10
+    - rid: 2882177913136349190
+      type: {class: LayerIdConverter, ns: Game.Ecs.GameLayers.Layer.Converters, asm: Game.Ecs.GameLayers}
+      data:
+        enabled: 1
+        layer:
+          value: 2
+    - rid: 2882177913136349191
+      type: {class: CategoryIdConverter, ns: Game.Ecs.GameLayers.Category.Converters,
+        asm: Game.Ecs.GameLayers}
+      data:
+        enabled: 1
+        categoryId:
+          _value: 1
+    - rid: 2882177913136349205
+      type: {class: AbilityConverter, ns: Game.Ecs.Ability.Converters, asm: Game.Ecs.Ability}
+      data:
+        _isEnabled: 1
+        abilityCells:
+        - IsDefault: 1
+          AbilityId:
+            _id: 1
+          SlotId:
+            _value: 0
+        abilityForAgents: []
+        userInput: 0
+        skipEquipRequest: 0
+        drawGizmos: 1
+    - rid: 2882177913136349206
+      type: {class: AttackConverter, ns: Game.Ecs.Characteristics.Attack.Converters,
+        asm: Game.Ecs.Characteristics}
+      data:
+        _isEnabled: 1
+        attackDamage: 10
+    - rid: 2882177913136349207
+      type: {class: AbilityPowerConverter, ns: Game.Ecs.Characteristics.AbilityPower.Converters,
+        asm: Game.Ecs.Characteristics}
+      data:
+        _isEnabled: 1
+        abilityPower: 1
 --- !u!195 &7784747775027257429
 NavMeshAgent:
   m_ObjectHideFlags: 0

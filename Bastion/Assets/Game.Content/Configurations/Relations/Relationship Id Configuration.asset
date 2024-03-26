@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Relationship Id Configuration
   m_EditorClassIdentifier: 
   _relationships:
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - Ally
+  - Self
+  - Neutrals
   - 
   - 
   - 

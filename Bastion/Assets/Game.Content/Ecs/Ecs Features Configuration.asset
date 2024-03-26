@@ -31,11 +31,27 @@ MonoBehaviour:
         type: 2}
       featureGroup:
         rid: -2
+    - featureGroupAsset: {fileID: 11400000, guid: 29690f38c9390444ebb6cb30aa0a238a,
+        type: 2}
+      featureGroup:
+        rid: -2
     - featureGroupAsset: {fileID: 11400000, guid: 63b1728bc73f1094bb8f458556efb4aa,
         type: 2}
       featureGroup:
         rid: -2
-    - featureGroupAsset: {fileID: 11400000, guid: 35cd37e2d273cb44e9fa182c3ec7dd51,
+    - featureGroupAsset: {fileID: 11400000, guid: 5bf9e65c229e33541a1f659d2f25ad67,
+        type: 2}
+      featureGroup:
+        rid: -2
+    - featureGroupAsset: {fileID: 11400000, guid: 3547d556d4dff394d881a406e3eb4e0f,
+        type: 2}
+      featureGroup:
+        rid: -2
+    - featureGroupAsset: {fileID: 11400000, guid: 73b7d1f9bcd3f994eb613a71ff8c3033,
+        type: 2}
+      featureGroup:
+        rid: -2
+    - featureGroupAsset: {fileID: 11400000, guid: 2f9273fd07793a445aa3661fb3ba6bdc,
         type: 2}
       featureGroup:
         rid: -2
