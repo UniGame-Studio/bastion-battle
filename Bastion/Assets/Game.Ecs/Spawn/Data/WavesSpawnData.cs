@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Game.Ecs.Spawn.Data
 {
-    [CreateAssetMenu(menuName = "Game/Configurations/Spawn",fileName = nameof(WavesSpawnData))]
-    public class WavesSpawnData : ScriptableObject
+    [Serializable]
+    public class WavesSpawnData
     {
         public List<WaveData> Waves;
     }
