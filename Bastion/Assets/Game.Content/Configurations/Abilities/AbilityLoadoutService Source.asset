@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd2ea7b87aac4fcd8e0d43fd96c9cf3e, type: 3}
+  m_Name: AbilityLoadoutService Source
+  m_EditorClassIdentifier: 
+  enabled: 1
+  isSharedSystem: 1
+  ownDataLifeTime: 1
+  abilityDatabase:
+    m_AssetGUID: d60e4ffce74dc4e43acd54df4dcd1bdd
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  abilitySlotMap:
+    m_AssetGUID: bf0273e41b8d70848b0d8d73f66cc13b
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  abilityRarityData:
+    m_AssetGUID: 3f06a29c46f66ec4c83b02f0c34b5847
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

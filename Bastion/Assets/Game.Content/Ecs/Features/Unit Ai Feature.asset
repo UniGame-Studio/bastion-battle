@@ -9,20 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf5bb75a82bd45f0bee7ea1d4eee368c, type: 3}
-  m_Name: Core Root Feature
+  m_Script: {fileID: 11500000, guid: 44179ab22af749c8956f637c403323db, type: 3}
+  m_Name: Unit Ai Feature
   m_EditorClassIdentifier: 
   isEnabled: 1
   groupConfiguration:
     showFeatureInfo: 1
-    name: Core Feature
+    name: 
     _active: 1
     _systems: []
-    nestedFeatures:
-    - {fileID: 11400000, guid: fa577f7789a50674c93c50869e24c44a, type: 2}
-    - {fileID: 11400000, guid: 04b6914a291551b44861d5b88650b3c6, type: 2}
-    - {fileID: 11400000, guid: d8da46bf51b7b9d4da95560bd3d2261e, type: 2}
-    - {fileID: 11400000, guid: 1c849b757db8bbc40b39e6b7b29e7875, type: 2}
+    nestedFeatures: []
     serializableFeatures: []
   references:
     version: 2

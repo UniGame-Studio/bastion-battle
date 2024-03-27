@@ -129,6 +129,32 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d60e4ffce74dc4e43acd54df4dcd1bdd
+    m_Address: Assets/Game.Content/Configurations/Abilities/Ability Data Base.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bf0273e41b8d70848b0d8d73f66cc13b
+    m_Address: Assets/Game.Content/Configurations/Abilities/AbilitySlotsData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f06a29c46f66ec4c83b02f0c34b5847
+    m_Address: Assets/Game.Content/Configurations/Abilities/Ability Rarity Map.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e60d76a3ca53d7d46a58b3dc7545bfbc
+    m_Address: Assets/Game.Content/Configurations/Abilities/AbilityLoadoutService
+      Source.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 068975340fda7ae4eb5e166a3b016472
+    m_Address: Assets/Game.Content/Configurations/Abilities/Initiators/AbilityItemAsset.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5be18780e8fdf434c90bf26cedd41243, type: 2}
   m_SchemaSet:

@@ -101,21 +101,15 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 2882177821664608292
   - rid: 2882177913136349192
   - rid: 2882177913136349193
   - rid: 2882177913136349196
+  - rid: 2882177937304977408
   assetConverters: []
   entity: -1
   references:
     version: 2
     RefIds:
-    - rid: 2882177821664608292
-      type: {class: HealthComponentConverter, ns: Game.Ecs.Characteristics.Health.Converters,
-        asm: Game.Ecs.Characteristics.Health}
-      data:
-        _isEnabled: 1
-        maxHealth: 222
     - rid: 2882177913136349192
       type: {class: LayerIdConverter, ns: Game.Ecs.GameLayers.Layer.Converters, asm: Game.Ecs.GameLayers}
       data:
@@ -133,3 +127,16 @@ MonoBehaviour:
       type: {class: CrystalConverter, ns: Game.Ecs.Ai.Converter, asm: game.ecs.ai}
       data:
         isEnabled: 1
+    - rid: 2882177937304977408
+      type: {class: CharacteristicsConverter, ns: Game.Ecs.Characteristics.CharacteristicsTools.Converters,
+        asm: Game.Ecs.Characteristics.Tools}
+      data:
+        _isEnabled: 1
+        characteristics:
+        - rid: 2882177937304977409
+    - rid: 2882177937304977409
+      type: {class: HealthComponentConverter, ns: Game.Ecs.Characteristics.Health.Converters,
+        asm: Game.Ecs.Characteristics.Health}
+      data:
+        _isEnabled: 1
+        maxHealth: 222
