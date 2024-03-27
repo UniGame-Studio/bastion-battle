@@ -15,7 +15,7 @@ namespace Game.Ecs.Spawn.Systems
     using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// check wave delay and start unit spawn
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -39,7 +39,10 @@ namespace Game.Ecs.Spawn.Systems
             _world = systems.GetWorld();
             _filter = _world
                 .Filter<CurrentWaveDelayComponent>()
+                .Inc<CurrentWaveDurationComponent>()
+                .Inc<CooldownRemainsTimeComponent>()
                 .Inc<WaveDelayStateComponent>()
+                .Inc<CooldownCompleteComponent>()
                 .Exc<WaveDurationStateComponent>()
                 .End();
         }
@@ -48,12 +51,9 @@ namespace Game.Ecs.Spawn.Systems
         {
             foreach (var spawnEntity in _filter)
             {
-                ref var remains = ref _remainsPool.Get(spawnEntity);
-                
-                if(remains.Value > 0) continue;
-                
                 _spawnAspect.DelayState.Del(spawnEntity);
                 _spawnAspect.DurationState.Add(spawnEntity);
+                _spawnAspect.RestartCooldown.Add(spawnEntity);
             }
         }
     }

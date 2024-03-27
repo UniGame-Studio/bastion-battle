@@ -15,6 +15,5 @@
     [Serializable]
     public struct WaveStartEvent
     {
-        public int Index;
     }
 }

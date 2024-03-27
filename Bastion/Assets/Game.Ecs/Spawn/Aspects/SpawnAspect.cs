@@ -3,6 +3,7 @@ using Game.Ecs.Spawn.Data;
 using Game.Ecs.Spawn.Data.Events;
 using Leopotam.EcsLite;
 using UniGame.LeoEcs.Timer.Components;
+using UniGame.LeoEcs.Timer.Components.Requests;
 
 namespace Game.Ecs.Spawn.Aspects
 {
@@ -34,8 +35,10 @@ namespace Game.Ecs.Spawn.Aspects
         // current wave state
         public EcsPool<CooldownComponent> Cooldown;
         public EcsPool<CooldownRemainsTimeComponent> RemainsCooldown;
+        public EcsPool<CooldownActiveComponent> ActiveCooldown;
         public EcsPool<WaveDelayStateComponent> DelayState;
         public EcsPool<WaveDurationStateComponent> DurationState;
+        public EcsPool<RestartCooldownSelfRequest> RestartCooldown;
         
         // events
         public EcsPool<WaveStartEvent> WaveStartEvent;

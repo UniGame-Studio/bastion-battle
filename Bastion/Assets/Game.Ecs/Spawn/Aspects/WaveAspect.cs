@@ -21,14 +21,17 @@ namespace Game.Ecs.Spawn.Aspects
     [Serializable]
     public class WaveAspect : EcsAspect
     {
+        // wave config
         public EcsPool<WaveDataComponent> Data;
 
+        // unit congigs
         public EcsPool<UnitCooldownComponent> UnitCooldown;
         public EcsPool<UnitResourceComponent> UnitResource;
         
+        // unit cooldown
         public EcsPool<CooldownComponent> Cooldown;
         public EcsPool<CooldownRemainsTimeComponent> RemainsCooldown;
-        
+        public EcsPool<CooldownActiveComponent> ActiveCooldown;
         public EcsPool<RestartCooldownSelfRequest> RestartCooldown;
     }
 }

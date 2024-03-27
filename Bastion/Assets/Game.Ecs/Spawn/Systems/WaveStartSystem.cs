@@ -32,50 +32,44 @@ namespace Game.Ecs.Spawn.Systems
         private EcsWorld _world;
         private SpawnAspect _spawnAspect;
         private WaveAspect _waveAspect;
-        private EcsFilter _startEventFilter;
         private EcsFilter _spawnFilter;
 
         public void Init(IEcsSystems systems)
         {
             _world = systems.GetWorld();
-
-            _startEventFilter = _world.Filter<WaveStartEvent>().End();
             _spawnFilter = _world
                 .Filter<WaveOrderComponent>()
+                .Inc<WaveStartEvent>()
+                .Inc<CurrentWaveDelayComponent>()
+                .Inc<CurrentWaveDurationComponent>()
                 .End();
         }
 
         public void Run(IEcsSystems systems)
         {
-            // следит за эвентом старта, добавляет сущности для спавна юнитов, запускает эвент StartDelay
-
-            foreach (var eventEntity in _startEventFilter)
+            foreach (var spawnEntity in _spawnFilter)
             {
-                ref var startEvent = ref _spawnAspect.WaveStartEvent.Get(eventEntity);
-
-                foreach (var spawnEntity in _spawnFilter)
-                {
-                    ref var wavesOrder = ref _spawnAspect.WaveOrder.Get(spawnEntity);
+                ref var wavesOrder = ref _spawnAspect.WaveOrder.Get(spawnEntity);
+                ref var waveIndex = ref _spawnAspect.Wave.Get(spawnEntity);
                         
-                    if(!wavesOrder.Waves[startEvent.Index].Unpack(_world, out int waveEntity)) continue;
+                if(!wavesOrder.Waves[waveIndex.Value].Unpack(_world, out int waveEntity)) continue;
 
-                    ref var waveDataComponent = ref _waveAspect.Data.Get(waveEntity);
-                    ref var currentWaveDelay = ref _spawnAspect.WaveDelay.Get(spawnEntity);
-                    ref var currentWaveDuration = ref _spawnAspect.WaveDuration.Get(spawnEntity);
-                    ref var currentWave = ref _spawnAspect.Wave.Get(spawnEntity);
+                ref var waveDataComponent = ref _waveAspect.Data.Get(waveEntity);
+                ref var currentWaveDelay = ref _spawnAspect.WaveDelay.Get(spawnEntity);
+                ref var currentWaveDuration = ref _spawnAspect.WaveDuration.Get(spawnEntity);
                     
-                    // вносим параметры новой волны
+                // вносим параметры новой волны
 
-                    WaveData data = waveDataComponent.Data;
-                    currentWaveDelay.Time = data.Delay;
-                    currentWaveDuration.Time = data.Duration;
-                    currentWave.Value = startEvent.Index;
+                WaveData data = waveDataComponent.Data;
+                currentWaveDelay.Time = data.Delay;
+                currentWaveDuration.Time = data.Duration;
 
-                    foreach (var unitSpawnData in data.Units)
-                    {
-                        CreateNewUnitEntity(unitSpawnData);
-                    }
+                foreach (var unitSpawnData in data.Units)
+                {
+                    CreateNewUnitEntity(unitSpawnData);
                 }
+                
+                _spawnAspect.DelayState.Add(spawnEntity);
             }
         }
 

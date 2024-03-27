@@ -16,7 +16,7 @@ namespace Game.Ecs.Spawn.Systems
     using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// spawn unit by cooldowns
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -42,8 +42,8 @@ namespace Game.Ecs.Spawn.Systems
             _gameSpawnTools = _world.GetGlobal<GameSpawnTools>();
             
             _filter = _world
-                .Filter<CooldownRemainsTimeComponent>()
-                .Inc<UnitCooldownComponent>()
+                .Filter<UnitCooldownComponent>()
+                .Inc<CooldownCompleteComponent>()
                 .End();
 
             _spawnFilter = _world.Filter<SpawnPointComponent>().End();
@@ -53,10 +53,6 @@ namespace Game.Ecs.Spawn.Systems
         {
             foreach (var unitSpawnEntity in _filter)
             {
-                ref var remains = ref _waveAspect.RemainsCooldown.Get(unitSpawnEntity);
-                
-                if (remains.Value > 0) continue;
-
                 ref var unitResource = ref _waveAspect.UnitResource.Get(unitSpawnEntity);
 
                 foreach (var spawnPointEntity in _spawnFilter)

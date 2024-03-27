@@ -1,6 +1,7 @@
 ﻿using Game.Ecs.Spawn.Aspects;
 using Game.Ecs.Spawn.Components;
 using UniGame.LeoEcs.Timer.Components;
+using UniGame.LeoEcs.Timer.Components.Requests;
 
 namespace Game.Ecs.Spawn.Systems
 {
@@ -15,7 +16,7 @@ namespace Game.Ecs.Spawn.Systems
     using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// check for end wave and delete unit spawn cooldowns
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -30,8 +31,9 @@ namespace Game.Ecs.Spawn.Systems
     {
         private EcsWorld _world;
         private EcsFilter _filter;
-        private EcsPool<CooldownRemainsTimeComponent> _remainsPool;
+        private EcsFilter _unitSpawnFilter;
         private SpawnAspect _spawnAspect;
+        private WaveAspect _waveAspect;
 
         public void Init(IEcsSystems systems)
         {
@@ -41,19 +43,25 @@ namespace Game.Ecs.Spawn.Systems
                 .Filter<CurrentWaveDelayComponent>()
                 .Exc<WaveDelayStateComponent>()
                 .Inc<WaveDurationStateComponent>()
+                .Inc<CooldownRemainsTimeComponent>()
+                .Inc<CooldownCompleteComponent>()
+                .Exc<RestartCooldownSelfRequest>()
                 .End();
+
+            _unitSpawnFilter = _world.Filter<UnitCooldownComponent>().End();
         }
 
         public void Run(IEcsSystems systems)
         {
             foreach (var spawnEntity in _filter)
             {
-                ref var remains = ref _remainsPool.Get(spawnEntity);
-                
-                if(remains.Value > 0) continue;
-                
                 _spawnAspect.DurationState.Del(spawnEntity);
                 _spawnAspect.WaveEndEvent.Add(spawnEntity);
+
+                foreach (var unitSpawnEntity in _unitSpawnFilter)
+                {
+                    _world.DelEntity(unitSpawnEntity);
+                }
             }
         }
     }

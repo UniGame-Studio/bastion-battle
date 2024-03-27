@@ -8,7 +8,7 @@ namespace Game.Ecs.Spawn.Systems
     using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// start next wave or end event
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -36,8 +36,14 @@ namespace Game.Ecs.Spawn.Systems
         {
             foreach (var spawnEntity in _filter)
             {
-                // уничтожить спавнеры юнитов
-                // запустить старт следующей волны или отправить эвент о завершении волн
+                ref var currentWave = ref _spawnAspect.Wave.Get(spawnEntity);
+                currentWave.Value++;
+                ref var waveOrder = ref _spawnAspect.WaveOrder.Get(spawnEntity);
+                
+                if (waveOrder.Waves.ContainsKey(currentWave.Value))
+                    _spawnAspect.WaveStartEvent.Add(spawnEntity);
+                else
+                    _spawnAspect.WavesEndedEvent.Add(spawnEntity);
             }
         }
     }

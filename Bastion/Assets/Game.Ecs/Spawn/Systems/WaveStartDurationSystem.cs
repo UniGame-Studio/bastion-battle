@@ -1,6 +1,7 @@
 ﻿using Game.Ecs.Spawn.Aspects;
 using Game.Ecs.Spawn.Components;
 using UniGame.LeoEcs.Timer.Components;
+using UniGame.LeoEcs.Timer.Components.Requests;
 
 namespace Game.Ecs.Spawn.Systems
 {
@@ -15,7 +16,7 @@ namespace Game.Ecs.Spawn.Systems
     using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// init cooldowns wave units spawn and duration time
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -30,8 +31,9 @@ namespace Game.Ecs.Spawn.Systems
     {
         private EcsWorld _world;
         private SpawnAspect _spawnAspect;
+        private WaveAspect _waveAspect;
         private EcsFilter _spawnFilter;
-
+        private EcsFilter _unitSpawnFilter;
 
         public void Init(IEcsSystems systems)
         {
@@ -43,19 +45,35 @@ namespace Game.Ecs.Spawn.Systems
                 .Inc<CurrentWaveDurationComponent>()
                 .Inc<CooldownComponent>()
                 .Exc<WaveDelayStateComponent>()
+                .Inc<CooldownCompleteComponent>()
+                .Inc<RestartCooldownSelfRequest>()
                 .Inc<WaveDurationStateComponent>()
                 .End();
+
+            _unitSpawnFilter = _world.Filter<UnitCooldownComponent>().End();
         }
 
         public void Run(IEcsSystems systems)
         {
             foreach (var spawnEntity in _spawnFilter)
             {
-                ref var cooldown = ref _spawnAspect.Cooldown.Get(spawnEntity);
-                ref var waveDelay = ref _spawnAspect.WaveDelay.Get(spawnEntity);
-                cooldown.Value = waveDelay.Time;
+                ref var waveCooldown = ref _spawnAspect.Cooldown.Get(spawnEntity);
+                ref var waveDuration = ref _spawnAspect.WaveDuration.Get(spawnEntity);
+                waveCooldown.Value = waveDuration.Time;
                 
-                // создать сущности кулдаунов для юнитов
+                // накидываем кулдауны для спавна юнитов
+                foreach (var unitSpawnEntity in _unitSpawnFilter)
+                {
+                    ref var unitCooldown = ref _waveAspect.UnitCooldown.Get(unitSpawnEntity);
+                    ref var cooldown = ref _waveAspect.Cooldown.Add(unitSpawnEntity);
+                    cooldown.Value = unitCooldown.Time;
+                    _waveAspect.ActiveCooldown.Add(unitSpawnEntity);
+                    
+                    if(!unitCooldown.Immediately) continue;
+
+                    ref var remains = ref _waveAspect.RemainsCooldown.Add(unitSpawnEntity);
+                    remains.Value = 0;
+                }
             }
         }
     }

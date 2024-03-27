@@ -16,7 +16,7 @@ namespace Game.Ecs.Spawn.Systems
     using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// init and start time for wave delay
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -32,7 +32,6 @@ namespace Game.Ecs.Spawn.Systems
         private EcsWorld _world;
         private EcsFilter _spawnFilter;
         private SpawnAspect _spawnAspect;
-        
 
         public void Init(IEcsSystems systems)
         {
@@ -43,6 +42,8 @@ namespace Game.Ecs.Spawn.Systems
                 .Inc<CurrentWaveDelayComponent>()
                 .Inc<CurrentWaveDurationComponent>()
                 .Inc<CooldownComponent>()
+                .Exc<CooldownActiveComponent>()
+                .Exc<CooldownCompleteComponent>()
                 .Inc<WaveDelayStateComponent>()
                 .Exc<WaveDurationStateComponent>()
                 .End();
@@ -55,7 +56,7 @@ namespace Game.Ecs.Spawn.Systems
                 ref var cooldown = ref _spawnAspect.Cooldown.Get(spawnEntity);
                 ref var waveDelay = ref _spawnAspect.WaveDelay.Get(spawnEntity);
                 cooldown.Value = waveDelay.Time;
-                _spawnAspect.DelayState.Add(spawnEntity);
+                _spawnAspect.ActiveCooldown.Add(spawnEntity);
             }
         }
     }

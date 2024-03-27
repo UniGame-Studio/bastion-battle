@@ -1,5 +1,7 @@
-﻿using Game.Ecs.Spawn.Aspects;
+﻿using System.Collections.Generic;
+using Game.Ecs.Spawn.Aspects;
 using Game.Ecs.Spawn.Data;
+using Unity.Collections;
 
 namespace Game.Ecs.Spawn.Systems
 {
@@ -14,7 +16,7 @@ namespace Game.Ecs.Spawn.Systems
     using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// init wave entities with data and start first wave
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -35,20 +37,27 @@ namespace Game.Ecs.Spawn.Systems
         public void Init(IEcsSystems systems)
         {
             _world = systems.GetWorld();
-            _wavesSpawnDataAsset = systems.GetShared<WavesSpawnDataAsset>();
+            _wavesSpawnDataAsset = _world.GetGlobal<WavesSpawnDataAsset>();
 
             int spawnEntity = _world.NewEntity();
             ref var waveIndex = ref _spawnAspect.Wave.Add(spawnEntity);
             ref var waveOrder = ref _spawnAspect.WaveOrder.Add(spawnEntity);
+            ref var waveDelay = ref _spawnAspect.WaveDelay.Add(spawnEntity);
+            ref var waveDuration = ref _spawnAspect.WaveDuration.Add(spawnEntity);
             ref var cooldown = ref _spawnAspect.Cooldown.Add(spawnEntity);
 
-            for (int i = 0; i < _wavesSpawnDataAsset.Data.Waves.Count; i++)
+            List<WaveData> waves = _wavesSpawnDataAsset.Data.Waves;
+            waveOrder.Waves = new NativeHashMap<int, EcsPackedEntity>(waves.Count, Allocator.Persistent);
+            for (int i = 0; i < waves.Count; i++)
             {
                 int waveEntity = _world.NewEntity();
                 ref var waveData = ref _waveAspect.Data.Add(waveEntity);
-                waveData.Data = _wavesSpawnDataAsset.Data.Waves[i];
+                waveData.Data = waves[i];
                 waveOrder.Waves.Add(i, waveEntity.PackedEntity(_world));
             }
+
+            waveIndex.Value = 0;
+            _spawnAspect.WaveStartEvent.Add(spawnEntity);
         }
     }
 }

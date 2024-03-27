@@ -1,4 +1,5 @@
-﻿using Game.Ecs.Spawn.Data.Events;
+﻿using Game.Ecs.Spawn.Data;
+using Game.Ecs.Spawn.Data.Events;
 using Game.Ecs.Spawn.Systems;
 using Leopotam.EcsLite.ExtendedSystems;
 using UniGame.LeoEcs.Shared.Extensions;
@@ -16,13 +17,18 @@ namespace NAMESPACE
     using UnityEngine.AddressableAssets;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// wave spawn feature for gameplay
     /// </summary>
     [CreateAssetMenu(menuName = "Game/Feature/Gameplay/SpawnFeature")]
     public class SpawnFeature : BaseLeoEcsFeature
     {
+        [SerializeField]
+        private WavesSpawnDataAsset _dataAsset;
+        
         public override async UniTask InitializeFeatureAsync(IEcsSystems ecsSystems)
         {
+            ecsSystems.GetWorld().SetGlobal(_dataAsset);
+            
             ecsSystems.Add(new WavesInitSystem());
             
             // wave start
