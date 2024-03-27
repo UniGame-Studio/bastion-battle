@@ -10,6 +10,7 @@ namespace Game.Ecs.Ai.Systems
     using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
     using UniGame.LeoEcs.Timer.Components;
     using UniGame.LeoEcs.Timer.Components.Events;
+    using UniGame.LeoEcs.Timer.Components.Requests;
     using Unit.Components;
 
     /// <summary>
@@ -51,9 +52,9 @@ namespace Game.Ecs.Ai.Systems
             foreach (var enemyEntity in _enemyFilter)
             {
                 ref var cooldownComponent = ref _cooldownPool.Add(enemyEntity);
-                cooldownComponent.Value = 1f;
+                cooldownComponent.Value = 5f;
                 _world.GetPool<CooldownAutoRestartComponent>().Add(enemyEntity);
-                _world.GetPool<CooldownActiveComponent>().Add(enemyEntity);
+                _world.GetPool<RestartCooldownSelfRequest>().Add(enemyEntity);
             }
 
             foreach (var enemy in _endCooldownFilter)
