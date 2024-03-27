@@ -3,6 +3,7 @@ namespace Game.Ecs.Ui.EnergyUi.Models
     using System;
     using UniGame.UiSystem.Runtime;
     using UniModules.UniCore.Runtime.Common;
+    using UniModules.UniGame.Core.Runtime.Rx;
     using UniRx;
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;

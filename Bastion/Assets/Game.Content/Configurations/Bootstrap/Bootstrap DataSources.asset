@@ -43,5 +43,12 @@ MonoBehaviour:
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
+  - enabled: 1
+    awaitLoading: 1
+    source:
+      m_AssetGUID: e60d76a3ca53d7d46a58b3dc7545bfbc
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
   useTimeout: 1
   timeOutMs: 60000
