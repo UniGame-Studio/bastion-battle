@@ -142,7 +142,7 @@ MonoBehaviour:
         asm: Game.Ecs.Characteristics.Health}
       data:
         _isEnabled: 1
-        maxHealth: 222
+        maxHealth: 3
     - rid: 2882177960103903254
       type: {class: AvatarConverter, ns: Game.Ecs.Core.Converters, asm: UniGame.LeoEcs.Shared.Core}
       data:
@@ -151,7 +151,7 @@ MonoBehaviour:
           Center: {x: 0, y: 0, z: 0}
           Height: 0
           Radius: 0.5
-        headRoot: {fileID: 0}
+        headRoot: {fileID: 2793391748334773551}
         bodyRoot: {fileID: 2793391748334773551}
         feetRoot: {fileID: 0}
         handRoot: {fileID: 2793391748334773551}

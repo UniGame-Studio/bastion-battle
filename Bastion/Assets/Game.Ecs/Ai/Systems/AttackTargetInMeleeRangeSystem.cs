@@ -10,6 +10,8 @@ namespace Game.Ecs.Ai.Systems
     using Ability.SubFeatures.Target.Tools;
     using Ability.Tools;
     using Core.Components;
+    using Core.Death.Components;
+    using Gameplay.Death.Aspects;
     using Leopotam.EcsLite;
     using TargetSelection.Aspects;
     using UniGame.Core.Runtime.Extension;
@@ -43,7 +45,7 @@ namespace Game.Ecs.Ai.Systems
         private EcsFilter _abilitiesFilter;
         private EcsFilter _filter;
         private AbilityTargetTools _abilityTargetTools;
-
+        private DeathAspect _deathAspect;
         public void Init(IEcsSystems systems)
         {
             _world = systems.GetWorld();
@@ -54,14 +56,6 @@ namespace Game.Ecs.Ai.Systems
             _abilitiesFilter = _world.Filter<AbilityTargetsComponent>()
                 .Inc<AbilitySlotComponent>()
                 .End();
-            
-            _filter = _world
-                .Filter<AbilityValidationSelfRequest>()
-                // .Inc<CooldownStateComponent>()
-                // .Inc<ActiveAbilityComponent>()
-                // .Exc<AbilityUsingComponent>()
-                .End();
-            
         }
 
         public void Run(IEcsSystems systems)
@@ -78,6 +72,8 @@ namespace Game.Ecs.Ai.Systems
                 if (selectedTargetsComponent.Count == 0) continue;
                 if (ownerComponent.Value.Unpack(_world, out var ownerEntity) == false) continue;
 
+                //todo разобраться с кулдауном
+                //hard code
                 var targetPackedEntity = selectedTargetsComponent.Entities[0];
                 if (!targetPackedEntity.Unpack(_world, out var targetEntity)) continue;
                 _abilityTargetTools.SetAbilityTarget(ownerEntity, targetPackedEntity, _abilityAspect.AbilitySlot.Get(abilityEntity).SlotType);
@@ -85,6 +81,15 @@ namespace Game.Ecs.Ai.Systems
                 _abilityTools.ActivateAbility(_world, abilityEntity);
                 
                 //todo add death request
+                //не будет рабоать если ипользовать Add
+                //такое ощущение что мы несколько раз заходим в эту фичу, перед тем как обработаем PrepareToDeathComponent
+                //хотя такого быть не должно
+                //когда мы попадаем сюда во втрой раз, то PrepareToDeathComponent уже есть, вызывается EntityAlreadyHasComponentException
+                //поэтому используем GetOrAddComponent
+                //так быть не должно
+                ref var prepareToDeath = ref _deathAspect.PrepareToDeath.GetOrAddComponent(ownerEntity); 
+                prepareToDeath.Source = ownerComponent.Value;
+                
                 Debug.Log("Attack target in melee range!");
             }
         }

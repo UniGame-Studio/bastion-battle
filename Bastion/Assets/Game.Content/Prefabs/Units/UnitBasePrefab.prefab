@@ -133,7 +133,8 @@ MonoBehaviour:
   - rid: 2882177913136349191
   - rid: 2882177913136349205
   - rid: 2882177960103903255
-  - rid: 2882177960103903272
+  - rid: 2882177960103903292
+  - rid: 2882177960103903293
   assetConverters: []
   entity: -1
   references:
@@ -252,12 +253,12 @@ MonoBehaviour:
           Center: {x: 0, y: 0, z: 0}
           Height: 0
           Radius: 0.5
-        headRoot: {fileID: 0}
+        headRoot: {fileID: 6477238066181123547}
         bodyRoot: {fileID: 6477238066181123547}
         feetRoot: {fileID: 0}
         handRoot: {fileID: 0}
         weaponRoot: {fileID: 6477238066181123547}
-    - rid: 2882177960103903272
+    - rid: 2882177960103903292
       type: {class: EffectRootConverter, ns: Game.Ecs.Effects.Converters, asm: Game.Ecs.Effects}
       data:
         enabled: 1
@@ -266,8 +267,16 @@ MonoBehaviour:
             value: 1
           objectValue: {fileID: 5115211655814986030}
           objectName: UnitBasePrefab
-        bakeOnConvert: 1
+        bakeOnConvert: 0
         backedRoots: []
+    - rid: 2882177960103903293
+      type: {class: EffectRootTargetConverter, ns: Game.Ecs.Effects.Converters, asm: Game.Ecs.Effects}
+      data:
+        enabled: 1
+        effectRootId:
+          value: 1
+        useRootTransform: 1
+        rootValue: {fileID: 0}
 --- !u!195 &7784747775027257429
 NavMeshAgent:
   m_ObjectHideFlags: 0

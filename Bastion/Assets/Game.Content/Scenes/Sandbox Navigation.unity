@@ -363,6 +363,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &358111395 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6477238066181123547, guid: e8b0eb52f0106ac458b43994acab9146,
+    type: 3}
+  m_PrefabInstance: {fileID: 1034929395}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &387091637
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,22 +865,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7695468690431768397, guid: e8b0eb52f0106ac458b43994acab9146,
         type: 3}
-      propertyPath: serializableConverters.Array.size
-      value: 9
-      objectReference: {fileID: 0}
+      propertyPath: managedReferences[2882177960103903255].headRoot
+      value: 
+      objectReference: {fileID: 358111395}
     - target: {fileID: 7695468690431768397, guid: e8b0eb52f0106ac458b43994acab9146,
         type: 3}
-      propertyPath: managedReferences[2882177960103903272].enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7695468690431768397, guid: e8b0eb52f0106ac458b43994acab9146,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903255]._isEnabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7695468690431768397, guid: e8b0eb52f0106ac458b43994acab9146,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903272].bakeOnConvert
+      propertyPath: managedReferences[2882177960103903292].backedRoots.Array.size
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -882,9 +878,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8b0eb52f0106ac458b43994acab9146, type: 3}
---- !u!1 &1410572327 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3706665903967306140, guid: 632cb5d26aa657446b3ff38b8d336488,
+--- !u!4 &1410572331 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2793391748334773551, guid: 632cb5d26aa657446b3ff38b8d336488,
     type: 3}
   m_PrefabInstance: {fileID: 3901646994661270458}
   m_PrefabAsset: {fileID: 0}
@@ -1090,94 +1086,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
         type: 3}
-      propertyPath: serializableConverters.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: serializableConverters.Array.data[5]
-      value: 2882177960103903273
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: serializableConverters.Array.data[6]
-      value: 2882177960103903274
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903273]
-      value: Game.Ecs.Effects Game.Ecs.Effects.Converters.EffectRootConverter
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903274]
-      value: Game.Ecs.Effects Game.Ecs.Effects.Converters.EffectRootTargetConverter
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903271].enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903273].enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903274].enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903274].rootValue
+      propertyPath: managedReferences[2882177960103903254].headRoot
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1410572331}
     - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
         type: 3}
-      propertyPath: managedReferences[2882177960103903271].bakeOnConvert
-      value: 0
+      propertyPath: managedReferences[2882177937304977409].maxHealth
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903273].bakeOnConvert
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903274].useRootTransform
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903274].effectRootId.value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903273].backedRoots.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903273].effectRoots.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903273].effectRoots.Array.data[0].id.value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903273].effectRoots.Array.data[0].objectName
-      value: Crystall(draft)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882236583626422229, guid: 632cb5d26aa657446b3ff38b8d336488,
-        type: 3}
-      propertyPath: managedReferences[2882177960103903273].effectRoots.Array.data[0].objectValue
-      value: 
-      objectReference: {fileID: 1410572327}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
