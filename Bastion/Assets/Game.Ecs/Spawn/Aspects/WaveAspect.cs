@@ -31,6 +31,7 @@ namespace Game.Ecs.Spawn.Aspects
         // unit cooldown
         public EcsPool<CooldownComponent> Cooldown;
         public EcsPool<CooldownRemainsTimeComponent> RemainsCooldown;
+        public EcsPool<CooldownCompleteComponent> CompleteCooldown;
         public EcsPool<CooldownActiveComponent> ActiveCooldown;
         public EcsPool<RestartCooldownSelfRequest> RestartCooldown;
     }

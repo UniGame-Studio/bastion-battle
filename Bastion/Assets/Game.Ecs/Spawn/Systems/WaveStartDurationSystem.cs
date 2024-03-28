@@ -71,8 +71,7 @@ namespace Game.Ecs.Spawn.Systems
                     
                     if(!unitCooldown.Immediately) continue;
 
-                    ref var remains = ref _waveAspect.RemainsCooldown.Add(unitSpawnEntity);
-                    remains.Value = 0;
+                    _waveAspect.CompleteCooldown.Add(unitSpawnEntity);
                 }
             }
         }
