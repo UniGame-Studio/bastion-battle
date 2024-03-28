@@ -27,5 +27,29 @@ MonoBehaviour:
       m_SubObjectType: 
       m_EditorAssetChanged: 0
     name: Unit
+  - assetReference:
+      m_AssetGUID: 116759443bf732b4ca02c50528fe1d8e
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    name: Test Unit Square 1
+  - assetReference:
+      m_AssetGUID: cbf7e0258158f904b88236b1fcdf4d01
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    name: Test Unit Square 2
+  - assetReference:
+      m_AssetGUID: ad1be7924e692b14aa3333689c965ef5
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    name: Test Unit Square 3
+  - assetReference:
+      m_AssetGUID: 211860c1d757b4b428edd0176db74b92
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    name: Test Unit Square 4
   folders:
   - Assets/Game.Content/Units

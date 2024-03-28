@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b795c39942934e46b0d13bd9edff926e, type: 3}
   m_Name: Ability Feature
   m_EditorClassIdentifier: 
-  isEnabled: 1
+  isEnabled: 0
   subFeatures:
   - {fileID: 11400000, guid: 5d2d2e6fcb83fc14fb7d3d84c7c54aca, type: 2}
   - {fileID: 11400000, guid: aa2b2d26389ad564591f869a3f97e7ca, type: 2}
@@ -26,3 +26,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0f1a319132f452c4bbc834f1d5f2064e, type: 2}
   - {fileID: 11400000, guid: a5808377a7dcbda499eb66e90018be71, type: 2}
   - {fileID: 11400000, guid: e21cf1ca15f5eb645b5cbcd2c608b6f8, type: 2}
+  inventoryFeature:
+    name: 
+    isEnabled: 1
+    abilityCatalog: {fileID: 0}
