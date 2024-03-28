@@ -20,12 +20,7 @@ MonoBehaviour:
     _systems: []
     nestedFeatures:
     - {fileID: 11400000, guid: 97e40b1790ad0514eb7d8aad680c8975, type: 2}
-    - {fileID: 11400000, guid: 73b7d1f9bcd3f994eb613a71ff8c3033, type: 2}
-    - {fileID: 11400000, guid: 86770488a0040af4080e42ae5f2a1e27, type: 2}
-    - {fileID: 11400000, guid: d1b41852913c21249b50732d93a1b452, type: 2}
     - {fileID: 11400000, guid: 50ececf1005d6d64d87cd29ecf007ff7, type: 2}
-    - {fileID: 11400000, guid: 1b5e17ac57d495045a4bcc67e460103b, type: 2}
-    - {fileID: 11400000, guid: dfcb95d238735354587b9853afe0ec8d, type: 2}
     serializableFeatures:
     - rid: 2882177944892997634
   references:

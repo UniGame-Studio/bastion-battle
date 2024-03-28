@@ -15,6 +15,7 @@ namespace Game.Ecs.Ai.Systems
     using Leopotam.EcsLite;
     using TargetSelection.Aspects;
     using UniGame.Core.Runtime.Extension;
+    using UniGame.LeoEcs.Bootstrap.Runtime.Abstract;
     using UniGame.LeoEcs.Shared.Extensions;
     using UniGame.Runtime.ObjectPool.Extensions;
     using UnityEngine;
@@ -46,6 +47,7 @@ namespace Game.Ecs.Ai.Systems
         private EcsFilter _filter;
         private AbilityTargetTools _abilityTargetTools;
         private DeathAspect _deathAspect;
+        private TimerAspect _timerAspect;
         public void Init(IEcsSystems systems)
         {
             _world = systems.GetWorld();
@@ -78,16 +80,11 @@ namespace Game.Ecs.Ai.Systems
                 if (!targetPackedEntity.Unpack(_world, out var targetEntity)) continue;
                 _abilityTargetTools.SetAbilityTarget(ownerEntity, targetPackedEntity, _abilityAspect.AbilitySlot.Get(abilityEntity).SlotType);
                 if (abilityTargetsComponent.Count == 0) continue;
+                if(!_abilityTools.IsAbilityCooldownPassed(abilityEntity)) continue;
                 _abilityTools.ActivateAbility(_world, abilityEntity);
-                
+                _timerAspect.Restart.GetOrAddComponent(abilityEntity); 
                 //todo add death request
-                //не будет рабоать если ипользовать Add
-                //такое ощущение что мы несколько раз заходим в эту фичу, перед тем как обработаем PrepareToDeathComponent
-                //хотя такого быть не должно
-                //когда мы попадаем сюда во втрой раз, то PrepareToDeathComponent уже есть, вызывается EntityAlreadyHasComponentException
-                //поэтому используем GetOrAddComponent
-                //так быть не должно
-                ref var prepareToDeath = ref _deathAspect.PrepareToDeath.GetOrAddComponent(ownerEntity); 
+                ref var prepareToDeath = ref _deathAspect.PrepareToDeath.Add(ownerEntity); 
                 prepareToDeath.Source = ownerComponent.Value;
                 
                 Debug.Log("Attack target in melee range!");

@@ -195,8 +195,8 @@ MonoBehaviour:
         asm: Game.Ecs.Characteristic.AttackRange}
       data:
         _isEnabled: 1
-        attackRange: 3.17
-        minValue: 3
+        attackRange: 2
+        minValue: 0.5
         maxValue: 100
         delta: {x: -0.5, y: 0.5}
         rangeGizmosColor: {r: 0.128, g: 0.2, b: 0.85, a: 1}
@@ -238,7 +238,7 @@ MonoBehaviour:
         asm: Game.Ecs.Characteristics}
       data:
         _isEnabled: 1
-        attackDamage: 10
+        attackDamage: 1
     - rid: 2882177913136349207
       type: {class: AbilityPowerConverter, ns: Game.Ecs.Characteristics.AbilityPower.Converters,
         asm: Game.Ecs.Characteristics}
@@ -266,7 +266,7 @@ MonoBehaviour:
         - id:
             value: 1
           objectValue: {fileID: 5115211655814986030}
-          objectName: UnitBasePrefab
+          objectName: UnitBasePrefab_3
         bakeOnConvert: 0
         backedRoots: []
     - rid: 2882177960103903293
