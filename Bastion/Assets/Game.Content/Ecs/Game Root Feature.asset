@@ -24,7 +24,19 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 86770488a0040af4080e42ae5f2a1e27, type: 2}
     - {fileID: 11400000, guid: d1b41852913c21249b50732d93a1b452, type: 2}
     - {fileID: 11400000, guid: 50ececf1005d6d64d87cd29ecf007ff7, type: 2}
-    serializableFeatures: []
+    serializableFeatures:
+    - rid: 2882177944892997634
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 2882177944892997634
+      type: {class: RelationshipFeature, ns: Game.Ecs.GameLayers.Relationship, asm: Game.Ecs.GameLayers}
+      data:
+        enabled: 1
+        featureName: RelationshipFeature
+        _layerIdConfiguration: {fileID: 11400000, guid: 2007d0616c35397428615163ff8d91c9,
+          type: 2}
+        _relationshipIdMap: {fileID: 11400000, guid: 06b6b962238eeb74183ad850ba63b711,
+          type: 2}
+        _selfRelationship:
+          _value: 4

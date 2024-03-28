@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Melee Attack Ability Configuration
   m_EditorClassIdentifier: 
   specification:
-    cooldown: 0
-    cooldownType: 1
+    cooldown: 2
+    cooldownType: 2
     radius: 1
     relationshipId:
       _value: 1
@@ -27,7 +27,7 @@ MonoBehaviour:
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  duration: 0.2
+  duration: 1
   abilityBehaviours:
   - rid: 2882177913136349197
   - rid: 2882177913136349198
@@ -50,7 +50,6 @@ MonoBehaviour:
       data:
         effects:
         - rid: 2882177913136349200
-        - rid: 2882177913136349202
     - rid: 2882177913136349200
       type: {class: AttackDamageEffectConfiguration, ns: Game.Ecs.GameEffects.DamageEffect,
         asm: Game.Ecs.GameEffects.DamageEffect}
@@ -77,23 +76,3 @@ MonoBehaviour:
       type: {class: PhysicsDamageType, ns: Game.Ecs.GameEffects.DamageEffect.DamageTypes,
         asm: Game.Ecs.GameEffects.DamageEffect}
       data: 
-    - rid: 2882177913136349202
-      type: {class: BlockableEffectConfiguration, ns: Game.Ecs.GameEffects.DamageEffect,
-        asm: Game.Ecs.GameEffects}
-      data:
-        duration: 0
-        periodicity: -1
-        delay: 0
-        targetType: 0
-        viewPrefab: {fileID: 0}
-        view:
-          m_AssetGUID: 
-          m_SubObjectName: 
-          m_SubObjectType: 
-          m_EditorAssetChanged: 0
-        viewLifeTime: 0
-        spawnAtRoot: 0
-        viewInstanceType: 1
-        effectRoot:
-          value: 0
-        attachToSource: 0

@@ -26,3 +26,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0f1a319132f452c4bbc834f1d5f2064e, type: 2}
   - {fileID: 11400000, guid: a5808377a7dcbda499eb66e90018be71, type: 2}
   - {fileID: 11400000, guid: e21cf1ca15f5eb645b5cbcd2c608b6f8, type: 2}
+  - {fileID: 11400000, guid: e0d3fdf97226549439509985e5385130, type: 2}
+  inventoryFeature:
+    name: 
+    isEnabled: 1
+    abilityCatalog: {fileID: 0}

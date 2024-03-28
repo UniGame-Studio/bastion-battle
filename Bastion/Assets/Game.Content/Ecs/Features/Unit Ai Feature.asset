@@ -15,7 +15,7 @@ MonoBehaviour:
   isEnabled: 1
   groupConfiguration:
     showFeatureInfo: 1
-    name: 
+    name: Unit Ai Feature
     _active: 1
     _systems: []
     nestedFeatures: []
