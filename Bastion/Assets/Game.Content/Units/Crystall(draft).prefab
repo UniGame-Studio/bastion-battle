@@ -105,6 +105,9 @@ MonoBehaviour:
   - rid: 2882177913136349193
   - rid: 2882177913136349196
   - rid: 2882177937304977408
+  - rid: 2882177960103903254
+  - rid: 2882177960103903273
+  - rid: 2882177960103903274
   assetConverters: []
   entity: -1
   references:
@@ -140,3 +143,35 @@ MonoBehaviour:
       data:
         _isEnabled: 1
         maxHealth: 222
+    - rid: 2882177960103903254
+      type: {class: AvatarConverter, ns: Game.Ecs.Core.Converters, asm: UniGame.LeoEcs.Shared.Core}
+      data:
+        _isEnabled: 1
+        entityBounds:
+          Center: {x: 0, y: 0, z: 0}
+          Height: 0
+          Radius: 0.5
+        headRoot: {fileID: 0}
+        bodyRoot: {fileID: 2793391748334773551}
+        feetRoot: {fileID: 0}
+        handRoot: {fileID: 2793391748334773551}
+        weaponRoot: {fileID: 0}
+    - rid: 2882177960103903273
+      type: {class: EffectRootConverter, ns: Game.Ecs.Effects.Converters, asm: Game.Ecs.Effects}
+      data:
+        enabled: 1
+        effectRoots:
+        - id:
+            value: 1
+          objectValue: {fileID: 3706665903967306140}
+          objectName: Crystall(draft)
+        bakeOnConvert: 0
+        backedRoots: []
+    - rid: 2882177960103903274
+      type: {class: EffectRootTargetConverter, ns: Game.Ecs.Effects.Converters, asm: Game.Ecs.Effects}
+      data:
+        enabled: 1
+        effectRootId:
+          value: 1
+        useRootTransform: 1
+        rootValue: {fileID: 0}

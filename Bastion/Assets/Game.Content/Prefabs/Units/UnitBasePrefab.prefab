@@ -132,6 +132,8 @@ MonoBehaviour:
   - rid: 2882177913136349190
   - rid: 2882177913136349191
   - rid: 2882177913136349205
+  - rid: 2882177960103903255
+  - rid: 2882177960103903272
   assetConverters: []
   entity: -1
   references:
@@ -242,6 +244,30 @@ MonoBehaviour:
       data:
         _isEnabled: 1
         abilityPower: 1
+    - rid: 2882177960103903255
+      type: {class: AvatarConverter, ns: Game.Ecs.Core.Converters, asm: UniGame.LeoEcs.Shared.Core}
+      data:
+        _isEnabled: 1
+        entityBounds:
+          Center: {x: 0, y: 0, z: 0}
+          Height: 0
+          Radius: 0.5
+        headRoot: {fileID: 0}
+        bodyRoot: {fileID: 6477238066181123547}
+        feetRoot: {fileID: 0}
+        handRoot: {fileID: 0}
+        weaponRoot: {fileID: 6477238066181123547}
+    - rid: 2882177960103903272
+      type: {class: EffectRootConverter, ns: Game.Ecs.Effects.Converters, asm: Game.Ecs.Effects}
+      data:
+        enabled: 1
+        effectRoots:
+        - id:
+            value: 1
+          objectValue: {fileID: 5115211655814986030}
+          objectName: UnitBasePrefab
+        bakeOnConvert: 1
+        backedRoots: []
 --- !u!195 &7784747775027257429
 NavMeshAgent:
   m_ObjectHideFlags: 0

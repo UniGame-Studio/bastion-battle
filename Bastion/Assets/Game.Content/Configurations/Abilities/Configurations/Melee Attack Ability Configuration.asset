@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Melee Attack Ability Configuration
   m_EditorClassIdentifier: 
   specification:
-    cooldown: 2
+    cooldown: 5
     cooldownType: 2
     radius: 1
     relationshipId:
       _value: 1
     categoryId:
-      _value: 8
+      _value: -1
   useAnimation: 0
   animationLink:
     reference:

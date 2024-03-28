@@ -24,6 +24,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 86770488a0040af4080e42ae5f2a1e27, type: 2}
     - {fileID: 11400000, guid: d1b41852913c21249b50732d93a1b452, type: 2}
     - {fileID: 11400000, guid: 50ececf1005d6d64d87cd29ecf007ff7, type: 2}
+    - {fileID: 11400000, guid: 1b5e17ac57d495045a4bcc67e460103b, type: 2}
     serializableFeatures:
     - rid: 2882177944892997634
   references:

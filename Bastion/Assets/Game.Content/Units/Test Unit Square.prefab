@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 760253494955232426}
   - component: {fileID: 2760400526324160379}
+  - component: {fileID: -4218845283619988859}
+  - component: {fileID: -4992176919743804184}
   m_Layer: 0
   m_Name: Test Unit Square
   m_TagString: Untagged
@@ -85,3 +87,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-4218845283619988859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8190002146913120580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0acd60cbbe1484da9c72d797dc766f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  createEntityOnEnabled: 1
+  createEntityOnStart: 0
+  destroyEntityOnDisable: 1
+  destroyOnDestroy: 0
+  serializableConverters: []
+  assetConverters: []
+  entity: -1
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-4992176919743804184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8190002146913120580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e696c1f7fa69412989569a11de5b5752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  converter:
+    enabled: 1
+    effectRoots: []
+    bakeOnConvert: 0
+    backedRoots: []

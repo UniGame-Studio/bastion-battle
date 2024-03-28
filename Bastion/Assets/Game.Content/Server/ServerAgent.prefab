@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1176439337061131995}
   - component: {fileID: -5721901542006613524}
+  - component: {fileID: -6349093581886828793}
   m_Layer: 0
   m_Name: ServerAgent
   m_TagString: Untagged
@@ -49,13 +50,28 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 6421667524534075392
+  - rid: -2
   assetConverters: []
   entity: -1
   references:
     version: 2
     RefIds:
-    - rid: 6421667524534075392
-      type: {class: GameServerConverter, ns: Game.Ecs.Server.Converters, asm: game.ecs.server}
-      data:
-        enabled: 1
+    - rid: -2
+      type: {class: , ns: , asm: }
+--- !u!114 &-6349093581886828793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739617538862350457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e696c1f7fa69412989569a11de5b5752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  converter:
+    enabled: 1
+    effectRoots: []
+    bakeOnConvert: 0
+    backedRoots: []
