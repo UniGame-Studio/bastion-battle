@@ -19,14 +19,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ab271c4892e862043bebf77203eaa3dc, type: 2}
   - {fileID: 11400000, guid: fbefbd47f3093d04084f7f7f8083f82d, type: 2}
   - {fileID: 11400000, guid: 5b47312004621294b9e74bc883fcfd64, type: 2}
-  - {fileID: 11400000, guid: efd44d877b2c973429c154ee9aaaeed8, type: 2}
   - {fileID: 11400000, guid: 4c209ef767cc9e647864c99fac0a2bdc, type: 2}
   - {fileID: 11400000, guid: 2ead63a50813e2849b4fa2fe0fe892e6, type: 2}
   - {fileID: 11400000, guid: b6ef74ee1b99565429aa8cd4c8adb290, type: 2}
   - {fileID: 11400000, guid: 0f1a319132f452c4bbc834f1d5f2064e, type: 2}
   - {fileID: 11400000, guid: a5808377a7dcbda499eb66e90018be71, type: 2}
   - {fileID: 11400000, guid: e21cf1ca15f5eb645b5cbcd2c608b6f8, type: 2}
-  - {fileID: 11400000, guid: e0d3fdf97226549439509985e5385130, type: 2}
   inventoryFeature:
     name: 
     isEnabled: 1

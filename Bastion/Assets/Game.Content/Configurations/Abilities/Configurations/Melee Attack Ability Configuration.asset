@@ -15,7 +15,7 @@ MonoBehaviour:
   specification:
     cooldown: 100
     cooldownType: 2
-    radius: 1
+    radius: 0.5
     relationshipId:
       _value: 1
     categoryId:
@@ -27,7 +27,7 @@ MonoBehaviour:
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  duration: 1
+  duration: 0
   abilityBehaviours:
   - rid: 2882177913136349197
   - rid: 2882177913136349198

@@ -5,6 +5,7 @@ namespace Game.Ecs.Ai.Systems
     using Ability.Aspects;
     using Ability.Common.Components;
     using Ability.Components;
+    using Ability.Components.Requests;
     using Ability.SubFeatures.Selection.Components;
     using Ability.SubFeatures.Target.Components;
     using Ability.SubFeatures.Target.Tools;
@@ -79,11 +80,12 @@ namespace Game.Ecs.Ai.Systems
                 var targetPackedEntity = selectedTargetsComponent.Entities[0];
                 if (!targetPackedEntity.Unpack(_world, out var targetEntity)) continue;
                 _abilityTargetTools.SetAbilityTarget(ownerEntity, targetPackedEntity, _abilityAspect.AbilitySlot.Get(abilityEntity).SlotType);
+                
                 if (abilityTargetsComponent.Count == 0) continue;
                 if(!_abilityTools.IsAbilityCooldownPassed(abilityEntity)) continue;
                 _abilityTools.ActivateAbility(_world, abilityEntity);
-                _timerAspect.Restart.GetOrAddComponent(abilityEntity); 
-                    Debug.Log("Attack target in melee range!");
+                // _world.AddComponent<RestartAbilityCooldownSelfRequest>(abilityEntity); //bug! если я запускаю кулдаун то абилки не активируются
+                Debug.Log("Attack target in melee range!");
             }
         }
     }
