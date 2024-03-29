@@ -205,7 +205,7 @@ MonoBehaviour:
         asm: Game.Ecs.Characteristics}
       data:
         _isEnabled: 1
-        attackDamage: 10
+        attackDamage: 1
     - rid: 2882177913136349190
       type: {class: LayerIdConverter, ns: Game.Ecs.GameLayers.Layer.Converters, asm: Game.Ecs.GameLayers}
       data:

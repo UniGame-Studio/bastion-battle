@@ -83,11 +83,7 @@ namespace Game.Ecs.Ai.Systems
                 if(!_abilityTools.IsAbilityCooldownPassed(abilityEntity)) continue;
                 _abilityTools.ActivateAbility(_world, abilityEntity);
                 _timerAspect.Restart.GetOrAddComponent(abilityEntity); 
-                //todo add death request
-                ref var prepareToDeath = ref _deathAspect.PrepareToDeath.Add(ownerEntity); 
-                prepareToDeath.Source = ownerComponent.Value;
-                
-                Debug.Log("Attack target in melee range!");
+                    Debug.Log("Attack target in melee range!");
             }
         }
     }

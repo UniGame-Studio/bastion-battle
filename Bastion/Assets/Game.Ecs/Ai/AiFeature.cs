@@ -24,6 +24,7 @@ namespace Game.Ecs.Ai
             // ecsSystems.Add(new TakeDamageByCooldownSystem());
             // ecsSystems.Add(new ApplyUnitsAbilitiesByCooldownSystem());
             ecsSystems.Add(new AttackTargetInMeleeRangeSystem());
+            ecsSystems.Add(new DeathAfterMeleeAttackSystem());
             return base.OnPostInitializeFeatureAsync(ecsSystems);
         }
     }
