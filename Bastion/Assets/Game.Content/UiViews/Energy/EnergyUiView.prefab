@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2515810115546002447}
   - component: {fileID: 8461299891629376254}
   - component: {fileID: 542009095821136597}
-  - component: {fileID: 320641221684253251}
   m_Layer: 5
   m_Name: EnergyUiView
   m_TagString: Untagged
@@ -174,23 +173,6 @@ MonoBehaviour:
           Interactable: 1
           BlockRaycasts: 1
           IgnoreParent: 0
---- !u!114 &320641221684253251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1436259000275143745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e696c1f7fa69412989569a11de5b5752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  converter:
-    enabled: 1
-    effectRoots: []
-    bakeOnConvert: 0
-    backedRoots: []
 --- !u!1 &3752970577434937237
 GameObject:
   m_ObjectHideFlags: 0

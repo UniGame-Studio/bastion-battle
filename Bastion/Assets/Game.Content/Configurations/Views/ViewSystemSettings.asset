@@ -41,7 +41,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: 2100377649
+    Hash: 1518423622
   - AssetGUID: d6a73b70e575d314e93595b8a37af647
     View:
       m_AssetGUID: d6a73b70e575d314e93595b8a37af647
@@ -64,7 +64,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: -731386169
+    Hash: 525750421
   - AssetGUID: 26b133b726da1344095cd9ee414fdc20
     View:
       m_AssetGUID: 26b133b726da1344095cd9ee414fdc20
@@ -87,7 +87,30 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: -1250942942
+    Hash: -1508740482
+  - AssetGUID: f9c21a7ce8875644fa2562587638a0b9
+    View:
+      m_AssetGUID: f9c21a7ce8875644fa2562587638a0b9
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    ViewName: CrystalHpView
+    Tag: 
+    Type:
+      name: CrystalsHpView
+      fullTypeName: Game.Ecs.Ui.PlayerHudUi.Views.CrystalsHpView, game.ecs.ui.hud,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    ModelType:
+      name: CrystalsHpViewModel
+      fullTypeName: Game.Ecs.Ui.PlayerHudUi.Views.CrystalsHpViewModel, game.ecs.ui.hud,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    ViewModelType:
+      name: CrystalsHpViewModel
+      fullTypeName: Game.Ecs.Ui.PlayerHudUi.Views.CrystalsHpViewModel, game.ecs.ui.hud,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    PoolingPreloadCount: 1
+    Atlases: []
+    Hash: 819001482
   - AssetGUID: 10a6a1b9b95dac3418376f41b4ebe96d
     View:
       m_AssetGUID: 10a6a1b9b95dac3418376f41b4ebe96d
@@ -110,7 +133,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: -1986597550
+    Hash: -1679211340
   - AssetGUID: 7c4cd758f7f05164c931cca10e3bf40a
     View:
       m_AssetGUID: 7c4cd758f7f05164c931cca10e3bf40a
@@ -133,7 +156,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: -557189995
+    Hash: 668487686
   applyAddressablesGroup: 0
   labels: []
   addressableGroupName: 
