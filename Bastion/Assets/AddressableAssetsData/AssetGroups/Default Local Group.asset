@@ -93,8 +93,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6f2346356d4e3d842ab0c821cec48dd5
-    m_Address: Assets/Game.Content/Units/Unit.prefab
+  - m_GUID: fb2d8e9cfd9deb448bcaa1a8851ace12
+    m_Address: Assets/Game.Content/Configurations/Effects/Effects Root Configuration.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

@@ -22,7 +22,7 @@ MonoBehaviour:
     data:
       slotType: 0
       unlockLevel: 0
-      isDefault: 0
+      isDefault: 1
       isHidden: 0
       isBlock: 0
     ability:
