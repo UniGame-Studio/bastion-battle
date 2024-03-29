@@ -75,8 +75,6 @@ namespace Game.Ecs.Ai.Systems
                 if (selectedTargetsComponent.Count == 0) continue;
                 if (ownerComponent.Value.Unpack(_world, out var ownerEntity) == false) continue;
 
-                //todo разобраться с кулдауном
-                //hard code
                 var targetPackedEntity = selectedTargetsComponent.Entities[0];
                 if (!targetPackedEntity.Unpack(_world, out var targetEntity)) continue;
                 _abilityTargetTools.SetAbilityTarget(ownerEntity, targetPackedEntity, _abilityAspect.AbilitySlot.Get(abilityEntity).SlotType);
@@ -84,7 +82,6 @@ namespace Game.Ecs.Ai.Systems
                 if (abilityTargetsComponent.Count == 0) continue;
                 if(!_abilityTools.IsAbilityCooldownPassed(abilityEntity)) continue;
                 _abilityTools.ActivateAbility(_world, abilityEntity);
-                // _world.AddComponent<RestartAbilityCooldownSelfRequest>(abilityEntity); //bug! если я запускаю кулдаун то абилки не активируются
                 Debug.Log("Attack target in melee range!");
             }
         }

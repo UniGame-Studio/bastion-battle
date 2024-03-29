@@ -20,11 +20,9 @@ namespace Game.Ecs.Ai
             var world = ecsSystems.GetWorld();
             abilityTools.Init(ecsSystems);
             world.SetGlobal(abilityTools);
-            //test
-            // ecsSystems.Add(new TakeDamageByCooldownSystem());
-            // ecsSystems.Add(new ApplyUnitsAbilitiesByCooldownSystem());
+            
             ecsSystems.Add(new AttackTargetInMeleeRangeSystem());
-            ecsSystems.Add(new DeathAfterMeleeAttackSystem());
+            // ecsSystems.Add(new DeathAfterMeleeAttackSystem());
             return base.OnPostInitializeFeatureAsync(ecsSystems);
         }
     }
