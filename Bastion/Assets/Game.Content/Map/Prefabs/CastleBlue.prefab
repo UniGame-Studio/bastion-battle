@@ -1373,7 +1373,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1856977347928051794}
   - component: {fileID: 4852363957540814074}
-  - component: {fileID: -1519244152069360945}
   m_Layer: 0
   m_Name: CastleBlue
   m_TagString: Untagged
@@ -1420,23 +1419,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!114 &-1519244152069360945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5414455308745377269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e696c1f7fa69412989569a11de5b5752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  converter:
-    enabled: 1
-    effectRoots: []
-    bakeOnConvert: 0
-    backedRoots: []
 --- !u!1 &6168287414327570782
 GameObject:
   m_ObjectHideFlags: 0

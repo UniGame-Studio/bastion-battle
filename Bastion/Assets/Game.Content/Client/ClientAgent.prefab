@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 659987495373917514}
   - component: {fileID: 5650205383374873697}
-  - component: {fileID: 918725020671544666}
   m_Layer: 0
   m_Name: ClientAgent
   m_TagString: Untagged
@@ -49,29 +48,9 @@ MonoBehaviour:
   createEntityOnStart: 0
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
-  serializableConverters:
-  - rid: -2
+  serializableConverters: []
   assetConverters: []
   entity: -1
   references:
     version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
---- !u!114 &918725020671544666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7393409775234433648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e696c1f7fa69412989569a11de5b5752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  converter:
-    enabled: 1
-    effectRoots: []
-    bakeOnConvert: 0
-    backedRoots: []
+    RefIds: []

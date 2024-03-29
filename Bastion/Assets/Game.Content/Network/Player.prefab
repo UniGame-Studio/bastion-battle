@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3214130350807973739}
   - component: {fileID: 7658199536259942201}
   - component: {fileID: 1569737222612305808}
-  - component: {fileID: -5138481185139815968}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -77,20 +76,3 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!114 &-5138481185139815968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2581287063223087126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e696c1f7fa69412989569a11de5b5752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  converter:
-    enabled: 1
-    effectRoots: []
-    bakeOnConvert: 0
-    backedRoots: []

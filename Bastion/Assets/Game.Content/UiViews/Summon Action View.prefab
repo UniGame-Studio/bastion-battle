@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2073867198668714189}
   - component: {fileID: 4094513435519194665}
   - component: {fileID: 4222638542174508186}
-  - component: {fileID: 5574167527725409538}
   m_Layer: 5
   m_Name: Summon Action View
   m_TagString: Untagged
@@ -200,23 +199,6 @@ MonoBehaviour:
           Interactable: 1
           BlockRaycasts: 1
           IgnoreParent: 0
---- !u!114 &5574167527725409538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103354067940945309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e696c1f7fa69412989569a11de5b5752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  converter:
-    enabled: 1
-    effectRoots: []
-    bakeOnConvert: 0
-    backedRoots: []
 --- !u!1 &5984904087764428259
 GameObject:
   m_ObjectHideFlags: 0

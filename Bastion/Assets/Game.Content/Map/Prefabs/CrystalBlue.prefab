@@ -94,7 +94,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1250703112531868393}
   - component: {fileID: -3036532876586139683}
-  - component: {fileID: 8581009289441617982}
   m_Layer: 0
   m_Name: CrystalBlue
   m_TagString: Untagged
@@ -140,20 +139,3 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!114 &8581009289441617982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4170956447758213442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e696c1f7fa69412989569a11de5b5752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  converter:
-    enabled: 1
-    effectRoots: []
-    bakeOnConvert: 0
-    backedRoots: []

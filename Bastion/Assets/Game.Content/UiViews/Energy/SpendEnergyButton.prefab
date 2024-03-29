@@ -148,7 +148,6 @@ GameObject:
   - component: {fileID: 3034599952932228699}
   - component: {fileID: 6402218523534730721}
   - component: {fileID: 3561118525100765439}
-  - component: {fileID: -4004991305877855760}
   m_Layer: 5
   m_Name: SpendEnergyButton
   m_TagString: Untagged
@@ -334,20 +333,3 @@ MonoBehaviour:
           Interactable: 1
           BlockRaycasts: 1
           IgnoreParent: 0
---- !u!114 &-4004991305877855760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6809315617448509541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e696c1f7fa69412989569a11de5b5752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  converter:
-    enabled: 1
-    effectRoots: []
-    bakeOnConvert: 0
-    backedRoots: []
