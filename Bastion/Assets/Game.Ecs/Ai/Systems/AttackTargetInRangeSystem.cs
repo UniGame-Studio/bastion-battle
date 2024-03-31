@@ -38,7 +38,7 @@ namespace Game.Ecs.Ai.Systems
 #endif
     [Serializable]
     [ECSDI]
-    public class AttackTargetInMeleeRangeSystem : IEcsInitSystem, IEcsRunSystem
+    public class AttackTargetInRangeSystem : IEcsInitSystem, IEcsRunSystem
     {
         private EcsWorld _world;
         private AbilityTools _abilityTools;
@@ -77,6 +77,7 @@ namespace Game.Ecs.Ai.Systems
 
                 var targetPackedEntity = selectedTargetsComponent.Entities[0];
                 if (!targetPackedEntity.Unpack(_world, out var targetEntity)) continue;
+                //todo hardcode
                 _abilityTargetTools.SetAbilityTarget(ownerEntity, targetPackedEntity, _abilityAspect.AbilitySlot.Get(abilityEntity).SlotType);
                 
                 if (abilityTargetsComponent.Count == 0) continue;
