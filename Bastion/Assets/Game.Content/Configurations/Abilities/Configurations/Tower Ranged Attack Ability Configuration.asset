@@ -10,47 +10,54 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49ce07b25485433e92e898f44c6f8f6b, type: 3}
-  m_Name: Melee Attack Ability Configuration
+  m_Name: Tower Ranged Attack Ability Configuration
   m_EditorClassIdentifier: 
   specification:
-    cooldown: 1
+    cooldown: 2
     cooldownType: 2
-    radius: 0.5
+    radius: 50
     relationshipId:
       _value: 1
     categoryId:
-      _value: -1
+      _value: 1
   useAnimation: 0
   animationLink:
     reference:
-      m_AssetGUID: c5d43ba5b4ea2c947b66365cbc853aad
+      m_AssetGUID: 
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  duration: 0
+  duration: 0.2
   abilityBehaviours:
-  - rid: 2882177913136349197
-  - rid: 2882177913136349198
-  - rid: 2882177913136349199
+  - rid: 2882178006919675904
+  - rid: 2882178006919675905
+  - rid: 2882178006919675909
+  - rid: 2882178006919675910
   isBlocked: 0
   references:
     version: 2
     RefIds:
-    - rid: 2882177913136349197
+    - rid: 2882178006919675904
       type: {class: ToTargetBehaviour, ns: Game.Ecs.Ability.SubFeatures.Target.Behaviours,
         asm: Game.Ecs.Ability.Target}
       data: 
-    - rid: 2882177913136349198
+    - rid: 2882178006919675905
+      type: {class: CircleZoneDetectionBehaviour, ns: Game.Ecs.Ability.SubFeatures.Target.Behaviours,
+        asm: Game.Ecs.Ability.Target}
+      data:
+        offset: {x: 0, y: 0}
+        radius: 55
+    - rid: 2882178006919675909
       type: {class: InstantlyApplyEffects, ns: Game.Ecs.Ability.SubFeatures.Target.Behaviours,
         asm: Game.Ecs.Ability.Target}
       data: 
-    - rid: 2882177913136349199
+    - rid: 2882178006919675910
       type: {class: ApplyEffectsBehaviour, ns: Game.Ecs.Ability.SubFeatures.Effects.Behaviours,
         asm: Game.Ecs.Ability}
       data:
         effects:
-        - rid: 2882177913136349200
-    - rid: 2882177913136349200
+        - rid: 2882178006919675911
+    - rid: 2882178006919675911
       type: {class: AttackDamageEffectConfiguration, ns: Game.Ecs.GameEffects.DamageEffect,
         asm: Game.Ecs.GameEffects.DamageEffect}
       data:
@@ -71,8 +78,8 @@ MonoBehaviour:
           value: 0
         attachToSource: 0
         DamageType:
-          rid: 2882177913136349201
-    - rid: 2882177913136349201
+          rid: 2882178006919675912
+    - rid: 2882178006919675912
       type: {class: PhysicsDamageType, ns: Game.Ecs.GameEffects.DamageEffect.DamageTypes,
         asm: Game.Ecs.GameEffects.DamageEffect}
       data: 
