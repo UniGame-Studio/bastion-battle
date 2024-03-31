@@ -30,7 +30,6 @@ MonoBehaviour:
   duration: 0.2
   abilityBehaviours:
   - rid: 2882178006919675904
-  - rid: 2882178006919675905
   - rid: 2882178006919675909
   - rid: 2882178006919675910
   isBlocked: 0
@@ -41,12 +40,6 @@ MonoBehaviour:
       type: {class: ToTargetBehaviour, ns: Game.Ecs.Ability.SubFeatures.Target.Behaviours,
         asm: Game.Ecs.Ability.Target}
       data: 
-    - rid: 2882178006919675905
-      type: {class: CircleZoneDetectionBehaviour, ns: Game.Ecs.Ability.SubFeatures.Target.Behaviours,
-        asm: Game.Ecs.Ability.Target}
-      data:
-        offset: {x: 0, y: 0}
-        radius: 55
     - rid: 2882178006919675909
       type: {class: InstantlyApplyEffects, ns: Game.Ecs.Ability.SubFeatures.Target.Behaviours,
         asm: Game.Ecs.Ability.Target}

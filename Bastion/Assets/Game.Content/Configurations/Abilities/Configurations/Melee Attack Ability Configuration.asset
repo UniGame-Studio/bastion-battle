@@ -32,6 +32,7 @@ MonoBehaviour:
   - rid: 2882177913136349197
   - rid: 2882177913136349198
   - rid: 2882177913136349199
+  - rid: 2882178023282704442
   isBlocked: 0
   references:
     version: 2
@@ -75,4 +76,7 @@ MonoBehaviour:
     - rid: 2882177913136349201
       type: {class: PhysicsDamageType, ns: Game.Ecs.GameEffects.DamageEffect.DamageTypes,
         asm: Game.Ecs.GameEffects.DamageEffect}
+      data: 
+    - rid: 2882178023282704442
+      type: {class: SuicideAfterAbilityEffects, ns: Game.Ecs.Ability.Effects, asm: game.esc.ability.feature}
       data: 

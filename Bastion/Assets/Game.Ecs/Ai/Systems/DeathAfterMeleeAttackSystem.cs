@@ -42,6 +42,7 @@ namespace Game.Ecs.Ai.Systems
         {
             foreach (var abilityEntity in _completedAbilityFilter)
             {
+                //todo move to IAbilityBehavior
                 //сейчас мы не проверяем, что абилка является атакой, но в реальной игре это нужно будет сделать
                 //сущность будет умирать после любой абилки
                 ref OwnerComponent ownerComponent = ref _world.GetComponent<OwnerComponent>(abilityEntity);
