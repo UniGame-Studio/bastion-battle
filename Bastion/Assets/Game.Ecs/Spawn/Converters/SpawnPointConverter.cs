@@ -10,7 +10,7 @@ namespace NAMESPACE.Converters
     using Unity.IL2CPP.CompilerServices;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// convert spawn point
     /// </summary>
     [Serializable]
     public class SpawnPointConverter : EcsComponentConverter

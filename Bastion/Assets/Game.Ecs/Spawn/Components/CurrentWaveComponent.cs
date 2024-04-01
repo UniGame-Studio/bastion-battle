@@ -3,7 +3,7 @@
     using System;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// current wave data 
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -13,8 +13,10 @@
     [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 #endif
     [Serializable]
-    public struct CurrentWaveDelayComponent
+    public struct CurrentWaveComponent
     {
-        public float Time;
+        public int Index;
+        public float Delay;
+        public float Duration;
     }
 }

@@ -40,10 +40,7 @@ namespace Game.Ecs.Spawn.Systems
             _world = systems.GetWorld();
             
             _filter = _world
-                .Filter<CurrentWaveDelayComponent>()
-                .Exc<WaveDelayStateComponent>()
-                .Inc<WaveDurationStateComponent>()
-                .Inc<CooldownRemainsTimeComponent>()
+                .Filter<CurrentWaveComponent>()
                 .Inc<CooldownCompleteComponent>()
                 .Exc<RestartCooldownSelfRequest>()
                 .End();

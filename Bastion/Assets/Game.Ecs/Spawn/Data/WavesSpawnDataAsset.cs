@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Game.Ecs.Spawn.Data
 {
-    [CreateAssetMenu(menuName = "Game/Configurations/Spawn",fileName = nameof(WavesSpawnDataAsset))]
+    [CreateAssetMenu(menuName = "Game/Configurations/Spawn/Waves",fileName = nameof(WavesSpawnDataAsset))]
     public class WavesSpawnDataAsset : ScriptableObject
     {
         [InlineProperty]

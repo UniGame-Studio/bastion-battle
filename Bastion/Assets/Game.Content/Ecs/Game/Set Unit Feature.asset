@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Set Unit Feature
   m_EditorClassIdentifier: 
   isEnabled: 1
+  SpawnDataAsset: {fileID: 11400000, guid: acbadea27542d9d43967b8585e091c13, type: 2}
