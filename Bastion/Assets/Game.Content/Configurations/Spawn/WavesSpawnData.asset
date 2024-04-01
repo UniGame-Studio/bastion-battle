@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b496c82f67a64771b63cba0bbd199446, type: 3}
+  m_Name: WavesSpawnData
+  m_EditorClassIdentifier: 
+  Waves:
+  - Delay: 1
+    Duration: 25
+    Units:
+    - UnitReference:
+        m_AssetGUID: f676c86e8bea0864c9251474fdcc0d09
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Cooldown: 1
+      SpawnImmediately: 1
+  - Delay: 3
+    Duration: 15
+    Units:
+    - UnitReference:
+        m_AssetGUID: 6f2346356d4e3d842ab0c821cec48dd5
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Cooldown: 1
+      SpawnImmediately: 1
+    - UnitReference:
+        m_AssetGUID: f676c86e8bea0864c9251474fdcc0d09
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Cooldown: 2
+      SpawnImmediately: 0
