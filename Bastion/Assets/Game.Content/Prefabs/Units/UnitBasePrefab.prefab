@@ -210,159 +210,17 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 2882177798788874249
-  - rid: 2882177821664608264
-  - rid: 2882177821664608281
-  - rid: 2882177821664608287
-  - rid: 2882177821664608293
-  - rid: 2882177913136349190
-  - rid: 2882177913136349191
-  - rid: 2882177913136349205
-  - rid: 2882177960103903255
-  - rid: 2882177960103903292
-  - rid: 2882177960103903293
-  assetConverters: []
+  - rid: 2882178006919675957
+  assetConverters:
+  - {fileID: 11400000, guid: 34332decceeab9047bfb64326e3bccdf, type: 2}
   entity: -1
   references:
     version: 2
     RefIds:
-    - rid: 2882177798788874249
+    - rid: 2882178006919675957
       type: {class: UnitConverter, ns: Game.Ecs.Unit.Converters, asm: game.ecs.unit}
       data:
         isEnabled: 1
-    - rid: 2882177821664608264
-      type: {class: MovementConverter, ns: Game.Ecs.Movement.Converters, asm: Game.Ecs.Movement}
-      data:
-        _isEnabled: 1
-        movementData:
-          speed: 2
-          angularSpeed: 720
-          navMeshStep: 1
-          animationRunSpeed: 5
-          maxAnimationRunSpeed: 6
-          instantRotation: 0
-    - rid: 2882177821664608281
-      type: {class: AiBrainConverter, ns: Game.Ecs.Ai.Converter, asm: game.ecs.ai}
-      data:
-        _isEnabled: 1
-        aiConverters:
-        - rid: 2882177821664608286
-    - rid: 2882177821664608286
-      type: {class: AiMovementConverter, ns: Game.Ecs.Ai.Converter, asm: game.ecs.ai}
-      data:
-        _isEnabled: 1
-    - rid: 2882177821664608287
-      type: {class: CharacteristicsConverter, ns: Game.Ecs.Characteristics.CharacteristicsTools.Converters,
-        asm: Game.Ecs.Characteristics.Tools}
-      data:
-        _isEnabled: 1
-        characteristics:
-        - rid: 2882177821664608288
-        - rid: 2882177821664608289
-        - rid: 2882177821664608290
-        - rid: 2882177913136349206
-        - rid: 2882177913136349207
-    - rid: 2882177821664608288
-      type: {class: SpeedConverter, ns: Game.Ecs.Characteristics.Speed.Converters,
-        asm: Game.Ecs.Characteristics}
-      data:
-        _isEnabled: 1
-        speed: 2
-        minValue: 0
-        maxValue: 0
-    - rid: 2882177821664608289
-      type: {class: HealthComponentConverter, ns: Game.Ecs.Characteristics.Health.Converters,
-        asm: Game.Ecs.Characteristics.Health}
-      data:
-        _isEnabled: 1
-        maxHealth: 10
-    - rid: 2882177821664608290
-      type: {class: AttackRangeComponentConverter, ns: Game.Ecs.Characteristics.CriticalChance.Converters,
-        asm: Game.Ecs.Characteristic.AttackRange}
-      data:
-        _isEnabled: 1
-        attackRange: 2
-        minValue: 0.5
-        maxValue: 100
-        delta: {x: -0.5, y: 0.5}
-        rangeGizmosColor: {r: 0.128, g: 0.2, b: 0.85, a: 1}
-    - rid: 2882177821664608293
-      type: {class: AttackConverter, ns: Game.Ecs.Characteristics.Attack.Converters,
-        asm: Game.Ecs.Characteristics}
-      data:
-        _isEnabled: 1
-        attackDamage: 1
-    - rid: 2882177913136349190
-      type: {class: LayerIdConverter, ns: Game.Ecs.GameLayers.Layer.Converters, asm: Game.Ecs.GameLayers}
-      data:
-        enabled: 1
-        layer:
-          value: 2
-    - rid: 2882177913136349191
-      type: {class: CategoryIdConverter, ns: Game.Ecs.GameLayers.Category.Converters,
-        asm: Game.Ecs.GameLayers}
-      data:
-        enabled: 1
-        categoryId:
-          _value: 1
-    - rid: 2882177913136349205
-      type: {class: AbilityConverter, ns: Game.Ecs.Ability.Converters, asm: Game.Ecs.Ability}
-      data:
-        _isEnabled: 1
-        abilityCells:
-        - IsDefault: 1
-          AbilityId:
-            _id: 1
-          SlotId:
-            _value: 0
-        abilityForAgents: []
-        userInput: 0
-        skipEquipRequest: 0
-        drawGizmos: 1
-    - rid: 2882177913136349206
-      type: {class: AttackConverter, ns: Game.Ecs.Characteristics.Attack.Converters,
-        asm: Game.Ecs.Characteristics}
-      data:
-        _isEnabled: 1
-        attackDamage: 1
-    - rid: 2882177913136349207
-      type: {class: AbilityPowerConverter, ns: Game.Ecs.Characteristics.AbilityPower.Converters,
-        asm: Game.Ecs.Characteristics}
-      data:
-        _isEnabled: 1
-        abilityPower: 1
-    - rid: 2882177960103903255
-      type: {class: AvatarConverter, ns: Game.Ecs.Core.Converters, asm: UniGame.LeoEcs.Shared.Core}
-      data:
-        _isEnabled: 1
-        entityBounds:
-          Center: {x: 0, y: 0, z: 0}
-          Height: 0
-          Radius: 0.5
-        headRoot: {fileID: 6477238066181123547}
-        bodyRoot: {fileID: 6477238066181123547}
-        feetRoot: {fileID: 0}
-        handRoot: {fileID: 0}
-        weaponRoot: {fileID: 6477238066181123547}
-    - rid: 2882177960103903292
-      type: {class: EffectRootConverter, ns: Game.Ecs.Effects.Converters, asm: Game.Ecs.Effects}
-      data:
-        enabled: 1
-        effectRoots:
-        - id:
-            value: 1
-          objectValue: {fileID: 5115211655814986030}
-          objectName: UnitBasePrefab_3
-        bakeOnConvert: 0
-        backedRoots: []
-    - rid: 2882177960103903293
-      type: {class: EffectRootTargetConverter, ns: Game.Ecs.Effects.Converters, asm: Game.Ecs.Effects}
-      data:
-        enabled: 1
-        effectRootId:
-          value: 1
-        useRootTransform: 1
-        rootValue: {fileID: 0}
 --- !u!195 &7784747775027257429
 NavMeshAgent:
   m_ObjectHideFlags: 0

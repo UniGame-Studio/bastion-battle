@@ -57,11 +57,16 @@ MonoBehaviour:
   - rid: 2882177960103903254
   - rid: 2882177960103903273
   - rid: 2882177960103903274
+  - rid: 1871375416700436494
   assetConverters: []
   entity: -1
   references:
     version: 2
     RefIds:
+    - rid: 1871375416700436494
+      type: {class: SelectionTargetConverter, ns: Game.Ecs.Core.Converters, asm: UniGame.LeoEcs.Shared.Core}
+      data:
+        isEnabled: 1
     - rid: 2882177913136349192
       type: {class: LayerIdConverter, ns: Game.Ecs.GameLayers.Layer.Converters, asm: Game.Ecs.GameLayers}
       data:

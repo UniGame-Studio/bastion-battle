@@ -8,12 +8,9 @@ namespace Game.Ecs.Ai.Systems
     using Ability.SubFeatures.Target.Tools;
     using Ability.Tools;
     using Core.Components;
-    using Gameplay.Death.Aspects;
     using Leopotam.EcsLite;
     using TargetSelection.Aspects;
-    using UniGame.LeoEcs.Bootstrap.Runtime.Abstract;
     using UniGame.LeoEcs.Shared.Extensions;
-    using UnityEngine;
     using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
 
     /// <summary>
@@ -33,13 +30,14 @@ namespace Game.Ecs.Ai.Systems
     {
         private EcsWorld _world;
         private AbilityTools _abilityTools;
-        private TargetAspect _targetAspect;
         private AbilityAspect _abilityAspect;
+        private TargetAspect _targetAspect;
         private EcsFilter _abilitiesFilter;
-        private EcsFilter _filter;
         private AbilityTargetTools _abilityTargetTools;
-        private DeathAspect _deathAspect;
-        private TimerAspect _timerAspect;
+        private EcsPool<AbilityTargetsComponent> _abilityTargetPool;
+        private EcsPool<SelectedTargetsComponent> _selectedTargetsPool;
+        
+
         public void Init(IEcsSystems systems)
         {
             _world = systems.GetWorld();
@@ -58,23 +56,22 @@ namespace Game.Ecs.Ai.Systems
             //поэтому нужно будет добавить фильтр по слоту абилки
             foreach (var abilityEntity in _abilitiesFilter)
             {
-                ref SelectedTargetsComponent selectedTargetsComponent = ref _world.GetComponent<SelectedTargetsComponent>(abilityEntity);
-                ref AbilityTargetsComponent abilityTargetsComponent = ref _world.GetComponent<AbilityTargetsComponent>(abilityEntity);
-                ref AbilitySlotComponent abilitySlotComponent = ref _world.GetComponent<AbilitySlotComponent>(abilityEntity);
-                ref OwnerComponent ownerComponent = ref _world.GetComponent<OwnerComponent>(abilityEntity);
+                ref SelectedTargetsComponent selectedTargetsComponent = ref  _selectedTargetsPool.Get(abilityEntity);
+                ref AbilityTargetsComponent abilityTargetsComponent = ref _abilityTargetPool.Get(abilityEntity);
+                ref AbilitySlotComponent abilitySlotComponent = ref  _abilityAspect.AbilitySlot.Get(abilityEntity);
+                ref OwnerComponent ownerComponent = ref _abilityAspect.Owner.Get(abilityEntity);
+                if(!_abilityTools.IsAbilityCooldownPassed(abilityEntity)) continue;
                 
                 if (selectedTargetsComponent.Count == 0) continue;
                 if (ownerComponent.Value.Unpack(_world, out var ownerEntity) == false) continue;
 
-                var targetPackedEntity = selectedTargetsComponent.Entities[0];
+                var targetPackedEntity = selectedTargetsComponent.Entities[0];//не знаю пока на что заменить эту строчку
                 if (!targetPackedEntity.Unpack(_world, out var targetEntity)) continue;
-                //todo hardcode
+
                 _abilityTargetTools.SetAbilityTarget(ownerEntity, targetPackedEntity, _abilityAspect.AbilitySlot.Get(abilityEntity).SlotType);
-                
                 if (abilityTargetsComponent.Count == 0) continue;
-                if(!_abilityTools.IsAbilityCooldownPassed(abilityEntity)) continue;
+                
                 _abilityTools.ActivateAbility(_world, abilityEntity);
-                Debug.Log("Attack target in melee range!");
             }
         }
     }
