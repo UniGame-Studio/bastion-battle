@@ -1,29 +1,20 @@
 namespace Game.Ecs.Ai.Systems
 {
     using System;
-    using System.Linq;
     using Ability.Aspects;
-    using Ability.Common.Components;
     using Ability.Components;
-    using Ability.Components.Requests;
     using Ability.SubFeatures.Selection.Components;
     using Ability.SubFeatures.Target.Components;
     using Ability.SubFeatures.Target.Tools;
     using Ability.Tools;
     using Core.Components;
-    using Core.Death.Components;
     using Gameplay.Death.Aspects;
     using Leopotam.EcsLite;
     using TargetSelection.Aspects;
-    using UniGame.Core.Runtime.Extension;
     using UniGame.LeoEcs.Bootstrap.Runtime.Abstract;
     using UniGame.LeoEcs.Shared.Extensions;
-    using UniGame.Runtime.ObjectPool.Extensions;
     using UnityEngine;
-    using UnityEngine.Pool;
     using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
-    using UniGame.LeoEcs.Timer.Components;
-    using Unit.Components;
 
     /// <summary>
     /// System for attack target in melee range

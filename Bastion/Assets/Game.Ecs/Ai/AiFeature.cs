@@ -22,7 +22,6 @@ namespace Game.Ecs.Ai
             world.SetGlobal(abilityTools);
             
             ecsSystems.Add(new AttackTargetInRangeSystem());
-            // ecsSystems.Add(new DeathAfterMeleeAttackSystem());
             return base.OnPostInitializeFeatureAsync(ecsSystems);
         }
     }
