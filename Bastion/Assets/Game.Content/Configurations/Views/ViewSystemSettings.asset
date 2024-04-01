@@ -41,7 +41,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: 1518423622
+    Hash: -847969992
   - AssetGUID: d6a73b70e575d314e93595b8a37af647
     View:
       m_AssetGUID: d6a73b70e575d314e93595b8a37af647
@@ -64,7 +64,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: 525750421
+    Hash: 1953078852
   - AssetGUID: 26b133b726da1344095cd9ee414fdc20
     View:
       m_AssetGUID: 26b133b726da1344095cd9ee414fdc20
@@ -87,7 +87,30 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: -1508740482
+    Hash: 75351747
+  - AssetGUID: e1d9fe09965217647a782ba18c9e9692
+    View:
+      m_AssetGUID: e1d9fe09965217647a782ba18c9e9692
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    ViewName: Healthbar
+    Tag: 
+    Type:
+      name: HealthBarView
+      fullTypeName: Game.Ecs.UI.HealthBar.Views.HealthBarView, game.ecs.ui.healthbar,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    ModelType:
+      name: HealthBarViewModel
+      fullTypeName: Game.Ecs.UI.HealthBar.Models.HealthBarViewModel, game.ecs.ui.healthbar,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    ViewModelType:
+      name: HealthBarViewModel
+      fullTypeName: Game.Ecs.UI.HealthBar.Models.HealthBarViewModel, game.ecs.ui.healthbar,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    PoolingPreloadCount: 1
+    Atlases: []
+    Hash: -231786334
   - AssetGUID: f9c21a7ce8875644fa2562587638a0b9
     View:
       m_AssetGUID: f9c21a7ce8875644fa2562587638a0b9
@@ -110,7 +133,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: 819001482
+    Hash: -240090189
   - AssetGUID: 10a6a1b9b95dac3418376f41b4ebe96d
     View:
       m_AssetGUID: 10a6a1b9b95dac3418376f41b4ebe96d
@@ -133,7 +156,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: -1679211340
+    Hash: 228504558
   - AssetGUID: 7c4cd758f7f05164c931cca10e3bf40a
     View:
       m_AssetGUID: 7c4cd758f7f05164c931cca10e3bf40a
@@ -156,7 +179,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: 668487686
+    Hash: 1992055303
   applyAddressablesGroup: 0
   labels: []
   addressableGroupName: 

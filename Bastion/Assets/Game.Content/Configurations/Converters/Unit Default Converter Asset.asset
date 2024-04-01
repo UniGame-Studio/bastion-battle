@@ -144,7 +144,7 @@ MonoBehaviour:
         asm: Game.Ecs.Characteristic.AttackRange}
       data:
         _isEnabled: 1
-        attackRange: 3.2
+        attackRange: 3.5
         minValue: 3
         maxValue: 100
         delta: {x: -0.5, y: 0.5}

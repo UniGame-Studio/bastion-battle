@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaabbd14b09d4c08acf18fe725439187, type: 3}
-  m_Name: Energy Ui Feature
+  m_Script: {fileID: 11500000, guid: c811b1c0b420ce849bd606273d3850f6, type: 3}
+  m_Name: Health Bar Ui Feature
   m_EditorClassIdentifier: 
   isEnabled: 1
+  layerIdColor: {fileID: 11400000, guid: d2d829212f494dc40ba6590c661a4686, type: 2}
