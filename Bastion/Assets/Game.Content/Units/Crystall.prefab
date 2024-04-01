@@ -49,86 +49,13 @@ MonoBehaviour:
   createEntityOnStart: 0
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
-  serializableConverters:
-  - rid: 2882177913136349192
-  - rid: 2882177913136349193
-  - rid: 2882177913136349196
-  - rid: 2882177937304977408
-  - rid: 2882177960103903254
-  - rid: 2882177960103903273
-  - rid: 2882177960103903274
-  - rid: 1871375416700436494
-  assetConverters: []
+  serializableConverters: []
+  assetConverters:
+  - {fileID: 11400000, guid: 62cc4f01e2a6dc84783912e15c13674d, type: 2}
   entity: -1
   references:
     version: 2
-    RefIds:
-    - rid: 1871375416700436494
-      type: {class: SelectionTargetConverter, ns: Game.Ecs.Core.Converters, asm: UniGame.LeoEcs.Shared.Core}
-      data:
-        isEnabled: 1
-    - rid: 2882177913136349192
-      type: {class: LayerIdConverter, ns: Game.Ecs.GameLayers.Layer.Converters, asm: Game.Ecs.GameLayers}
-      data:
-        enabled: 1
-        layer:
-          value: 1
-    - rid: 2882177913136349193
-      type: {class: CategoryIdConverter, ns: Game.Ecs.GameLayers.Category.Converters,
-        asm: Game.Ecs.GameLayers}
-      data:
-        enabled: 1
-        categoryId:
-          _value: 8
-    - rid: 2882177913136349196
-      type: {class: CrystalConverter, ns: Game.Ecs.Ai.Converter, asm: game.ecs.ai}
-      data:
-        isEnabled: 1
-    - rid: 2882177937304977408
-      type: {class: CharacteristicsConverter, ns: Game.Ecs.Characteristics.CharacteristicsTools.Converters,
-        asm: Game.Ecs.Characteristics.Tools}
-      data:
-        _isEnabled: 1
-        characteristics:
-        - rid: 2882177937304977409
-    - rid: 2882177937304977409
-      type: {class: HealthComponentConverter, ns: Game.Ecs.Characteristics.Health.Converters,
-        asm: Game.Ecs.Characteristics.Health}
-      data:
-        _isEnabled: 1
-        maxHealth: 3
-    - rid: 2882177960103903254
-      type: {class: AvatarConverter, ns: Game.Ecs.Core.Converters, asm: UniGame.LeoEcs.Shared.Core}
-      data:
-        _isEnabled: 1
-        entityBounds:
-          Center: {x: 0, y: 0, z: 0}
-          Height: 0
-          Radius: 0.5
-        headRoot: {fileID: 2793391748334773551}
-        bodyRoot: {fileID: 2793391748334773551}
-        feetRoot: {fileID: 0}
-        handRoot: {fileID: 2793391748334773551}
-        weaponRoot: {fileID: 0}
-    - rid: 2882177960103903273
-      type: {class: EffectRootConverter, ns: Game.Ecs.Effects.Converters, asm: Game.Ecs.Effects}
-      data:
-        enabled: 1
-        effectRoots:
-        - id:
-            value: 1
-          objectValue: {fileID: 3706665903967306140}
-          objectName: Crystall(draft)
-        bakeOnConvert: 0
-        backedRoots: []
-    - rid: 2882177960103903274
-      type: {class: EffectRootTargetConverter, ns: Game.Ecs.Effects.Converters, asm: Game.Ecs.Effects}
-      data:
-        enabled: 1
-        effectRootId:
-          value: 1
-        useRootTransform: 1
-        rootValue: {fileID: 0}
+    RefIds: []
 --- !u!1 &8889578656383046378
 GameObject:
   m_ObjectHideFlags: 0
