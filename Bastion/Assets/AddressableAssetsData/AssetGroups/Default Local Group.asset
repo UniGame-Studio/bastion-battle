@@ -115,12 +115,78 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 457aba3117e4f7d408ad99499b1b13a7
-    m_Address: Assets/Game.Content/Configurations/GameDatabase/AddressablesResourceLocation.asset
+    m_Address: urations/GameDatabase/AddressablesResourceLocation.assetblesResourceLocation.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f676c86e8bea0864c9251474fdcc0d09
     m_Address: Assets/Game.Content/Units/Test Unit Square.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0310ed671d469aa41babb77af639b843
+    m_Address: Assets/Game.Content/Configurations/Abilities/Abilities Ability Configuration.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d60e4ffce74dc4e43acd54df4dcd1bdd
+    m_Address: Assets/Game.Content/Configurations/Abilities/Ability Data Base.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bf0273e41b8d70848b0d8d73f66cc13b
+    m_Address: Assets/Game.Content/Configurations/Abilities/AbilitySlotsData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f06a29c46f66ec4c83b02f0c34b5847
+    m_Address: Assets/Game.Content/Configurations/Abilities/Ability Rarity Map.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e60d76a3ca53d7d46a58b3dc7545bfbc
+    m_Address: Assets/Game.Content/Configurations/Abilities/AbilityLoadoutService
+      Source.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 068975340fda7ae4eb5e166a3b016472
+    m_Address: Assets/Game.Content/Configurations/Abilities/Initiators/AbilityItemAsset.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8b0eb52f0106ac458b43994acab9146
+    m_Address: Assets/Game.Content/Prefabs/Units/UnitBasePrefab.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3a89fb0c049b65644b96c7258a61978f
+    m_Address: Assets/Game.Content/Prefabs/Units/UnitBasePrefab - big.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 116759443bf732b4ca02c50528fe1d8e
+    m_Address: Assets/Game.Content/Units/Test Unit Square 1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cbf7e0258158f904b88236b1fcdf4d01
+    m_Address: Assets/Game.Content/Units/Test Unit Square 2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ad1be7924e692b14aa3333689c965ef5
+    m_Address: Assets/Game.Content/Units/Test Unit Square 3.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 211860c1d757b4b428edd0176db74b92
+    m_Address: Assets/Game.Content/Units/Test Unit Square 4.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 06f3662fea8f71249a1d7c99bde43220
+    m_Address: Assets/Game.Content/Prefabs/Units/UnitBasePrefab - small.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

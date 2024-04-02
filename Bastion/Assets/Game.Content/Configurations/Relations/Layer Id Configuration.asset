@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Layer Id Configuration
   m_EditorClassIdentifier: 
   _layers:
-  - Team A
-  - Minions
-  - Team B
+  - Team 1
+  - Team 2
+  - 
   - 
   - 
   - 

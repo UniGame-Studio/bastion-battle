@@ -41,7 +41,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: 2100377649
+    Hash: 186580251
   - AssetGUID: d6a73b70e575d314e93595b8a37af647
     View:
       m_AssetGUID: d6a73b70e575d314e93595b8a37af647
@@ -64,7 +64,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: -731386169
+    Hash: -706649566
   - AssetGUID: 26b133b726da1344095cd9ee414fdc20
     View:
       m_AssetGUID: 26b133b726da1344095cd9ee414fdc20
@@ -87,7 +87,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: -1250942942
+    Hash: -1154600302
   - AssetGUID: 10a6a1b9b95dac3418376f41b4ebe96d
     View:
       m_AssetGUID: 10a6a1b9b95dac3418376f41b4ebe96d
@@ -110,7 +110,7 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: -1986597550
+    Hash: -1737775722
   - AssetGUID: 7c4cd758f7f05164c931cca10e3bf40a
     View:
       m_AssetGUID: 7c4cd758f7f05164c931cca10e3bf40a
@@ -121,19 +121,19 @@ MonoBehaviour:
     Tag: 
     Type:
       name: MapCommandsView
-      fullTypeName: Game.Ecs.SelectUnit.View.MapCommandsView, Assembly-CSharp, Version=0.0.0.0,
+      fullTypeName: Game.Ecs.SetUnit.View.MapCommandsView, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
     ModelType:
       name: MapCommandsViewModel
-      fullTypeName: Game.Ecs.SelectUnit.View.MapCommandsViewModel, Assembly-CSharp,
+      fullTypeName: Game.Ecs.SetUnit.View.MapCommandsViewModel, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     ViewModelType:
       name: MapCommandsViewModel
-      fullTypeName: Game.Ecs.SelectUnit.View.MapCommandsViewModel, Assembly-CSharp,
+      fullTypeName: Game.Ecs.SetUnit.View.MapCommandsViewModel, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PoolingPreloadCount: 1
     Atlases: []
-    Hash: -557189995
+    Hash: -1586638545
   applyAddressablesGroup: 0
   labels: []
   addressableGroupName: 

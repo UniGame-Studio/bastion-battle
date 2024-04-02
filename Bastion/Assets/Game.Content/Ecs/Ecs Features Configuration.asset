@@ -23,7 +23,11 @@ MonoBehaviour:
   ecsUpdateGroups:
   - updateType: Update
     features:
-    - featureGroupAsset: {fileID: 11400000, guid: 796039a81836ea243bc5076fed1006da,
+    - featureGroupAsset: {fileID: 11400000, guid: fa577f7789a50674c93c50869e24c44a,
+        type: 2}
+      featureGroup:
+        rid: -2
+    - featureGroupAsset: {fileID: 11400000, guid: be47594c98b23744b80b3e0116b74f50,
         type: 2}
       featureGroup:
         rid: -2
@@ -31,7 +35,15 @@ MonoBehaviour:
         type: 2}
       featureGroup:
         rid: -2
-    - featureGroupAsset: {fileID: 11400000, guid: 27918cf9f9676a54ba95b4a6cb10ed7e,
+    - featureGroupAsset: {fileID: 11400000, guid: 29690f38c9390444ebb6cb30aa0a238a,
+        type: 2}
+      featureGroup:
+        rid: -2
+    - featureGroupAsset: {fileID: 11400000, guid: 04b6914a291551b44861d5b88650b3c6,
+        type: 2}
+      featureGroup:
+        rid: -2
+    - featureGroupAsset: {fileID: 11400000, guid: 02e953864ee9bca4e8b14dafca1bb648,
         type: 2}
       featureGroup:
         rid: -2

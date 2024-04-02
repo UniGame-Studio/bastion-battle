@@ -50,7 +50,7 @@ namespace Game.Ecs.Map.Systems
 
             _cellFilter = _world
                 .Filter<CellComponent>()
-                .Inc<ParentEntityComponent>()
+                .Inc<OwnerComponent>()
                 .End();
         }
 

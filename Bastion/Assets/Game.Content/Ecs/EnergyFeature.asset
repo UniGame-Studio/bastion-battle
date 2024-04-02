@@ -13,6 +13,3 @@ MonoBehaviour:
   m_Name: EnergyFeature
   m_EditorClassIdentifier: 
   isEnabled: 1
-  Setup:
-    StartEnergy: 50
-    MaxEnergy: 100

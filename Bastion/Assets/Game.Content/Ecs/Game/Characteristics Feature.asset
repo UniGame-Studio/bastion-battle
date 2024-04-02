@@ -13,3 +13,129 @@ MonoBehaviour:
   m_Name: Characteristics Feature
   m_EditorClassIdentifier: 
   isEnabled: 1
+  characteristicFeatures:
+  - rid: 7966364767655034884
+  - rid: 7966364767655034885
+  - rid: 7966364767655034886
+  - rid: 7966364767655034887
+  - rid: 7966364767655034888
+  - rid: 7966364767655034889
+  - rid: 7966364767655034890
+  - rid: 7966364767655034891
+  - rid: 7966364767655034892
+  - rid: 7966364767655034893
+  - rid: 7966364767655034894
+  - rid: 7966364767655034895
+  - rid: 7966364767655034896
+  - rid: 7966364767655034897
+  - rid: 7966364767655034898
+  - rid: 7966364767655034899
+  - rid: 7966364767655034900
+  - rid: 7966364767655034901
+  - rid: 7966364767655034902
+  references:
+    version: 2
+    RefIds:
+    - rid: 7966364767655034884
+      type: {class: CriticalChanceEcsFeature, ns: Game.Ecs.Characteristics.CriticalChance,
+        asm: Game.Ecs.Characteristic.CriticalChance}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034885
+      type: {class: ArmorResistEcsFeature, ns: Game.Ecs.Characteristics.ArmorResist,
+        asm: Game.Ecs.Characteristics.ArmorResist}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034886
+      type: {class: CriticalMultiplierEcsFeature, ns: Game.Ecs.Characteristics.CriticalMultiplier,
+        asm: Game.Ecs.Characteristic.CriticalMultiplier}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034887
+      type: {class: ManaRegenerationEcsFeature, ns: Game.Ecs.Characteristics.ManaRegeneration,
+        asm: Game.Ecs.Characteristics.ManaRegeneration}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034888
+      type: {class: DodgeEcsFeature, ns: Game.Ecs.Characteristics.Dodge, asm: Game.Ecs.Characteristic.Dodge}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034889
+      type: {class: CriticalChanceEcsFeature, ns: Game.Ecs.Characteristics.CriticalChance,
+        asm: Game.Ecs.Characteristic.AttackRange}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034890
+      type: {class: AttackSpeedEcsFeature, ns: Game.Ecs.Characteristics.AttackSpeed,
+        asm: Game.Ecs.Characteristic.AttakSpeed}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034891
+      type: {class: SpeedEcsFeature, ns: Game.Ecs.Characteristics.Speed, asm: Game.Ecs.Characteristics}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034892
+      type: {class: AttackDamageEcsFeature, ns: Game.Ecs.Characteristics.Attack, asm: Game.Ecs.Characteristics}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034893
+      type: {class: AbilityPowerEcsFeature, ns: Game.Ecs.Characteristics.AbilityPower,
+        asm: Game.Ecs.Characteristics}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034894
+      type: {class: SplashDamageEcsFeature, ns: Game.Ecs.Characteristics.SplashDamage,
+        asm: Game.Ecs.Characteristics}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034895
+      type: {class: DemoValueEcsFeature, ns: Game.Ecs.Characteristics.DemoValue, asm: Game.Ecs.Characteristics}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034896
+      type: {class: CooldownEcsFeature, ns: Game.Ecs.Characteristics.Cooldown, asm: Game.Ecs.Characteristics}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034897
+      type: {class: ShieldEcsFeature, ns: Game.Ecs.Characteristics.Shield, asm: Game.Ecs.Characteristics}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034898
+      type: {class: DurationEcsFeature, ns: Game.Ecs.Characteristics.Duration, asm: Game.Ecs.Characteristics}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034899
+      type: {class: RadiusEcsFeature, ns: Game.Ecs.Characteristics.Radius, asm: Game.Ecs.Characteristics}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034900
+      type: {class: ManaEcsFeature, ns: Game.Ecs.Characteristics.Mana, asm: Game.Ecs.Characteristics.Mana}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034901
+      type: {class: HealthEcsFeature, ns: Game.Ecs.Characteristics.Health, asm: Game.Ecs.Characteristics.Health}
+      data:
+        name: 
+        isEnabled: 1
+    - rid: 7966364767655034902
+      type: {class: BlockEcsFeature, ns: Game.Ecs.Characteristics.Block, asm: Game.Ecs.Characteristic.Block}
+      data:
+        name: 
+        isEnabled: 1

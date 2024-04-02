@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf5bb75a82bd45f0bee7ea1d4eee368c, type: 3}
+  m_Name: Gameplay Feature
+  m_EditorClassIdentifier: 
+  isEnabled: 1
+  groupConfiguration:
+    showFeatureInfo: 1
+    name: Gameplay Feature
+    _active: 1
+    _systems: []
+    nestedFeatures:
+    - {fileID: 11400000, guid: d761d910ea9da38439d74a678bbae6ac, type: 2}
+    - {fileID: 11400000, guid: 29690f38c9390444ebb6cb30aa0a238a, type: 2}
+    - {fileID: 11400000, guid: 2f9273fd07793a445aa3661fb3ba6bdc, type: 2}
+    - {fileID: 11400000, guid: 73b7d1f9bcd3f994eb613a71ff8c3033, type: 2}
+    - {fileID: 11400000, guid: 5bf9e65c229e33541a1f659d2f25ad67, type: 2}
+    - {fileID: 11400000, guid: 63b1728bc73f1094bb8f458556efb4aa, type: 2}
+    - {fileID: 11400000, guid: 10110ae76b06b274fb581a1c675d1d60, type: 2}
+    serializableFeatures: []
+  references:
+    version: 2
+    RefIds: []
