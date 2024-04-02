@@ -107,4 +107,4 @@ MonoBehaviour:
         asm: Game.Ecs.Characteristics.Health}
       data:
         _isEnabled: 1
-        maxHealth: 100
+        maxHealth: 3

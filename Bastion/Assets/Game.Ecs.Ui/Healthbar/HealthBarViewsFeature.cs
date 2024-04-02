@@ -6,6 +6,9 @@ namespace Game.Ecs.UI.HealthBar
     using Leopotam.EcsLite;
     using UniGame.LeoEcs.Bootstrap.Runtime;
     using UnityEngine;
+    
+    //Для работы системы необходимо чтобы существовал CameraComponent который хранит ссылку на мейн камеру
+    //И чтобы в канвасе лежал объект с HpbarRootComponent чтобы игра понимала куда его спавнить по иерархии
 
     [CreateAssetMenu(menuName = "Game/Feature/Ui/Health Bar Ui Feature", fileName = "Health Bar Ui Feature")]
     public sealed class HealthBarViewFeature : BaseLeoEcsFeature
@@ -20,7 +23,7 @@ namespace Game.Ecs.UI.HealthBar
             
             ecsSystems.Add(new HealthBarCreateSystem());
             // links HealthBarComponent owner entity and healthBar view entity, mark owner as linked
-            //ecsSystems.Add(new HealthBarLinkSystem());
+            // ecsSystems.Add(new HealthBarLinkSystem());
             // change healthBar color based it's relation to player entity
             ecsSystems.Add(new HealthBarColorSystem(colorSettings));
             
@@ -32,19 +35,8 @@ namespace Game.Ecs.UI.HealthBar
             // show and hides healthBars based on unit target
             ecsSystems.Add(new HealthBarUpdateSelectionTargetSystem());
             // show target of champions under the damage
-            ecsSystems.Add(new HealthBarUpdateUnderDamageSystem());
-
-            // //selection health bar view
-            // ecsSystems.Add(new CreateSelectionDataHealthBarSystem());
-            // ecsSystems.Add(new CreateSelectionHealthBarSystem());
-            // ecsSystems.Add(new UpdateSelectionHealthBarSystem());
+            ecsSystems.Add(new HealthBarDisplayByDamageSystem());
             
-            //if no selection health target, then destroy all selection bars view
-            // ecsSystems.CloseOn<StageStartedEvent, SelectionHealthViewModel>(); //todo enable later
-            // ecsSystems.CloseOn<StageCompleteEvent, SelectionHealthViewModel>(); //todo enable later
-            // ecsSystems.Add(new DestroySelectionHealthBarViewsSystem());
-            // ecsSystems.Add(new DestroySelectionDataSystem());
-
             // TODO: move this system https://dreamfrost.atlassian.net/browse/IDLE-535
             ecsSystems.Add(new UpdateCharacteristicsViewSystem()); // why here?
             

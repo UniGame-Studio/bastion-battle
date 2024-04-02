@@ -139,8 +139,8 @@ MonoBehaviour:
         asm: Game.Ecs.Characteristic.AttackRange}
       data:
         _isEnabled: 1
-        attackRange: 3.2
-        minValue: 3
+        attackRange: 1.01
+        minValue: 0.5
         maxValue: 100
         delta: {x: -0.5, y: 0.5}
         rangeGizmosColor: {r: 0.128, g: 0.2, b: 0.85, a: 1}

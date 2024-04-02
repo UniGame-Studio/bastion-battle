@@ -1,5 +1,6 @@
 namespace Game.Ecs.UI.HealthBar.Systems
 {
+    using Camera.Components;
     using Characteristics.Health.Components;
     using Components;
     using Core.Components;
@@ -29,7 +30,7 @@ namespace Game.Ecs.UI.HealthBar.Systems
         private EcsPool<HealthComponent> _healthDataPool;
         private EcsPool<HealthBarTargetComponent> _healthBarsPool;
         private EcsPool<OwnerComponent> _ownerLinkPool;
-        private EcsPool<HealthBarCameraComponent> _cameraPool;
+        private EcsPool<CameraComponent> _cameraPool;
         private EcsPool<HealthBarColoredComponent> _healthColorPool;
 
         public void Init(IEcsSystems systems)
@@ -42,7 +43,7 @@ namespace Game.Ecs.UI.HealthBar.Systems
                 .End();
 
             _cameraFilter = _world
-                .Filter<HealthBarCameraComponent>()
+                .Filter<CameraComponent>()
                 .End();
         }
 
@@ -52,6 +53,7 @@ namespace Game.Ecs.UI.HealthBar.Systems
             foreach (var cameraEntity in _cameraFilter)
             {
                 ref var cameraComponent = ref _cameraPool.Get(cameraEntity);
+                if(!cameraComponent.IsMain) continue;
                 camera = cameraComponent.Camera;
                 break;
             }

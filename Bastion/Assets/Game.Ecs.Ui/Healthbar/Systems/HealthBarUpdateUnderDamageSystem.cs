@@ -90,8 +90,6 @@
                     ref var ownerComponent = ref _ownerPool.Get(healthBarEntity);
                     if (!ownerComponent.Value.Unpack(_world, out var ownerEntity))
                         continue;
-
-                    if(_userInputPool.Has(ownerEntity)) continue;
                     
                     var visibility = ownerComponent.Value.EqualsTo(target);
                     found |= visibility;
