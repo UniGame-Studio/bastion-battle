@@ -16,18 +16,33 @@ MonoBehaviour:
   resourceLocation: {fileID: 11400000, guid: 457aba3117e4f7d408ad99499b1b13a7, type: 2}
   id: Ability
   abilities:
-  - name: Melee Attack
+  - name: Melee Attack Initiator
     id: 1
     slotType: 0
     data:
       slotType: 0
       unlockLevel: 0
-      isDefault: 0
+      isDefault: 1
       isHidden: 0
       isBlock: 0
     ability:
       reference:
         m_AssetGUID: 068975340fda7ae4eb5e166a3b016472
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+  - name: Range Attacl Initiator
+    id: 2
+    slotType: 0
+    data:
+      slotType: 0
+      unlockLevel: 0
+      isDefault: 1
+      isHidden: 0
+      isBlock: 0
+    ability:
+      reference:
+        m_AssetGUID: 8cc92eb1d549d10429721cf7f7d3e975
         m_SubObjectName: 
         m_SubObjectType: 
         m_EditorAssetChanged: 0

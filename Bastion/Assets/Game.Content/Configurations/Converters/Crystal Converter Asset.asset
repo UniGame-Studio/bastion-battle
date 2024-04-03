@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1db2324c734489c9e90b17c8690b283, type: 3}
+  m_Name: Crystal Converter Asset
+  m_EditorClassIdentifier: 
+  enabled: 1
+  useConverters: 1
+  converters:
+  - converter:
+      rid: 1871375416700436505
+    convertersAsset: {fileID: 0}
+    nesterConverter: {fileID: 0}
+  - converter:
+      rid: 2882178006919675937
+    convertersAsset: {fileID: 0}
+    nesterConverter: {fileID: 0}
+  - converter:
+      rid: 2882178006919675938
+    convertersAsset: {fileID: 0}
+    nesterConverter: {fileID: 0}
+  - converter:
+      rid: 2882178006919675939
+    convertersAsset: {fileID: 0}
+    nesterConverter: {fileID: 0}
+  - converter:
+      rid: 2882178006919675940
+    convertersAsset: {fileID: 0}
+    nesterConverter: {fileID: 0}
+  - converter:
+      rid: 2882178006919675942
+    convertersAsset: {fileID: 0}
+    nesterConverter: {fileID: 0}
+  - converter:
+      rid: 2882178006919675943
+    convertersAsset: {fileID: 0}
+    nesterConverter: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1871375416700436505
+      type: {class: CrystalConverter, ns: Game.Ecs.Ai.Converter, asm: game.ecs.ai}
+      data:
+        isEnabled: 1
+    - rid: 2882178006919675937
+      type: {class: LayerIdConverter, ns: Game.Ecs.GameLayers.Layer.Converters, asm: Game.Ecs.GameLayers}
+      data:
+        enabled: 1
+        layer:
+          value: 1
+    - rid: 2882178006919675938
+      type: {class: CategoryIdConverter, ns: Game.Ecs.GameLayers.Category.Converters,
+        asm: Game.Ecs.GameLayers}
+      data:
+        enabled: 1
+        categoryId:
+          _value: 8
+    - rid: 2882178006919675939
+      type: {class: EffectRootConverter, ns: Game.Ecs.Effects.Converters, asm: Game.Ecs.Effects}
+      data:
+        enabled: 1
+        effectRoots:
+        - id:
+            value: 1
+          objectValue: {fileID: 0}
+          objectName: 
+        bakeOnConvert: 0
+        backedRoots: []
+    - rid: 2882178006919675940
+      type: {class: EffectRootTargetConverter, ns: Game.Ecs.Effects.Converters, asm: Game.Ecs.Effects}
+      data:
+        enabled: 1
+        effectRootId:
+          value: 1
+        useRootTransform: 1
+        rootValue: {fileID: 0}
+    - rid: 2882178006919675942
+      type: {class: AvatarConverter, ns: Game.Ecs.Core.Converters, asm: UniGame.LeoEcs.Shared.Core}
+      data:
+        _isEnabled: 1
+        entityBounds:
+          Center: {x: 0, y: 0, z: 0}
+          Height: 0
+          Radius: 0
+        headRoot: {fileID: 0}
+        bodyRoot: {fileID: 0}
+        feetRoot: {fileID: 0}
+        handRoot: {fileID: 0}
+        weaponRoot: {fileID: 0}
+    - rid: 2882178006919675943
+      type: {class: CharacteristicsConverter, ns: Game.Ecs.Characteristics.CharacteristicsTools.Converters,
+        asm: Game.Ecs.Characteristics.Tools}
+      data:
+        _isEnabled: 1
+        characteristics:
+        - rid: 2882178006919675944
+    - rid: 2882178006919675944
+      type: {class: HealthComponentConverter, ns: Game.Ecs.Characteristics.Health.Converters,
+        asm: Game.Ecs.Characteristics.Health}
+      data:
+        _isEnabled: 1
+        maxHealth: 3

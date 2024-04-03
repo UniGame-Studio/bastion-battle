@@ -35,10 +35,6 @@ MonoBehaviour:
         type: 2}
       featureGroup:
         rid: -2
-    - featureGroupAsset: {fileID: 11400000, guid: 29690f38c9390444ebb6cb30aa0a238a,
-        type: 2}
-      featureGroup:
-        rid: -2
     - featureGroupAsset: {fileID: 11400000, guid: 04b6914a291551b44861d5b88650b3c6,
         type: 2}
       featureGroup:

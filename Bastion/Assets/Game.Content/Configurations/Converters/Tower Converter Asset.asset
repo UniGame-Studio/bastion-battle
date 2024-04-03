@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1db2324c734489c9e90b17c8690b283, type: 3}
+  m_Name: Tower Converter Asset
+  m_EditorClassIdentifier: 
+  enabled: 1
+  useConverters: 1
+  converters:
+  - converter:
+      rid: 2882178006919675937
+    convertersAsset: {fileID: 0}
+    nesterConverter: {fileID: 0}
+  - converter:
+      rid: 2882178006919675938
+    convertersAsset: {fileID: 0}
+    nesterConverter: {fileID: 0}
+  - converter:
+      rid: 2882178006919675939
+    convertersAsset: {fileID: 0}
+    nesterConverter: {fileID: 0}
+  - converter:
+      rid: 2882178006919675940
+    convertersAsset: {fileID: 0}
+    nesterConverter: {fileID: 0}
+  - converter:
+      rid: 2882178006919675942
+    convertersAsset: {fileID: 0}
+    nesterConverter: {fileID: 0}
+  - converter:
+      rid: 2882178006919675943
+    convertersAsset: {fileID: 0}
+    nesterConverter: {fileID: 0}
+  - converter:
+      rid: 2882178006919675950
+    convertersAsset: {fileID: 0}
+    nesterConverter: {fileID: 0}
+  - converter:
+      rid: 2882178023282704386
+    convertersAsset: {fileID: 0}
+    nesterConverter: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 2882178006919675937
+      type: {class: LayerIdConverter, ns: Game.Ecs.GameLayers.Layer.Converters, asm: Game.Ecs.GameLayers}
+      data:
+        enabled: 1
+        layer:
+          value: 1
+    - rid: 2882178006919675938
+      type: {class: CategoryIdConverter, ns: Game.Ecs.GameLayers.Category.Converters,
+        asm: Game.Ecs.GameLayers}
+      data:
+        enabled: 1
+        categoryId:
+          _value: 4
+    - rid: 2882178006919675939
+      type: {class: EffectRootConverter, ns: Game.Ecs.Effects.Converters, asm: Game.Ecs.Effects}
+      data:
+        enabled: 1
+        effectRoots:
+        - id:
+            value: 1
+          objectValue: {fileID: 0}
+          objectName: 
+        bakeOnConvert: 0
+        backedRoots: []
+    - rid: 2882178006919675940
+      type: {class: EffectRootTargetConverter, ns: Game.Ecs.Effects.Converters, asm: Game.Ecs.Effects}
+      data:
+        enabled: 1
+        effectRootId:
+          value: 1
+        useRootTransform: 1
+        rootValue: {fileID: 0}
+    - rid: 2882178006919675942
+      type: {class: AvatarConverter, ns: Game.Ecs.Core.Converters, asm: UniGame.LeoEcs.Shared.Core}
+      data:
+        _isEnabled: 1
+        entityBounds:
+          Center: {x: 0, y: 0, z: 0}
+          Height: 0
+          Radius: 0
+        headRoot: {fileID: 0}
+        bodyRoot: {fileID: 0}
+        feetRoot: {fileID: 0}
+        handRoot: {fileID: 0}
+        weaponRoot: {fileID: 0}
+    - rid: 2882178006919675943
+      type: {class: CharacteristicsConverter, ns: Game.Ecs.Characteristics.CharacteristicsTools.Converters,
+        asm: Game.Ecs.Characteristics.Tools}
+      data:
+        _isEnabled: 1
+        characteristics:
+        - rid: 2882178006919675944
+        - rid: 2882178006919675946
+        - rid: 2882178006919675945
+        - rid: 2882178006919675948
+        - rid: 2882178006919675947
+    - rid: 2882178006919675944
+      type: {class: HealthComponentConverter, ns: Game.Ecs.Characteristics.Health.Converters,
+        asm: Game.Ecs.Characteristics.Health}
+      data:
+        _isEnabled: 1
+        maxHealth: 1
+    - rid: 2882178006919675945
+      type: {class: AttackSpeedConverter, ns: Game.Ecs.Characteristics.AttackSpeed.Converters,
+        asm: Game.Ecs.Characteristic.AttakSpeed}
+      data:
+        _isEnabled: 1
+        cooldownType: 1
+        abilitySlotId: 0
+        attackSpeed: 0
+        minLimitValue: 0
+        maxLimitValue: 5
+    - rid: 2882178006919675946
+      type: {class: AttackConverter, ns: Game.Ecs.Characteristics.Attack.Converters,
+        asm: Game.Ecs.Characteristics}
+      data:
+        _isEnabled: 1
+        attackDamage: 1
+    - rid: 2882178006919675947
+      type: {class: AbilityPowerConverter, ns: Game.Ecs.Characteristics.AbilityPower.Converters,
+        asm: Game.Ecs.Characteristics}
+      data:
+        _isEnabled: 1
+        abilityPower: 1
+    - rid: 2882178006919675948
+      type: {class: AttackRangeComponentConverter, ns: Game.Ecs.Characteristics.CriticalChance.Converters,
+        asm: Game.Ecs.Characteristic.AttackRange}
+      data:
+        _isEnabled: 1
+        attackRange: 3.2
+        minValue: 3
+        maxValue: 100
+        delta: {x: -0.5, y: 0.5}
+        rangeGizmosColor: {r: 0.128, g: 0.2, b: 0.85, a: 1}
+    - rid: 2882178006919675950
+      type: {class: AbilityConverter, ns: Game.Ecs.Ability.Converters, asm: Game.Ecs.Ability}
+      data:
+        _isEnabled: 1
+        abilityCells:
+        - IsDefault: 1
+          AbilityId:
+            _id: 2
+          SlotId:
+            _value: 0
+        abilityForAgents: []
+        userInput: 0
+        skipEquipRequest: 0
+        drawGizmos: 0
+    - rid: 2882178023282704386
+      type: {class: TransformConverter, ns: Game.Ecs.Core.Converters, asm: UniGame.LeoEcs.Shared.Core}
+      data:
+        enabled: 1
+        addPosition: 1
+        addDirection: 1

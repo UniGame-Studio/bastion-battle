@@ -1,6 +1,7 @@
 ﻿namespace Game.Ecs.Server
 {
     using Cysharp.Threading.Tasks;
+    using GameLayers.Relationship;
     using States;
     using Girand.Ecs.GameSettings;
     using Leopotam.EcsLite;
@@ -14,7 +15,6 @@
         public GameSettingsFeature gameSettingsFeature = new();
         public GameStatesFeature gameStatesFeature = new();
         public GameStateInitializeFeature gameStateInitializeFeature = new();
-        
         public sealed override async UniTask InitializeFeatureAsync(IEcsSystems ecsSystems)
         {
             var world = ecsSystems.GetWorld();

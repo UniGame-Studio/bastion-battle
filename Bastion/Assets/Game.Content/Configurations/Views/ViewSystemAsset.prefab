@@ -128,6 +128,7 @@ GameObject:
   - component: {fileID: 7387079578667170276}
   - component: {fileID: 7387079578667170278}
   - component: {fileID: 1652989200803567895}
+  - component: {fileID: 3236384285293152888}
   m_Layer: 0
   m_Name: ViewSystemAsset
   m_TagString: Untagged
@@ -189,6 +190,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63e7d19e8aef7874aaaab556faa8a74c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3236384285293152888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7387079578667170277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0acd60cbbe1484da9c72d797dc766f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  createEntityOnEnabled: 1
+  createEntityOnStart: 0
+  destroyEntityOnDisable: 1
+  destroyOnDestroy: 0
+  serializableConverters: []
+  assetConverters: []
+  entity: -1
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &7387079578710871639
 GameObject:
   m_ObjectHideFlags: 0

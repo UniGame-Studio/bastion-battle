@@ -93,8 +93,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6f2346356d4e3d842ab0c821cec48dd5
-    m_Address: Assets/Game.Content/Units/Unit.prefab
+  - m_GUID: fb2d8e9cfd9deb448bcaa1a8851ace12
+    m_Address: Assets/Game.Content/Configurations/Effects/Effects Root Configuration.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -187,6 +187,18 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 06f3662fea8f71249a1d7c99bde43220
     m_Address: Assets/Game.Content/Prefabs/Units/UnitBasePrefab - small.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cc92eb1d549d10429721cf7f7d3e975
+    m_Address: Assets/Game.Content/Configurations/Abilities/Initiators/Range Attack
+      Initiator.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aaa44692021a9224e8a99b8fabc6113a
+    m_Address: Assets/Game.Content/Configurations/Abilities/Configurations/Tower
+      Ranged Attack Ability Configuration.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

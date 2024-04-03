@@ -115,15 +115,11 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 7966364217674563589
+  - rid: -2
   assetConverters: []
   entity: -1
   references:
     version: 2
     RefIds:
-    - rid: 7966364217674563589
-      type: {class: NetcodeConverter, ns: Girand.Ecs.GameSettings.Converters, asm: game.ecs.netcode}
-      data:
-        enabled: 1
-        networkManager: {fileID: 7941845999426889846}
-        unityTransport: {fileID: 5154888420659230018}
+    - rid: -2
+      type: {class: , ns: , asm: }

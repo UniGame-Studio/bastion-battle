@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8cfeff9b2d40724da8f37441c4377a1, type: 3}
+  m_Name: Effects Feature
+  m_EditorClassIdentifier: 
+  isEnabled: 1
+  maxEffectsCount: 200
+  effectFeatures:
+  - {fileID: 11400000, guid: 4da36e72d7ae8ca438b7d893d44f2614, type: 2}
+  - {fileID: 11400000, guid: 3de8bcbcfc7563a42919bdd4725de720, type: 2}
+  - {fileID: 11400000, guid: 4c5030e32fcb90248b27433f9aa0127b, type: 2}
+  - {fileID: 11400000, guid: 6ed817cfc9a46c341ab362e16686d161, type: 2}
+  - {fileID: 11400000, guid: f411cf5f32d40b940853b4745da5b254, type: 2}
+  - {fileID: 11400000, guid: 8a7b7f29749bc0b42bbad964c2806ba4, type: 2}
+  - {fileID: 11400000, guid: 9b65c1d58f603514190a71f2efa938ba, type: 2}
+  - {fileID: 11400000, guid: 65156ee829e969242927855de4b87e0d, type: 2}
+  - {fileID: 11400000, guid: 63d4c70550b1d9144a6a19da406cde87, type: 2}
+  - {fileID: 11400000, guid: c55f2817640185e459473b9d7a3189e7, type: 2}
+  - {fileID: 11400000, guid: f53c0079d613717479d8f9c2d365eba2, type: 2}
+  - {fileID: 11400000, guid: 18380151160efdf4c89680268b787de2, type: 2}
+  - {fileID: 11400000, guid: f0ca863f993590b4fa996afe45d960c0, type: 2}
+  - {fileID: 11400000, guid: 35e8ff538d35b7c4f9fc32198f26d8af, type: 2}
+  effectsRootValue:
+    reference:
+      m_AssetGUID: fb2d8e9cfd9deb448bcaa1a8851ace12
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0

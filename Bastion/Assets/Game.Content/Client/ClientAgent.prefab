@@ -48,14 +48,9 @@ MonoBehaviour:
   createEntityOnStart: 0
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
-  serializableConverters:
-  - rid: 6421667524534075393
+  serializableConverters: []
   assetConverters: []
   entity: -1
   references:
     version: 2
-    RefIds:
-    - rid: 6421667524534075393
-      type: {class: GameClientConverter, ns: Game.Ecs.Client.Converters, asm: game.ecs.client}
-      data:
-        enabled: 1
+    RefIds: []

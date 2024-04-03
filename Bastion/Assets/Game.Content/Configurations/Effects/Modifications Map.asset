@@ -1,0 +1,435 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02950cd21ea84f45bc3c7c4508057923, type: 3}
+  m_Name: Modifications Map
+  m_EditorClassIdentifier: 
+  map:
+    modifications:
+    - id: Attack_Speed
+      info:
+        description: Attack speed
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 6443317736134148098
+    - id: Attack_Damage
+      info:
+        description: Attack
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 6443317736134148100
+    - id: Critical_Chance
+      info:
+        description: Critical chance
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 6443317736134148101
+    - id: Critical_Multiplier
+      info:
+        description: Critical multiplier
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 6443317736134148102
+    - id: Duration
+      info:
+        description: Effects duration
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 6443317736134148103
+    - id: Health
+      info:
+        description: Health
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 6443317736134148104
+    - id: Damage_Radius
+      info:
+        description: Range
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 6443317736134148105
+    - id: Bonus_Speed
+      info:
+        description: Speed
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 6443317736134148106
+    - id: Ability_Cooldown
+      info:
+        description: Ability cooldown
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 2842495529053847560
+    - id: Dodge
+      info:
+        description: Dodge chance
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 6443317738280583174
+    - id: Block
+      info:
+        description: Block chance
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 6443317738280583175
+    - id: Mana
+      info:
+        description: Mana
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 6443317741214236687
+    - id: Mana_Recharge
+      info:
+        description: Mana regeneration
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 6443317741214236688
+    - id: Skill_Damage_Base
+      info:
+        description: Skill damage
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 6443317736134148111
+    - id: Skill_Damage
+      info:
+        description: Skill damage
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 6443317736134148112
+    - id: AOE_Damage
+      info:
+        description: AOE damage
+        descriptionColor: {r: 0.03529412, g: 0.007843138, b: 0.3647059, a: 1}
+        valueColor: {r: 0.06666667, g: 0.41568628, b: 0.33333334, a: 1}
+        revertValue: 0
+      factory:
+        rid: 5484825923292495999
+    - id: Attack_Damage_Bonus
+      info:
+        description: Attack damage
+        descriptionColor: {r: 0, g: 0, b: 0, a: 1}
+        valueColor: {r: 0, g: 0, b: 1, a: 1}
+        revertValue: 0
+      factory:
+        rid: 2207432599598792746
+    - id: Block_Bonus
+      info:
+        description: Block chance
+        descriptionColor: {r: 0, g: 0, b: 0, a: 1}
+        valueColor: {r: 0, g: 0, b: 1, a: 1}
+        revertValue: 0
+      factory:
+        rid: 2207432599598792748
+    - id: Health_Bonus
+      info:
+        description: Health
+        descriptionColor: {r: 0, g: 0, b: 0, a: 1}
+        valueColor: {r: 0, g: 0, b: 1, a: 1}
+        revertValue: 0
+      factory:
+        rid: 2207432599598792749
+    - id: Mana_Max_Bonus
+      info:
+        description: Max mana
+        descriptionColor: {r: 0, g: 0, b: 0, a: 1}
+        valueColor: {r: 0, g: 0, b: 1, a: 1}
+        revertValue: 0
+      factory:
+        rid: 2207432599598792750
+    - id: Attack_Speed_Bonus
+      info:
+        description: Attack speed
+        descriptionColor: {r: 0, g: 0, b: 0, a: 1}
+        valueColor: {r: 0, g: 0, b: 1, a: 1}
+        revertValue: 0
+      factory:
+        rid: 2207432599598792759
+    - id: Critical_Chance_Bonus
+      info:
+        description: Critical chance
+        descriptionColor: {r: 0, g: 0, b: 0, a: 1}
+        valueColor: {r: 0, g: 0, b: 1, a: 1}
+        revertValue: 0
+      factory:
+        rid: 2207432599598792774
+    - id: Dodge_Bonus
+      info:
+        description: Dodge chance
+        descriptionColor: {r: 0, g: 0, b: 0, a: 1}
+        valueColor: {r: 0, g: 0, b: 1, a: 1}
+        revertValue: 0
+      factory:
+        rid: 2207432599598792779
+    - id: Mana_Recharge_Bonus
+      info:
+        description: Mana regeneration
+        descriptionColor: {r: 0, g: 0, b: 0, a: 1}
+        valueColor: {r: 0, g: 0, b: 1, a: 1}
+        revertValue: 0
+      factory:
+        rid: 2207432599598792780
+    - id: Resist_Physical
+      info:
+        description: 
+        descriptionColor: {r: 0, g: 0, b: 0, a: 1}
+        valueColor: {r: 0, g: 0, b: 1, a: 1}
+        revertValue: 0
+      factory:
+        rid: 6148489345855913998
+  references:
+    version: 2
+    RefIds:
+    - rid: 2207432599598792746
+      type: {class: AttackModificationFactory, ns: Game.Ecs.Characteristics, asm: Game.Ecs.Characteristics}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 1
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 2207432599598792748
+      type: {class: BlockModificationFactory, ns: Game.Ecs.Characteristics.Block,
+        asm: Game.Ecs.Characteristic.Block}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 1
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 2207432599598792749
+      type: {class: HealthModificationFactory, ns: Game.Ecs.Characteristics, asm: Game.Ecs.Characteristics.Tools}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 1
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 2207432599598792750
+      type: {class: ManaModificationFactory, ns: Game.Ecs.Characteristics.Mana, asm: Game.Ecs.Characteristics.Mana}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 1
+        isMaxValueModification: 1
+        revertSign: 0
+    - rid: 2207432599598792759
+      type: {class: AttackSpeedModificationFactory, ns: Game.Ecs.Characteristics.AttackSpeed,
+        asm: Game.Ecs.Characteristic.AttakSpeed}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 1
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 2207432599598792774
+      type: {class: CriticalChanceModificationFactory, ns: Game.Ecs.Characteristics.CriticalChance,
+        asm: Game.Ecs.Characteristic.CriticalChance}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 1
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 2207432599598792779
+      type: {class: DodgeModificationFactory, ns: Game.Ecs.Characteristics, asm: Game.Ecs.Characteristic.Dodge}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 1
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 2207432599598792780
+      type: {class: ManaRegenerationModificationFactory, ns: Game.Ecs.Characteristics,
+        asm: Game.Ecs.Characteristics.ManaRegeneration}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 1
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 2842495529053847560
+      type: {class: AbilityCooldownModificationFactory, ns: Game.Ecs.Ability.Modifications,
+        asm: Game.Ecs.Ability}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 1
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 5484825923292495999
+      type: {class: SplashDamageModificationFactory, ns: Game.Ecs.Characteristics.SplashDamage,
+        asm: Game.Ecs.Characteristics}
+      data:
+        defaultValue: 0
+        allowedSummation: 1
+        isPercent: 0
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 6148489345855913998
+      type: {class: ArmorResistModificationFactory, ns: Game.Ecs.Characteristics.ArmorResist,
+        asm: Game.Ecs.Characteristics.ArmorResist}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 1
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 6443317736134148098
+      type: {class: AttackSpeedModificationFactory, ns: Game.Ecs.Characteristics.AttackSpeed,
+        asm: Game.Ecs.Characteristic.AttakSpeed}
+      data:
+        defaultValue: 1
+        allowedSummation: 0
+        isPercent: 0
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 6443317736134148100
+      type: {class: AttackModificationFactory, ns: Game.Ecs.Characteristics, asm: Game.Ecs.Characteristics}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 0
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 6443317736134148101
+      type: {class: CriticalChanceModificationFactory, ns: Game.Ecs.Characteristics.CriticalChance,
+        asm: Game.Ecs.Characteristic.CriticalChance}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 0
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 6443317736134148102
+      type: {class: CriticalMultiplierModificationFactory, ns: Game.Ecs.Characteristics.CriticalChance,
+        asm: Game.Ecs.Characteristic.CriticalMultiplier}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 0
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 6443317736134148103
+      type: {class: DurationModificationFactory, ns: Game.Ecs.Characteristics, asm: Game.Ecs.Characteristics.Tools}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 0
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 6443317736134148104
+      type: {class: HealthModificationFactory, ns: Game.Ecs.Characteristics, asm: Game.Ecs.Characteristics.Tools}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 0
+        isMaxValueModification: 1
+        revertSign: 0
+    - rid: 6443317736134148105
+      type: {class: AttackRangeModificationFactory, ns: Game.Ecs.Characteristics.CriticalChance,
+        asm: Game.Ecs.Characteristic.AttackRange}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 0
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 6443317736134148106
+      type: {class: SpeedModificationFactory, ns: Game.Ecs.Characteristics.Speed,
+        asm: Game.Ecs.Characteristics}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 1
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 6443317736134148111
+      type: {class: AbilityPowerModificationFactory, ns: Game.Ecs.Characteristics.AbilityPower,
+        asm: Game.Ecs.Characteristics}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 0
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 6443317736134148112
+      type: {class: AbilityPowerModificationFactory, ns: Game.Ecs.Characteristics.AbilityPower,
+        asm: Game.Ecs.Characteristics}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 1
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 6443317738280583174
+      type: {class: DodgeModificationFactory, ns: Game.Ecs.Characteristics, asm: Game.Ecs.Characteristic.Dodge}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 0
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 6443317738280583175
+      type: {class: BlockModificationFactory, ns: Game.Ecs.Characteristics.Block,
+        asm: Game.Ecs.Characteristic.Block}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 0
+        isMaxValueModification: 0
+        revertSign: 0
+    - rid: 6443317741214236687
+      type: {class: ManaModificationFactory, ns: Game.Ecs.Characteristics.Mana, asm: Game.Ecs.Characteristics.Mana}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 0
+        isMaxValueModification: 1
+        revertSign: 0
+    - rid: 6443317741214236688
+      type: {class: ManaRegenerationModificationFactory, ns: Game.Ecs.Characteristics,
+        asm: Game.Ecs.Characteristics.ManaRegeneration}
+      data:
+        defaultValue: 0
+        allowedSummation: 0
+        isPercent: 0
+        isMaxValueModification: 0
+        revertSign: 0

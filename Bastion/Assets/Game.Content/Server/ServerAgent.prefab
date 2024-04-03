@@ -49,13 +49,11 @@ MonoBehaviour:
   destroyEntityOnDisable: 1
   destroyOnDestroy: 0
   serializableConverters:
-  - rid: 6421667524534075392
+  - rid: -2
   assetConverters: []
   entity: -1
   references:
     version: 2
     RefIds:
-    - rid: 6421667524534075392
-      type: {class: GameServerConverter, ns: Game.Ecs.Server.Converters, asm: game.ecs.server}
-      data:
-        enabled: 1
+    - rid: -2
+      type: {class: , ns: , asm: }
