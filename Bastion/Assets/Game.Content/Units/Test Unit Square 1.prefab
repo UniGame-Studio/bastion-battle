@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 760253494955232426}
+  - component: {fileID: 1628429492507268903}
   m_Layer: 0
   m_Name: Test Unit Square 1
   m_TagString: Untagged
@@ -32,6 +33,29 @@ Transform:
   - {fileID: 7837794842775444139}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1628429492507268903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8190002146913120580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0acd60cbbe1484da9c72d797dc766f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  createEntityOnEnabled: 1
+  createEntityOnStart: 0
+  destroyEntityOnDisable: 1
+  destroyOnDestroy: 0
+  serializableConverters: []
+  assetConverters:
+  - {fileID: 11400000, guid: ea53bdcb1863d2142ae9fe126791bbe8, type: 2}
+  entity: -1
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &8287001213358897408
 GameObject:
   m_ObjectHideFlags: 0

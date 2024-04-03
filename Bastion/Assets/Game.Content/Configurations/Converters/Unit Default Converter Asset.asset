@@ -116,7 +116,7 @@ MonoBehaviour:
         asm: Game.Ecs.Characteristics.Health}
       data:
         _isEnabled: 1
-        maxHealth: 100
+        maxHealth: 10
     - rid: 2882178006919675945
       type: {class: AttackSpeedConverter, ns: Game.Ecs.Characteristics.AttackSpeed.Converters,
         asm: Game.Ecs.Characteristic.AttakSpeed}
@@ -144,7 +144,7 @@ MonoBehaviour:
         asm: Game.Ecs.Characteristic.AttackRange}
       data:
         _isEnabled: 1
-        attackRange: 3.2
+        attackRange: 3.5
         minValue: 3
         maxValue: 100
         delta: {x: -0.5, y: 0.5}
@@ -182,7 +182,7 @@ MonoBehaviour:
       data:
         _isEnabled: 1
         movementData:
-          speed: 2
+          speed: 0
           angularSpeed: 720
           navMeshStep: 1
           animationRunSpeed: 5

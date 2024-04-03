@@ -19,8 +19,9 @@ MonoBehaviour:
     _active: 1
     _systems: []
     nestedFeatures:
-    - {fileID: 11400000, guid: 1c849b757db8bbc40b39e6b7b29e7875, type: 2}
     - {fileID: 11400000, guid: 0a16ae6a4e64eac4387f9b2c7fc32439, type: 2}
+    - {fileID: 11400000, guid: 2699060e79407e141a07256b04e77e0c, type: 2}
+    - {fileID: 11400000, guid: f59d03be9fee32244a27faa464cbf30f, type: 2}
     serializableFeatures: []
   references:
     version: 2
