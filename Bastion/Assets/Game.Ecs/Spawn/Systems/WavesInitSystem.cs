@@ -40,10 +40,8 @@ namespace Game.Ecs.Spawn.Systems
             _wavesSpawnDataAsset = _world.GetGlobal<WavesSpawnDataAsset>();
 
             int spawnEntity = _world.NewEntity();
-            ref var waveIndex = ref _spawnAspect.Wave.Add(spawnEntity);
+            ref var currentWave = ref _spawnAspect.Wave.Add(spawnEntity);
             ref var waveOrder = ref _spawnAspect.WaveOrder.Add(spawnEntity);
-            ref var waveDelay = ref _spawnAspect.WaveDelay.Add(spawnEntity);
-            ref var waveDuration = ref _spawnAspect.WaveDuration.Add(spawnEntity);
             ref var cooldown = ref _spawnAspect.Cooldown.Add(spawnEntity);
 
             List<WaveData> waves = _wavesSpawnDataAsset.Data.Waves;
@@ -56,7 +54,7 @@ namespace Game.Ecs.Spawn.Systems
                 waveOrder.Waves.Add(i, waveEntity.PackedEntity(_world));
             }
 
-            waveIndex.Value = 0;
+            currentWave.Index = 0;
             _spawnAspect.WaveStartEvent.Add(spawnEntity);
         }
     }

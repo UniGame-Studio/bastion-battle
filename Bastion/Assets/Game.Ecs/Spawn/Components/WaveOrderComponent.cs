@@ -6,7 +6,7 @@ namespace Game.Ecs.Spawn.Components
     using System;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// component with hash map index - WaveData
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;

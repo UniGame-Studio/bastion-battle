@@ -3,7 +3,7 @@ using UniGame.LeoEcs.ViewSystem.Converters;
 using UniGame.Rx.Runtime.Extensions;
 using UnityEngine.UI;
 
-namespace Game.Ecs.SelectUnit.View
+namespace Game.Ecs.SetUnit.View
 {
     public class MapCommandsView : EcsUiView<MapCommandsViewModel>
     {

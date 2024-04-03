@@ -1,6 +1,8 @@
-﻿using Game.Ecs.SelectUnit.Systems;
+﻿using Game.Ecs.SetUnit.Data;
+using Game.Ecs.SetUnit.Systems;
+using UniGame.LeoEcs.Shared.Extensions;
 
-namespace NAMESPACE
+namespace Game.Ecs.SetUnit
 {
     using Cysharp.Threading.Tasks;
     using Leopotam.EcsLite;
@@ -18,8 +20,10 @@ namespace NAMESPACE
     [CreateAssetMenu(menuName = "Game/Feature/Gameplay/SetUnitFeature")]
     public class SetUnitFeature : BaseLeoEcsFeature
     {
+        public CurrentCharactersSpawnDataAsset SpawnDataAsset;
         public override UniTask InitializeFeatureAsync(IEcsSystems ecsSystems)
         {
+            ecsSystems.GetWorld().SetGlobal(SpawnDataAsset.Data);
             ecsSystems.Add(new MapUiCommandsSystem());
 
             return UniTask.CompletedTask;

@@ -37,10 +37,10 @@ namespace Game.Ecs.Spawn.Systems
             foreach (var spawnEntity in _filter)
             {
                 ref var currentWave = ref _spawnAspect.Wave.Get(spawnEntity);
-                currentWave.Value++;
+                currentWave.Index++;
                 ref var waveOrder = ref _spawnAspect.WaveOrder.Get(spawnEntity);
                 
-                if (waveOrder.Waves.ContainsKey(currentWave.Value))
+                if (waveOrder.Waves.ContainsKey(currentWave.Index))
                     _spawnAspect.WaveStartEvent.Add(spawnEntity);
                 else
                     _spawnAspect.WavesEndedEvent.Add(spawnEntity);

@@ -38,14 +38,11 @@ namespace Game.Ecs.Spawn.Systems
             _world = systems.GetWorld();
 
             _spawnFilter = _world
-                .Filter<WaveOrderComponent>()
-                .Inc<CurrentWaveDelayComponent>()
-                .Inc<CurrentWaveDurationComponent>()
+                .Filter<CurrentWaveComponent>()
                 .Inc<CooldownComponent>()
+                .Inc<WaveDelayStateComponent>()
                 .Exc<CooldownActiveComponent>()
                 .Exc<CooldownCompleteComponent>()
-                .Inc<WaveDelayStateComponent>()
-                .Exc<WaveDurationStateComponent>()
                 .End();
         }
 
@@ -54,8 +51,8 @@ namespace Game.Ecs.Spawn.Systems
             foreach (var spawnEntity in _spawnFilter)
             {
                 ref var cooldown = ref _spawnAspect.Cooldown.Get(spawnEntity);
-                ref var waveDelay = ref _spawnAspect.WaveDelay.Get(spawnEntity);
-                cooldown.Value = waveDelay.Time;
+                ref var currentWave = ref _spawnAspect.Wave.Get(spawnEntity);
+                cooldown.Value = currentWave.Delay;
                 _spawnAspect.ActiveCooldown.Add(spawnEntity);
             }
         }
