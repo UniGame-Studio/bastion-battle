@@ -40,14 +40,9 @@ namespace Game.Ecs.Spawn.Systems
             _world = systems.GetWorld();
             
             _spawnFilter = _world
-                .Filter<WaveOrderComponent>()
-                .Inc<CurrentWaveDelayComponent>()
-                .Inc<CurrentWaveDurationComponent>()
-                .Inc<CooldownComponent>()
-                .Exc<WaveDelayStateComponent>()
+                .Filter<WaveDurationStateComponent>()
                 .Inc<CooldownCompleteComponent>()
                 .Inc<RestartCooldownSelfRequest>()
-                .Inc<WaveDurationStateComponent>()
                 .End();
 
             _unitSpawnFilter = _world.Filter<UnitCooldownComponent>().End();
@@ -58,8 +53,8 @@ namespace Game.Ecs.Spawn.Systems
             foreach (var spawnEntity in _spawnFilter)
             {
                 ref var waveCooldown = ref _spawnAspect.Cooldown.Get(spawnEntity);
-                ref var waveDuration = ref _spawnAspect.WaveDuration.Get(spawnEntity);
-                waveCooldown.Value = waveDuration.Time;
+                ref var currentWave = ref _spawnAspect.Wave.Get(spawnEntity);
+                waveCooldown.Value = currentWave.Duration;
                 
                 // накидываем кулдауны для спавна юнитов
                 foreach (var unitSpawnEntity in _unitSpawnFilter)

@@ -3,7 +3,7 @@
     using System;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// wave delay state marker
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;

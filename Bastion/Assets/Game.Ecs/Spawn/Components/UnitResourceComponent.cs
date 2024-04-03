@@ -6,7 +6,7 @@ namespace Game.Ecs.Spawn.Components
     using UniGame.LeoEcs.Bootstrap.Runtime.Abstract;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// unit resource data
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;

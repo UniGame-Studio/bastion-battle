@@ -3,7 +3,7 @@ using UniGame.Runtime.Common;
 using UniGame.UiSystem.Runtime;
 using UniRx;
 
-namespace Game.Ecs.SelectUnit.View
+namespace Game.Ecs.SetUnit.View
 {
     [Serializable]
     public class MapCommandsViewModel : ViewModelBase

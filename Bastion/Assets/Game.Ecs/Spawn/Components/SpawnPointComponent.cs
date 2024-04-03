@@ -5,7 +5,7 @@ namespace Game.Ecs.Spawn.Components
     using System;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// point for spawn units
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;

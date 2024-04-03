@@ -16,7 +16,7 @@ namespace Game.Ecs.Spawn.Systems
     using UniGame.LeoEcs.Bootstrap.Runtime.Attributes;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// set current wave data and start delay
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
@@ -40,8 +40,6 @@ namespace Game.Ecs.Spawn.Systems
             _spawnFilter = _world
                 .Filter<WaveOrderComponent>()
                 .Inc<WaveStartEvent>()
-                .Inc<CurrentWaveDelayComponent>()
-                .Inc<CurrentWaveDurationComponent>()
                 .End();
         }
 
@@ -50,38 +48,31 @@ namespace Game.Ecs.Spawn.Systems
             foreach (var spawnEntity in _spawnFilter)
             {
                 ref var wavesOrder = ref _spawnAspect.WaveOrder.Get(spawnEntity);
-                ref var waveIndex = ref _spawnAspect.Wave.Get(spawnEntity);
+                ref var currentWave = ref _spawnAspect.Wave.Get(spawnEntity);
                         
-                if(!wavesOrder.Waves[waveIndex.Value].Unpack(_world, out int waveEntity)) continue;
+                if(!wavesOrder.Waves[currentWave.Index].Unpack(_world, out int waveEntity)) continue;
 
                 ref var waveDataComponent = ref _waveAspect.Data.Get(waveEntity);
-                ref var currentWaveDelay = ref _spawnAspect.WaveDelay.Get(spawnEntity);
-                ref var currentWaveDuration = ref _spawnAspect.WaveDuration.Get(spawnEntity);
                     
                 // вносим параметры новой волны
 
                 WaveData data = waveDataComponent.Data;
-                currentWaveDelay.Time = data.Delay;
-                currentWaveDuration.Time = data.Duration;
+                currentWave.Delay = data.Delay;
+                currentWave.Duration = data.Duration;
 
                 foreach (var unitSpawnData in data.Units)
                 {
-                    CreateNewUnitEntity(unitSpawnData);
+                    int newUnitEntity = _world.NewEntity();
+                    ref var unitCooldown = ref _waveAspect.UnitCooldown.Add(newUnitEntity);
+                    ref var unitResource = ref _waveAspect.UnitResource.Add(newUnitEntity);
+
+                    unitCooldown.Time = unitSpawnData.Cooldown;
+                    unitCooldown.Immediately = unitSpawnData.SpawnImmediately;
+                    unitResource.Value = unitSpawnData.UnitReference;
                 }
                 
                 _spawnAspect.DelayState.Add(spawnEntity);
             }
-        }
-
-        private void CreateNewUnitEntity(UnitSpawnData data)
-        {
-            int newUnitEntity = _world.NewEntity();
-            ref var unitCooldown = ref _waveAspect.UnitCooldown.Add(newUnitEntity);
-            ref var unitResource = ref _waveAspect.UnitResource.Add(newUnitEntity);
-
-            unitCooldown.Time = data.Cooldown;
-            unitCooldown.Immediately = data.SpawnImmediately;
-            unitResource.Value = data.UnitReference;
         }
     }
 }

@@ -28,9 +28,7 @@ namespace Game.Ecs.Spawn.Aspects
         public EcsPool<WaveOrderComponent> WaveOrder;
         
         // current wave parameters
-        public EcsPool<CurrentWaveIndexComponent> Wave;
-        public EcsPool<CurrentWaveDurationComponent> WaveDuration;
-        public EcsPool<CurrentWaveDelayComponent> WaveDelay;
+        public EcsPool<CurrentWaveComponent> Wave;
         
         // current wave state
         public EcsPool<CooldownComponent> Cooldown;

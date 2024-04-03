@@ -9,7 +9,7 @@ namespace Game.Ecs.Spawn.Aspects
     using UniGame.LeoEcs.Bootstrap.Runtime.Abstract;
 
     /// <summary>
-    /// ADD DESCRIPTION HERE
+    /// current wave with units spawn aspect
     /// </summary>
 #if ENABLE_IL2CPP
     using Unity.IL2CPP.CompilerServices;
